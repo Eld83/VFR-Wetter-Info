@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VFR Wetter – Flugwetter-App für VFR-Piloten</title>
+  <meta name="description" content="VFR Wetter kombiniert METAR, TAF, DWD-Radar, MOSMIX, Open-Meteo und Kartenlayer zu einer klaren, begründeten VFR-Einschätzung – inklusive Performance-Hinweisen, Routen-Ampel und Homescreen-Widget.">
+  <meta name="theme-color" content="#071426">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VFR Wetter – Flugwetter-App für VFR-Piloten">
+  <meta property="og:description" content="Wetter, METAR/TAF, DWD-Radar, MOSMIX und Performance-Hinweise in einer klaren VFR-Einschätzung – für Android.">
+  <meta property="og:image" content="assets/current-assessment.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <div class="nav-links">
+      <a href="index.html#features">Funktionen</a>
+      <a href="index.html#recommendation">Empfehlung</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">✈ VFR-Flugwetter · Android App</div>
+      <h1>Wetter verstehen, bevor du startest.</h1>
+      <p class="lead">
+        VFR Wetter bündelt aktuelle Wetterdaten, METAR/TAF, DWD-Radar, MOSMIX,
+        Routenbewertung, Density Altitude, Crosswind und Sonnenstand zu einer klaren,
+        nachvollziehbaren Einschätzung für deine private VFR-Flugvorbereitung.
+      </p>
+      <div class="hero-actions">
+        <a class="button disabled" aria-disabled="true" title="Demnächst im Google Play Store">
+          <span>▶</span> Bald bei Google Play
+        </a>
+        <a class="button secondary" href="#screens">Screenshots ansehen</a>
+      </div>
+      <div class="trust-row">
+        <span>METAR / TAF</span>
+        <span>DWD Radar</span>
+        <span>MOSMIX</span>
+        <span>Open-Meteo</span>
+        <span>~19k Flugplätze</span>
+      </div>
+    </div>
+    <div class="phone-stack" aria-label="App Screenshots">
+      <div class="phone back"><img src="assets/radar-clouds.png" alt="Radar- und Wolkenkarte in VFR Wetter" loading="lazy"></div>
+      <div class="phone main"><img src="assets/current-assessment.png" alt="Flugwetterbewertung in VFR Wetter" loading="lazy"></div>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="container">
+    <div class="section-title">
+      <h2>Gebaut für die Frage: Kann ich fliegen?</h2>
+      <p>Nicht nur Rohdaten, sondern eine nachvollziehbare Einschätzung mit Gründen, Datenlage und Trends – von der Übersicht bis zur Bahnwahl.</p>
+    </div>
+
+    <h3 class="group-title">Wetter &amp; Einschätzung</h3>
+    <div class="features">
+      <div class="card"><div class="icon">✅</div><h3>Zentrale Flugwetter-Empfehlung</h3><p>Flugtauglich, eingeschränkt oder nicht flugtauglich – mit priorisierten Gründen, Datenqualitäts-Score und aufklappbarer Begründung „Warum diese Einschätzung?“.</p></div>
+      <div class="card"><div class="icon">📍</div><h3>Standort oder Flugplatzsuche</h3><p>Aktuelles Wetter per GPS oder Suche nach ICAO, Name bzw. Stadt aus ~19.000 Plätzen – vollständig offline durchsuchbar.</p></div>
+      <div class="card"><div class="icon">🧭</div><h3>VFR-Einstufung</h3><p>Sicht, Bewölkung, Wind, Böen und Wettercode ergeben die Flugkategorie VFR/MVFR/IFR/LIFR auf einen Blick.</p></div>
+      <div class="card"><div class="icon">⏱️</div><h3>„Seit HH:MM Uhr“-Karte</h3><p>Zeigt, was sich seit dem letzten Abruf geändert hat – Kategorie, Ceiling, Sicht, Wind, Böen, neue DWD-Warnungen – mit Gesamtfazit besser/schlechter.</p></div>
+      <div class="card"><div class="icon">🚦</div><h3>„Wenn du jetzt startest“</h3><p>Ampel-Kurzhorizont am Standort für jetzt, +1, +2 und +3 Stunden inklusive Hauptgrund je Stunde.</p></div>
+      <div class="card"><div class="icon">⭐</div><h3>Favoriten</h3><p>Gespeicherte Flugplätze mit Live-Flugkategorie direkt im Suchdialog – ideal für Stammplätze und Streckenplanung.</p></div>
+    </div>
+
+    <h3 class="group-title">METAR, TAF &amp; Route</h3>
+    <div class="features">
+      <div class="card"><div class="icon">📡</div><h3>Vollständiger METAR-/TAF-Dekoder</h3><p>Alle Gruppen – Wind inkl. Böen, Sicht, RVR, Wetter, Wolken, QNH, Tendenz – in verständlichem Klartext.</p></div>
+      <div class="card"><div class="icon">🛫</div><h3>Routenmodus als Ampel-Timeline</h3><p>Stationen entlang der Strecke als vertikale Timeline mit Flugkategorie-Farbe, die kritischste Station hervorgehoben und antippbar.</p></div>
+      <div class="card"><div class="icon">📶</div><h3>Platznahe Zusatzdaten</h3><p>Für VFR-Plätze ohne eigenes METAR wird automatisch eine nahe Station gesucht und transparent als Zusatzquelle gekennzeichnet.</p></div>
+      <div class="card"><div class="icon">🌐</div><h3>Tokenfreier Fallback</h3><p>Liefert AVWX keine Daten, springt AviationWeather.gov als weltweiter METAR-/TAF-Fallback ein.</p></div>
+    </div>
+
+    <h3 class="group-title">Performance &amp; Bahnwahl</h3>
+    <div class="features">
+      <div class="card"><div class="icon">🌡️</div><h3>Density Altitude</h3><p>Density Altitude, Pressure Altitude, ISA-Abweichung und Luftfeuchte für realistische Start- und Steigleistung.</p></div>
+      <div class="card"><div class="icon">☁️</div><h3>Wolkenbasis &amp; Thermik</h3><p>Wolkenbasis, Gefriergrenze sowie Hinweise zu Thermik, Turbulenz und Windshear – dort eingerechnet, wo sie wirklich limitieren.</p></div>
+      <div class="card"><div class="icon">🛬</div><h3>Pisten, Crosswind &amp; Performance</h3><p>Günstigste Bahnrichtung nach Headwind, dazu Crosswind- und Rückenwind-Bewertung direkt in der Hauptempfehlung.</p></div>
+      <div class="card"><div class="icon">🌅</div><h3>Live-Sonnenstand</h3><p>Höhe, Azimut/Kompass und Phase (Tag/Goldene Stunde/Dämmerung) in der Übersicht – im Performance-Tab zusätzlich Gegenlicht-Warnung je Bahnrichtung.</p></div>
+    </div>
+
+    <h3 class="group-title">Karten, Radar &amp; Vorhersage</h3>
+    <div class="features">
+      <div class="card"><div class="icon">🗺️</div><h3>Radar-Tab mit Kartenlayern</h3><p>DWD Radar + Blitze, OpenWeatherMap-Regen, ein selbst gerendertes Open-Meteo-Wolkenfeld (tief/mittel/hoch) und eine VFR-Ampel-Heatmap – mit Deckkraft und Legende.</p></div>
+      <div class="card"><div class="icon">🛰️</div><h3>Flugplätze auf der Karte</h3><p>~19.000 weltweite ICAO-Plätze als Punkte nach Typ mit Label, antippbar zur Auswahl, ein- und ausblendbar.</p></div>
+      <div class="card"><div class="icon">📅</div><h3>Tagesvorhersage &amp; Stundenverlauf</h3><p>Go/No-Go-Einschätzung für den Tag sowie Stundenverlauf aus Open-Meteo-Daten.</p></div>
+      <div class="card"><div class="icon">🔄</div><h3>Schneller Reload</h3><p>Aktualisiert den gewählten Platz bzw. GPS-Standort auf Knopfdruck – ohne erneute Suche.</p></div>
+    </div>
+
+    <h3 class="group-title">Zuverlässig unterwegs</h3>
+    <div class="features">
+      <div class="card"><div class="icon">📦</div><h3>Offline-Cache</h3><p>Zuletzt geladene Daten bleiben lokal verfügbar; bei Daten älter als 60 Minuten warnt die App sichtbar.</p></div>
+      <div class="card"><div class="icon">📱</div><h3>Homescreen-Widget</h3><p>Schnellübersicht direkt auf dem Homescreen mit manueller Aktualisierung.</p></div>
+      <div class="card"><div class="icon">⚠️</div><h3>Haftungsausschluss</h3><p>Klarer Hinweis bei jedem App-Start: die App ist ein Hilfsmittel, kein Ersatz für die amtliche Flugwetterberatung.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="recommendation" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>So entsteht die Empfehlung</h2>
+      <p>Die App zeigt nicht nur ein Ampel-Symbol, sondern erklärt, worauf es basiert.</p>
+    </div>
+    <div class="reco-grid">
+      <div class="reco-card">
+        <h3>Mehrere Quellen, eine Einschätzung</h3>
+        <p>Bewertet werden unter anderem Sicht, Wind, Böen, Niederschlag, Gewitter-/Thermikrisiko, DWD-Warnungen und die Wolkensituation. Ist ein ICAO-Flugplatz gewählt, fließt zuerst dessen METAR ein: <strong>IFR</strong>/<strong>LIFR</strong> erzwingt „Nicht flugtauglich“, <strong>MVFR</strong> stuft mindestens auf „Eingeschränkt“ ab.</p>
+      </div>
+      <div class="reco-card">
+        <h3>TAF, MOSMIX &amp; Radar als Zusatzbewertung</h3>
+        <p>TAF wird für die nächsten 6 Stunden geprüft, DWD MOSMIX zusätzlich als harte Vorhersagequelle. DWD-Radar liefert die aktuelle Niederschlagsrate am Standort – ab 2,5 mm/h „Eingeschränkt“, ab 7,5 mm/h „Nicht flugtauglich“.</p>
+      </div>
+      <div class="reco-card">
+        <h3>Runways, Crosswind &amp; Rückenwind</h3>
+        <p>Für den gewählten Flugplatz werden Runways geladen und die günstigste Bahn nach Headwind bewertet: Crosswind &gt; 15 kt oder Rückenwind &gt; 3 kt führt mindestens zu „Eingeschränkt“, ab 20 kt bzw. 7 kt zu „Nicht flugtauglich“.</p>
+      </div>
+      <div class="reco-card">
+        <h3>Transparente Quellenlage</h3>
+        <p>Statt „fehlendes METAR“ als Fehler zu werten, zeigt die App ehrlich, worauf die Einschätzung beruht: <em>Mehrere Quellen abgeglichen</em>, <em>Platznahe Zusatzdaten</em> oder <em>OWM + Open-Meteo</em>, wenn im 25-km-Umfeld keine Station verfügbar ist.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="screens">
+  <div class="container">
+    <div class="section-title">
+      <h2>Screenshots</h2>
+      <p>Ein schneller Eindruck der App: Bewertung, Route, Radar, METAR-Dekoder und Performance.</p>
+    </div>
+    <div class="screens">
+      <div class="screen"><img src="assets/current-assessment.png" alt="Aktuelle Flugwetterbewertung" loading="lazy"></div>
+      <div class="screen"><img src="assets/route.png" alt="Routenbewertung als Ampel-Timeline" loading="lazy"></div>
+      <div class="screen"><img src="assets/radar-vfr.png" alt="VFR-Ampel-Heatmap auf der Karte" loading="lazy"></div>
+      <div class="screen"><img src="assets/radar-clouds.png" alt="Radar- und Wolkenlayer auf der Karte" loading="lazy"></div>
+      <div class="screen"><img src="assets/metar-decoder.png" alt="Vollständiger METAR-/TAF-Dekoder" loading="lazy"></div>
+      <div class="screen"><img src="assets/performance.png" alt="Performance-Awareness-Ansicht mit Density Altitude" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="sources" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Datenquellen</h2>
+      <p>VFR Wetter kombiniert etablierte Wetter-, Luftfahrt- und Kartendienste zu einer gemeinsamen Einschätzung.</p>
+    </div>
+    <div class="trust-row large">
+      <span>AVWX (METAR/TAF)</span>
+      <span>AviationWeather.gov</span>
+      <span>Deutscher Wetterdienst (Radar, MOSMIX, Warnungen)</span>
+      <span>Open-Meteo</span>
+      <span>OpenWeatherMap</span>
+      <span>OurAirports (~19k Flugplätze)</span>
+      <span>OpenStreetMap / osmdroid</span>
+      <span>MapTiler</span>
+      <span>Google Play Services Location</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-title">
+      <h2>Häufige Fragen</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Ersetzt VFR Wetter die amtliche Flugwetterberatung?</summary>
+        <p>Nein. Die App ist ein ergänzendes Hilfsmittel zur privaten Flugvorbereitung. Sie ersetzt keine amtliche Flugwetterberatung, keine NOTAM-/AIP-Prüfung, keine POH-Berechnung und keine Entscheidung des verantwortlichen Luftfahrzeugführers.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Funktioniert die App auch ohne Internetverbindung?</summary>
+        <p>Zuletzt geladene Wetterdaten werden lokal zwischengespeichert und bleiben offline sichtbar. Sind die Daten älter als 60 Minuten, weist die App das deutlich aus. Die Flugplatzsuche mit ~19.000 Plätzen funktioniert vollständig offline.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was passiert, wenn ein Flugplatz kein eigenes METAR hat?</summary>
+        <p>Die App sucht automatisch eine nahe METAR-Station. Bis 10 km fließt sie als platznahe Zusatzquelle ein, zwischen 10 und 25 km nur vorsichtig als Trendhinweis. Ohne passende Station basiert die Einschätzung transparent auf Modellwetter (Open-Meteo/OWM), DWD und ggf. MOSMIX.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Plattform wird unterstützt?</summary>
+        <p>VFR Wetter ist eine native Android-App, gebaut mit Kotlin und Jetpack Compose, inklusive Homescreen-Widget.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Hinweis zur Nutzung</h2>
+        <p class="lead">
+          Die App ist ein ergänzendes Hilfsmittel zur privaten VFR-Flugvorbereitung.
+          Sie ersetzt keine amtliche Flugwetterberatung, keine NOTAM-/AIP-Prüfung,
+          keine POH-Berechnung und keine Entscheidung des verantwortlichen Luftfahrzeugführers.
+        </p>
+      </div>
+      <a class="button" href="privacy.html">Datenschutz lesen</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 VFR Wetter · Ein privates VFR-Briefing-Hilfsmittel.</div>
+    <div>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
