@@ -25,9 +25,9 @@
   <div class="container">
     <article>
       <h1>Datenschutzerklärung</h1>
-      <p><strong>Stand: 07.07.2026</strong></p>
+      <p><strong>Stand: 13.07.2026</strong></p>
 
-      <p>Der Schutz deiner personenbezogenen Daten ist uns wichtig. Diese App verarbeitet personenbezogene Daten ausschließlich, soweit dies zur Bereitstellung der gewünschten Funktionen erforderlich ist. Es werden keine Benutzerkonten geführt, keine Werbung eingeblendet und keine Tracking- oder Analyse-Dienste eingesetzt.</p>
+      <p>Der Schutz deiner personenbezogenen Daten ist uns wichtig. Diese App verarbeitet personenbezogene Daten ausschließlich, soweit dies zur Bereitstellung der gewünschten Funktionen erforderlich ist. Es werden keine Benutzerkonten geführt, keine Werbung eingeblendet und keine Tracking- oder Analyse-Dienste eingesetzt. VFR Wetter besteht aus der Android-App und einem eigenen Backend-Dienst (Cloud Run), der schlüsselpflichtige Wetterabfragen im Auftrag der App absichert und weiterleitet.</p>
 
       <h2>Verantwortlicher</h2>
       <p>Siehe Impressum.</p>
@@ -37,41 +37,48 @@
         <li>Standortdaten (GPS bzw. Netzwerkstandort): zur Ermittlung standortbezogener Wetter- und Flugwetterdaten sowie zur Kartenzentrierung.</li>
         <li>ICAO-Codes bzw. ausgewählte Flugplätze: zur Abfrage von METAR-, TAF- und Flugplatzinformationen.</li>
         <li>Kartenausschnitt und Zoomstufe: zum Laden der benötigten Karten- und Wetterdaten.</li>
-        <li>Favoriten und zuletzt verwendete Flugplätze: ausschließlich zur komfortablen Nutzung der App.</li>
+        <li>Favoriten, zuletzt verwendete Flugplätze und Spracheinstellung: ausschließlich zur komfortablen Nutzung der App.</li>
+        <li>Geräte-Integritätsnachweis (Play Integrity/Firebase App Check): zur Absicherung der Backend-Aufrufe gegen Missbrauch, siehe unten.</li>
+        <li>Kaufstatus bzw. Play-Purchase-Token: zur Prüfung eines aktiven VFR-Wetter-Pro-Abonnements, siehe „Abo und Zahlung“.</li>
       </ul>
 
       <h2>Zweck und Rechtsgrundlage</h2>
-      <p>Die Verarbeitung erfolgt ausschließlich zur Bereitstellung der von dir angeforderten Funktionen der App. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO sowie Art. 6 Abs. 1 lit. f DSGVO aufgrund unseres berechtigten Interesses an einer technisch funktionsfähigen und sicheren App.</p>
+      <p>Die Verarbeitung erfolgt ausschließlich zur Bereitstellung der von dir angeforderten Funktionen der App sowie zur Bereitstellung des Abonnements. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung, u. a. für das Abonnement) sowie Art. 6 Abs. 1 lit. f DSGVO aufgrund unseres berechtigten Interesses an einer technisch funktionsfähigen, missbrauchsgeschützten und sicheren App.</p>
 
       <h2>Empfänger und Drittanbieter</h2>
-      <p>Zur Bereitstellung der Wetter-, Flugwetter- und Kartendaten werden die jeweils erforderlichen Informationen direkt an die verwendeten Dienste übertragen. Ein eigener Server des App-Anbieters zur Verarbeitung dieser Daten wird nicht betrieben.</p>
+      <p><strong>Eigener Backend-Dienst (Cloud Run):</strong> Für OpenWeatherMap, AVWX sowie alle Open-Meteo-Abfragen (Forecast, ICON-Höhenwind, Luftqualität, Marine) läuft die Anfrage zunächst über einen eigenen, bei Google Cloud betriebenen Backend-Dienst und von dort an den jeweiligen Anbieter. Dabei werden Standort- bzw. Koordinatendaten sowie die Anfrageparameter übertragen. Der Dienst speichert keine dauerhaften Nutzerprofile, sondern hält Antworten nur kurzlebig zwischen (In-Memory-Cache).</p>
+      <p><strong>Direkt aufgerufene Dienste:</strong> Folgende Anbieter werden ohne Umweg über den eigenen Backend-Dienst direkt aus der App angefragt:</p>
       <ul>
-        <li>MapTiler – Kartendarstellung</li>
-        <li>OpenStreetMap – Kartendaten</li>
-        <li>OpenWeatherMap – Wetterdaten</li>
-        <li>Open-Meteo – Wettervorhersagen</li>
-        <li>AVWX – METAR-, TAF- und Stationsdaten</li>
-        <li>Aviation Weather Center (NOAA) – METAR-/TAF-Fallback</li>
-        <li>Bright Sky – DWD-nahe Wetterdaten</li>
-        <li>Deutscher Wetterdienst (DWD) – Radar, Warnungen, MOSMIX und OpenData-Dienste</li>
+        <li>Deutscher Wetterdienst (DWD) – Radar, Blitze, Warnungen, MOSMIX und Kartenkacheln (GeoServer)</li>
+        <li>Aviation Weather Center (NOAA, AviationWeather.gov) – METAR-/TAF-Fallback</li>
+        <li>OurAirports – Flugplatzstammdaten (~19.000 Plätze, überwiegend offline aus der App-Datenbank)</li>
+        <li>MapTiler / CARTO / OpenStreetMap – Kartenkacheln für die Radarkarte</li>
+      </ul>
+      <p><strong>Weitere Dienste:</strong></p>
+      <ul>
         <li>Google Play Services – Standortermittlung</li>
+        <li>Firebase App Check / Google Play Integrity – Geräte- und App-Integritätsprüfung für Backend-Anfragen</li>
+        <li>Google Play Billing – Abwicklung des Abonnements und Prüfung des Kaufstatus</li>
       </ul>
       <p>Einige dieser Dienste können personenbezogene Daten auf Servern außerhalb der Europäischen Union verarbeiten, insbesondere in den USA. Es gelten die Datenschutzbestimmungen der jeweiligen Anbieter.</p>
 
       <h2>Lokale Speicherung</h2>
-      <p>Favoriten, zuletzt verwendete Flugplätze, Offline-Wettercache und App-Einstellungen werden ausschließlich lokal auf deinem Gerät gespeichert. Diese Daten dienen ausschließlich der Nutzung der App und werden nicht an den App-Anbieter oder andere Dritte übertragen. Sie können jederzeit durch Löschen der App-Daten oder Deinstallation der App entfernt werden.</p>
+      <p>Favoriten, zuletzt verwendete Flugplätze, Spracheinstellung, Offline-Wettercache und App-Einstellungen werden lokal auf deinem Gerät gespeichert. Der zuletzt verifizierte Abo-Status wird für maximal 24 Stunden lokal als Offline-Kulanz vorgehalten; danach prüft die App den Kaufstatus erneut gegen Google Play. Diese Daten werden nicht an den App-Anbieter übertragen und können jederzeit durch Löschen der App-Daten oder Deinstallation der App entfernt werden.</p>
 
       <h2>Berechtigungen</h2>
       <ul>
         <li>Standort (präzise oder ungefähr): für standortbezogene Wetterabfragen. Ohne Freigabe bleibt die ICAO-Suche weiterhin nutzbar.</li>
-        <li>Internet und Netzwerkzugriff: zum Abruf von Wetter-, Karten- und Flugplatzdaten.</li>
+        <li>Internet und Netzwerkzugriff: zum Abruf von Wetter-, Karten- und Flugplatzdaten sowie zur Kommunikation mit dem eigenen Backend-Dienst.</li>
       </ul>
 
-      <h2>Google Play</h2>
-      <p>Sofern kostenpflichtige Funktionen oder Abonnements angeboten werden, erfolgt die Abwicklung ausschließlich über Google Play. Zahlungsinformationen werden ausschließlich durch Google verarbeitet und dem App-Anbieter nicht übermittelt.</p>
+      <h2>Geräteintegrität (Firebase App Check)</h2>
+      <p>Damit der Backend-Dienst nicht missbräuchlich von anderen Apps oder automatisierten Anfragen genutzt werden kann, prüft die App bei jeder schlüsselpflichtigen Anfrage ein Geräte-/App-Integritätstoken über Firebase App Check (auf Basis von Google Play Integrity). Dabei werden Geräte- und App-Signale an Google übertragen; es findet keine Profilbildung zu Werbezwecken statt. Ohne gültiges Token lehnt der Backend-Dienst die Anfrage ab.</p>
+
+      <h2>Abo und Zahlung (Google Play Billing)</h2>
+      <p>VFR Wetter ist eine Abo-App mit siebentägiger kostenloser Testphase. Im Anschluss läuft das Abonnement „VFR Wetter Pro“ über Google Play Billing weiter, sofern es nicht vorher gekündigt wird. Die App prüft den Kaufstatus bei jedem Start und bei Rückkehr in die App gegen Google Play; ein lokal verifizierter Zustand gilt höchstens 24 Stunden als Offline-Kulanz. Zur serverseitigen Prüfung übermittelt die App den Google-Play-Purchase-Token an den eigenen Backend-Dienst, der ihn über die Android Publisher API gegen den tatsächlichen Abo-Status prüft. Zahlungsdaten (z. B. Zahlungsmittel, Rechnungsadresse) laufen ausschließlich über Google Play; weder die App noch der Backend-Dienst erhalten oder speichern diese Zahlungsdaten.</p>
 
       <h2>Deine Rechte</h2>
-      <p>Dir stehen die Rechte aus Art. 15 bis 21 DSGVO zu, insbesondere auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch. Da der App-Anbieter keine personenbezogenen Daten serverseitig speichert, betreffen diese Rechte in erster Linie die verwendeten Drittanbieter sowie die lokal gespeicherten Daten.</p>
+      <p>Dir stehen die Rechte aus Art. 15 bis 21 DSGVO zu, insbesondere auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch. Der App-Anbieter speichert selbst keine dauerhaften personenbezogenen Nutzerprofile serverseitig; diese Rechte betreffen daher in erster Linie die eingesetzten Drittanbieter (einschließlich Google Play Billing) sowie die lokal auf deinem Gerät gespeicherten Daten.</p>
 
       <p>Bei Fragen zum Datenschutz kannst du dich jederzeit an den im Impressum genannten Kontakt wenden.</p>
     </article>

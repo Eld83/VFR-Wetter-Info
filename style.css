@@ -311,6 +311,18 @@ h2 {
   gap: 18px;
 }
 
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.note-text {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
 .reco-card {
   background: rgba(255,255,255,.04);
   border: 1px solid var(--line);
@@ -479,7 +491,8 @@ h2 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .reco-grid {
+  .reco-grid,
+  .price-grid {
     grid-template-columns: 1fr;
   }
 

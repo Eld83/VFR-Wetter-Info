@@ -20,6 +20,7 @@
     <div class="nav-links">
       <a href="index.html#features">Funktionen</a>
       <a href="index.html#recommendation">Empfehlung</a>
+      <a href="index.html#pricing">Preise</a>
       <a href="index.html#screens">Screenshots</a>
       <a href="index.html#faq">FAQ</a>
       <a href="support.html">Support</a>
@@ -46,6 +47,7 @@
         <a class="button secondary" href="#screens">Screenshots ansehen</a>
       </div>
       <div class="trust-row">
+        <span>7 Tage gratis testen</span>
         <span>METAR / TAF</span>
         <span>DWD Radar</span>
         <span>MOSMIX</span>
@@ -77,10 +79,11 @@
       <div class="card"><div class="icon">⭐</div><h3>Favoriten</h3><p>Gespeicherte Flugplätze mit Live-Flugkategorie direkt im Suchdialog – ideal für Stammplätze und Streckenplanung.</p></div>
     </div>
 
-    <h3 class="group-title">METAR, TAF &amp; Route</h3>
+    <h3 class="group-title">METAR, TAF &amp; Streckenplanung</h3>
     <div class="features">
       <div class="card"><div class="icon">📡</div><h3>Vollständiger METAR-/TAF-Dekoder</h3><p>Alle Gruppen – Wind inkl. Böen, Sicht, RVR, Wetter, Wolken, QNH, Tendenz – in verständlichem Klartext.</p></div>
-      <div class="card"><div class="icon">🛫</div><h3>Routenmodus als Ampel-Timeline</h3><p>Stationen entlang der Strecke als vertikale Timeline mit Flugkategorie-Farbe, die kritischste Station hervorgehoben und antippbar.</p></div>
+      <div class="card"><div class="icon">🛫</div><h3>Routenmodus als Ampel-Timeline</h3><p>Stationen entlang der Strecke als vertikale Timeline mit Flugkategorie-Farbe, die kritischste Station hervorgehoben und antippbar – inklusive ICON-Höhenwind-Hinweis ab Abflug mit frei wählbarer Reisegeschwindigkeit in kt.</p></div>
+      <div class="card"><div class="icon">🌬️</div><h3>DWD-Höhenwind &amp; Streckenwetter</h3><p>ICON-D2-Prognose im mitteleuropäischen Kerngebiet, sonst ICON-EU, mit festen Höhenwindbändern (2.000/5.000/8.000 ft MSL) sowie Dunst-/Saharastaub-Hinweis und Küstenwellen-Info.</p></div>
       <div class="card"><div class="icon">📶</div><h3>Platznahe Zusatzdaten</h3><p>Für VFR-Plätze ohne eigenes METAR wird automatisch eine nahe Station gesucht und transparent als Zusatzquelle gekennzeichnet.</p></div>
       <div class="card"><div class="icon">🌐</div><h3>Tokenfreier Fallback</h3><p>Liefert AVWX keine Daten, springt AviationWeather.gov als weltweiter METAR-/TAF-Fallback ein.</p></div>
     </div>
@@ -95,7 +98,7 @@
 
     <h3 class="group-title">Karten, Radar &amp; Vorhersage</h3>
     <div class="features">
-      <div class="card"><div class="icon">🗺️</div><h3>Radar-Tab mit Kartenlayern</h3><p>DWD Radar + Blitze, OpenWeatherMap-Regen, ein selbst gerendertes Open-Meteo-Wolkenfeld (tief/mittel/hoch) und eine VFR-Ampel-Heatmap – mit Deckkraft und Legende.</p></div>
+      <div class="card"><div class="icon">🗺️</div><h3>Radar-Tab mit Kartenlayern</h3><p>DWD Radar + Blitze, globaler OpenWeatherMap-Regen über einen abgesicherten Backend-Proxy, ein selbst gerendertes Open-Meteo-Wolkenfeld (tief/mittel/hoch) und eine VFR-Ampel-Heatmap – mit Deckkraft und Legende.</p></div>
       <div class="card"><div class="icon">🛰️</div><h3>Flugplätze auf der Karte</h3><p>~19.000 weltweite ICAO-Plätze als Punkte nach Typ mit Label, antippbar zur Auswahl, ein- und ausblendbar.</p></div>
       <div class="card"><div class="icon">📅</div><h3>Tagesvorhersage &amp; Stundenverlauf</h3><p>Go/No-Go-Einschätzung für den Tag sowie Stundenverlauf aus Open-Meteo-Daten.</p></div>
       <div class="card"><div class="icon">🔄</div><h3>Schneller Reload</h3><p>Aktualisiert den gewählten Platz bzw. GPS-Standort auf Knopfdruck – ohne erneute Suche.</p></div>
@@ -105,6 +108,8 @@
     <div class="features">
       <div class="card"><div class="icon">📦</div><h3>Offline-Cache</h3><p>Zuletzt geladene Daten bleiben lokal verfügbar; bei Daten älter als 60 Minuten warnt die App sichtbar.</p></div>
       <div class="card"><div class="icon">📱</div><h3>Homescreen-Widget</h3><p>Schnellübersicht direkt auf dem Homescreen mit manueller Aktualisierung.</p></div>
+      <div class="card"><div class="icon">🌍</div><h3>Sprachumschalter</h3><p>Systemsprache, Deutsch oder Englisch über ein Top-Bar-Icon – aktuell für Splash-Screen und Haupt-Chrome verfügbar, weitere Screens folgen schrittweise.</p></div>
+      <div class="card"><div class="icon">🔐</div><h3>Abgesicherte API-Anbindung</h3><p>Schlüsselpflichtige Wetterabfragen laufen über einen eigenen Cloud-Dienst, der mit Firebase App Check gegen Missbrauch abgesichert ist.</p></div>
       <div class="card"><div class="icon">⚠️</div><h3>Haftungsausschluss</h3><p>Klarer Hinweis bei jedem App-Start: die App ist ein Hilfsmittel, kein Ersatz für die amtliche Flugwetterberatung.</p></div>
     </div>
   </div>
@@ -132,6 +137,29 @@
       <div class="reco-card">
         <h3>Transparente Quellenlage</h3>
         <p>Statt „fehlendes METAR“ als Fehler zu werten, zeigt die App ehrlich, worauf die Einschätzung beruht: <em>Mehrere Quellen abgeglichen</em>, <em>Platznahe Zusatzdaten</em> oder <em>OWM + Open-Meteo</em>, wenn im 25-km-Umfeld keine Station verfügbar ist.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <div class="section-title">
+      <h2>Preise &amp; Testphase</h2>
+      <p>VFR Wetter ist eine Abo-App. Alle Kernfunktionen lassen sich zunächst kostenlos ausprobieren.</p>
+    </div>
+    <div class="price-grid">
+      <div class="reco-card">
+        <h3>🎁 7 Tage kostenlos testen</h3>
+        <p>Nach dem Haftungsausschluss startet die kostenlose Testphase automatisch – ohne Einschränkung der Funktionen.</p>
+      </div>
+      <div class="reco-card">
+        <h3>🔁 Danach im Abo</h3>
+        <p>Im Anschluss läuft VFR Wetter Pro als Abonnement über Google Play Billing weiter, sofern du nicht vorher kündigst. Den aktuellen Preis siehst du im Google Play Store.</p>
+      </div>
+      <div class="reco-card">
+        <h3>✋ Jederzeit kündbar</h3>
+        <p>Kündigung jederzeit direkt im Google Play Store. Die Zahlungsabwicklung läuft vollständig über Google Play – Zahlungsdaten sieht der App-Anbieter zu keinem Zeitpunkt.</p>
       </div>
     </div>
   </div>
@@ -171,6 +199,7 @@
       <span>MapTiler</span>
       <span>Google Play Services Location</span>
     </div>
+    <p class="note-text">Schlüsselpflichtige Aufrufe bei OpenWeatherMap, AVWX und Open-Meteo laufen über einen eigenen, mit Firebase App Check abgesicherten Cloud-Dienst – API-Schlüssel verlassen nie die App.</p>
   </div>
 </section>
 
@@ -195,6 +224,18 @@
       <details class="faq-item">
         <summary>Welche Plattform wird unterstützt?</summary>
         <p>VFR Wetter ist eine native Android-App, gebaut mit Kotlin und Jetpack Compose, inklusive Homescreen-Widget.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Ist VFR Wetter kostenlos?</summary>
+        <p>Du kannst VFR Wetter 7 Tage lang kostenlos und ohne Einschränkungen testen. Danach läuft die App als Abonnement (VFR Wetter Pro) über Google Play Billing weiter, sofern du nicht vorher kündigst. Kündigung ist jederzeit im Google Play Store möglich, die Zahlung läuft vollständig über Google Play.</p>
+      </details>
+      <details class="faq-item">
+        <summary>In welchen Sprachen ist die App verfügbar?</summary>
+        <p>Du kannst zwischen Systemsprache, Deutsch und Englisch wechseln. Aktuell sind Splash-Screen und die Haupt-Navigation (Tabs, Top-Bar) übersetzt, weitere Screens folgen schrittweise.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie werden die Wetter-API-Schlüssel geschützt?</summary>
+        <p>OpenWeatherMap-, AVWX- und Open-Meteo-Aufrufe laufen nicht direkt aus der App, sondern über einen eigenen Cloud-Dienst, der Anfragen per Firebase App Check verifiziert. API-Schlüssel sind damit nie Teil der App selbst.</p>
       </details>
     </div>
   </div>
