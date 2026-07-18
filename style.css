@@ -209,6 +209,7 @@ h1 {
 
 .phone img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -399,6 +400,7 @@ h2 {
 
 .screen img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -423,6 +425,7 @@ h2 {
 
 .club-badge img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
