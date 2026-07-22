@@ -32,16 +32,78 @@
     "operatingSystem": "Android",
     "description": "VFR Wetter kombiniert METAR, TAF, DWD-Radar, MOSMIX, Open-Meteo und Kartenlayer zu einer klaren, begründeten VFR-Einschätzung für VFR-Piloten – inklusive Performance-Hinweisen, Routen-Ampel und Homescreen-Widget.",
     "inLanguage": "de",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR",
-      "description": "7 Tage kostenlose Testphase, danach Abonnement VFR Wetter Pro über Google Play Billing"
+    "author": {
+      "@type": "Person",
+      "name": "Niels Deuter"
     },
     "publisher": {
       "@type": "Organization",
       "name": "VFR Wetter"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ersetzt VFR Wetter die amtliche Flugwetterberatung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Die App ist ein ergänzendes Hilfsmittel zur privaten Flugvorbereitung. Sie ersetzt keine amtliche Flugwetterberatung, keine NOTAM-/AIP-Prüfung, keine POH-Berechnung und keine Entscheidung des verantwortlichen Luftfahrzeugführers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Funktioniert die App auch ohne Internetverbindung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zuletzt geladene Wetterdaten werden lokal zwischengespeichert und bleiben offline sichtbar. Sind die Daten älter als 60 Minuten, weist die App das deutlich aus. Die Flugplatzsuche mit ~19.000 Plätzen funktioniert vollständig offline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was passiert, wenn ein Flugplatz kein eigenes METAR hat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die App sucht automatisch eine nahe METAR-Station. Bis 10 km fließt sie als platznahe Zusatzquelle ein, zwischen 10 und 25 km nur vorsichtig als Trendhinweis. Ohne passende Station basiert die Einschätzung transparent auf Modellwetter (Open-Meteo/OWM), DWD und ggf. MOSMIX."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Plattform wird unterstützt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VFR Wetter ist eine native Android-App, gebaut mit Kotlin und Jetpack Compose, inklusive Homescreen-Widget."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist VFR Wetter kostenlos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Du kannst VFR Wetter 7 Tage lang kostenlos und ohne Einschränkungen testen. Danach läuft die App als Abonnement (VFR Wetter Pro) über Google Play Billing weiter, sofern du nicht vorher kündigst."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welchen Sprachen ist die App verfügbar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Du kannst zwischen Systemsprache, Deutsch und Englisch wechseln. Aktuell sind Splash-Screen und die Haupt-Navigation übersetzt, weitere Screens folgen schrittweise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie werden die Wetter-API-Schlüssel geschützt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OpenWeatherMap-, AVWX- und Open-Meteo-Aufrufe laufen nicht direkt aus der App, sondern über einen eigenen Cloud-Dienst, der Anfragen per Firebase App Check verifiziert. API-Schlüssel sind damit nie Teil der App selbst."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -88,8 +150,8 @@
       </div>
     </div>
     <div class="phone-stack" aria-label="App Screenshots">
-      <div class="phone back"><img src="assets/radar-clouds.png" alt="Radar- und Wolkenkarte in VFR Wetter" width="919" height="1991" loading="lazy"></div>
-      <div class="phone main"><img src="assets/current-assessment.png" alt="Flugwetterbewertung in VFR Wetter" width="919" height="1991" loading="lazy"></div>
+      <div class="phone back"><img src="assets/radar-clouds.webp" alt="Radar- und Wolkenkarte in VFR Wetter" width="919" height="1991" fetchpriority="high"></div>
+      <div class="phone main"><img src="assets/current-assessment.png" alt="Flugwetterbewertung in VFR Wetter" width="919" height="1991" fetchpriority="high"></div>
     </div>
   </div>
 </header>
@@ -213,9 +275,9 @@
     <div class="screens">
       <div class="screen"><img src="assets/current-assessment.png" alt="Aktuelle Flugwetterbewertung mit Begründung" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/route.png" alt="Routenbewertung als Ampel-Timeline" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/radar-rain.png" alt="DWD-Regenradar mit Flugroute auf der Karte" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/radar-clouds.png" alt="Wolkenlayer auf der Karte" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/radar-vfr.png" alt="VFR-Ampel-Heatmap auf der Karte" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/radar-rain.webp" alt="DWD-Regenradar mit Flugroute auf der Karte" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/radar-clouds.webp" alt="Wolkenlayer auf der Karte" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/radar-vfr.webp" alt="VFR-Ampel-Heatmap auf der Karte" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/metar-decoder.png" alt="Vollständiger METAR-/TAF-Dekoder" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/performance.png" alt="Performance-Awareness-Ansicht mit Density Altitude" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/crosswind.png" alt="Crosswind-Rechner mit Pistenempfehlung" width="919" height="1991" loading="lazy"></div>
@@ -288,11 +350,12 @@
 
 <section id="club" class="alt">
   <div class="container">
+    <h2 class="sr-only">Über den Entwickler</h2>
     <div class="club-card">
       <div class="club-badge"><img src="assets/lsc-borkenberge-logo.png" alt="Logo Luftsportclub Borkenberge e.V." width="683" height="250" loading="lazy"></div>
       <div>
         <h3>Mit Rückenwind vom Luftsportclub Borkenberge e.V.</h3>
-        <p>„Wir erfüllen Dir Deinen Traum vom Fliegen" – der Verein, in dessen fliegerischem Umfeld VFR Wetter entstanden ist.</p>
+        <p>Entwickelt von Niels Deuter. „Wir erfüllen Dir Deinen Traum vom Fliegen" – der Verein, in dessen fliegerischem Umfeld VFR Wetter entstanden ist.</p>
       </div>
       <a class="button secondary" href="https://lsc-borkenberge.de/" target="_blank" rel="noopener">lsc-borkenberge.de</a>
     </div>

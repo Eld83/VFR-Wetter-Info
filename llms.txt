@@ -1,8 +1,8 @@
 # VFR Wetter
 
-> VFR Wetter ist eine Android-App für VFR-Piloten. Sie kombiniert METAR, TAF, DWD-Radar, MOSMIX, Open-Meteo, hochaufgelöste Regionalmodelle (HARMONIE/AROME/ICON-CH) und Kartenlayer zu einer klaren, begründeten Flugwetter-Einschätzung (Flugtauglich / Eingeschränkt / Nicht flugtauglich) für die private VFR-Flugvorbereitung in Deutschland und weiten Teilen Europas.
+> VFR Wetter ist eine Android-App für VFR-Piloten. Sie kombiniert METAR, TAF, DWD-Radar, MOSMIX, Open-Meteo, hochaufgelöste Regionalmodelle (HARMONIE/AROME/ICON-CH1-CH2/ICON-2I) und Kartenlayer zu einer klaren, begründeten Flugwetter-Einschätzung (Flugtauglich / Eingeschränkt / Nicht flugtauglich) für die private VFR-Flugvorbereitung in Deutschland und weiten Teilen Europas.
 
-Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Österreich, Schweiz, Slowenien, Dänemark, Belgien, Niederlande und Frankreich.
+Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Österreich, Schweiz, Slowenien, Dänemark, Kroatien, Polen, Belgien, Niederlande, Frankreich, Nord-/Zentralspanien und Italien.
 
 ## Kernfunktionen
 
@@ -10,8 +10,8 @@ Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Öste
 - Vollständiger METAR-/TAF-Dekoder in Klartext
 - Routenmodus als Ampel-Timeline mit Höhenwind-Briefing bis 72 Stunden im Voraus
 - Density Altitude, Crosswind-Rechner, Pisten- und Performance-Awareness
-- Radar-Tab mit DWD-Radar, Wolken- und VFR-Ampel-Heatmap-Layern
-- Live-Sonnenstand, Homescreen-Widget, Offline-Cache
+- Radar-Tab mit DWD-Radar, Wolken- und VFR-Ampel-Heatmap-Layern, Zeitregler bis +2 Stunden
+- Live-Sonnenstand, responsives Homescreen-Widget, Offline-Cache
 - Deutsch und Englisch, In-App-Sprachumschalter
 
 ## Wichtige Hinweise
@@ -20,9 +20,12 @@ Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Öste
 - Plattform: Android (Kotlin, Jetpack Compose).
 - Preismodell: 7 Tage kostenlose Testphase, danach Abonnement "VFR Wetter Pro" über Google Play Billing.
 
-## Seiten
+## Docs
 
-- [Startseite](https://vfrwetter.com/): Funktionen, Datenquellen, Preise, Screenshots, FAQ
+- [Startseite](https://vfrwetter.com/): Funktionen, Datenquellen, Empfehlungslogik, Preise, Screenshots, FAQ
 - [Support](https://vfrwetter.com/support.html): Kontakt und Support
-- [Datenschutzerklärung](https://vfrwetter.com/privacy.html)
-- [Impressum](https://vfrwetter.com/impressum.html)
+
+## Optional
+
+- [Datenschutzerklärung](https://vfrwetter.com/privacy.html): Datenverarbeitung und Drittanbieter
+- [Impressum](https://vfrwetter.com/impressum.html): Anbieterkennzeichnung
