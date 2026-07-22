@@ -111,6 +111,7 @@
 <nav class="nav">
   <div class="container nav-inner">
     <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
     <div class="nav-links">
       <a href="index.html#features">Funktionen</a>
       <a href="index.html#recommendation">Empfehlung</a>
@@ -176,7 +177,7 @@
     <h3 class="group-title">METAR, TAF &amp; Streckenplanung</h3>
     <div class="features">
       <div class="card"><div class="icon">📡</div><h3>Vollständiger METAR-/TAF-Dekoder</h3><p>Alle Gruppen – Wind inkl. Böen, Sicht, RVR, Wetter, Wolken, QNH, Tendenz – in verständlichem Klartext.</p></div>
-      <div class="card"><div class="icon">🛫</div><h3>Routenmodus als Ampel-Timeline</h3><p>Stationen entlang der Strecke als vertikale Timeline mit Flugkategorie-Farbe, die kritischste Station hervorgehoben und antippbar – inklusive ICON-Höhenwind-Hinweis mit frei wählbarer Abflugzeit bis 72 Stunden im Voraus und frei wählbarer Reisegeschwindigkeit in kt.</p></div>
+      <div class="card"><div class="icon">🛫</div><h3>Routenmodus als Gefahrenkorridor</h3><p>Stationen entlang der Strecke als vertikale Ampel-Timeline, dazu ein zeitbezogener Gefahrenkorridor: Höhenwind und Modell-Signale an bis zu acht ETA-Punkten, amtliche MeteoAlarm-Warnpolygone exakt zur Passagezeit, gültige TAF-Änderungsgruppen sowie DWD-RADVOR-Niederschlag am Routenpunkt – frei wählbare Abflugzeit bis 72 Stunden im Voraus und frei wählbare Reisegeschwindigkeit in kt. Die Karte zeichnet die Abschnitte grün/gelb/rot.</p></div>
       <div class="card"><div class="icon">🌬️</div><h3>DWD-Höhenwind &amp; Streckenwetter</h3><p>ICON-D2-Prognose im mitteleuropäischen Kerngebiet, sonst ICON-EU, mit festen Höhenwindbändern (2.000/5.000/8.000 ft MSL) sowie Dunst-/Saharastaub-Hinweis und Küstenwellen-Info.</p></div>
       <div class="card"><div class="icon">📶</div><h3>Platznahe Zusatzdaten</h3><p>Für VFR-Plätze ohne eigenes METAR wird automatisch eine nahe Station gesucht und transparent als Zusatzquelle gekennzeichnet.</p></div>
       <div class="card"><div class="icon">🌐</div><h3>Tokenfreier Fallback</h3><p>Liefert AVWX keine Daten, springt AviationWeather.gov als weltweiter METAR-/TAF-Fallback ein.</p></div>
@@ -184,7 +185,7 @@
 
     <h3 class="group-title">Europäische Bodenmessungen &amp; Warnungen</h3>
     <div class="features">
-      <div class="card"><div class="icon">🌦️</div><h3>Echte Stationsmessungen in 8 weiteren Ländern</h3><p>Neben Deutschland (DWD) ergänzen in Österreich (GeoSphere TAWES), der Schweiz (MeteoSwiss SwissMetNet), Slowenien (ARSO), Dänemark (DMI), Kroatien (DHMZ), Belgien (KMI/IRM), den Niederlanden (KNMI) und Frankreich (Météo-France) aktuelle amtliche Bodenmessungen die Modellwerte – nur übernommen bis 25 km Entfernung, 500 m Höhenunterschied und in der Regel höchstens 40 Minuten Alter.</p></div>
+      <div class="card"><div class="icon">🌦️</div><h3>Echte Stationsmessungen in 10 weiteren Ländern</h3><p>Neben Deutschland (DWD) ergänzen in Österreich (GeoSphere TAWES), der Schweiz (MeteoSwiss SwissMetNet), Slowenien (ARSO), Dänemark (DMI), Kroatien (DHMZ), Belgien (KMI/IRM), den Niederlanden (KNMI), Frankreich (Météo-France), Spanien (AEMET) und Schweden (SMHI) aktuelle amtliche Bodenmessungen die Modellwerte – nur übernommen bis 25 km Entfernung, 500 m Höhenunterschied und je nach Meldetakt höchstens 40 bis 100 Minuten Alter.</p></div>
       <div class="card"><div class="icon">🎯</div><h3>Hochaufgelöste Regionalmodelle</h3><p>In den Niederlanden/Belgien (KNMI HARMONIE), Dänemark/Kroatien/Polen (DMI HARMONIE), Frankreich/Korsika/Nord- und Zentralspanien inkl. Balearen (Météo-France AROME), Österreich (GeoSphere AROME), der Schweiz (MeteoSwiss ICON-CH1/CH2) und Italien inkl. Sardinien und Sizilien (ItaliaMeteo ICON-2I) ersetzt ein feineres Regionalmodell die groben Stundenwerte für heute. Weicht es relevant von der Standardprognose ab (Sicht, Böen, Tiefbewölkung, Niederschlag, Gewitter), stuft das eine sonst grüne Bewertung auf „Eingeschränkt" ab.</p></div>
       <div class="card"><div class="icon">🚨</div><h3>Amtliche Wetterwarnungen europaweit</h3><p>DWD-Warnungen für Deutschland, ergänzt um MeteoAlarm als kostenlosen Fallback für viele weitere europäische Länder – eine Warnung zählt nur, wenn der Standort wirklich im Warngebiet liegt und der Gültigkeitszeitraum aktiv ist.</p></div>
     </div>
@@ -199,7 +200,7 @@
 
     <h3 class="group-title">Karten, Radar &amp; Vorhersage</h3>
     <div class="features">
-      <div class="card"><div class="icon">🗺️</div><h3>Radar-Tab mit Kartenlayern</h3><p>DWD Radar + Blitze, globaler OpenWeatherMap-Regen über einen abgesicherten Backend-Proxy, ein selbst gerendertes Open-Meteo-Wolkenfeld (tief/mittel/hoch) und eine VFR-Ampel-Heatmap – mit Deckkraft, Legende und einem gemeinsamen Zeitregler bis +2 Stunden (amtlicher DWD-Nowcast bzw. stündliche Modellprognose für Wolken und VFR-Ampel).</p></div>
+      <div class="card"><div class="icon">🗺️</div><h3>Radar-Tab mit Kartenlayern</h3><p>DWD Radar + Blitze, EUMETSAT-GeoColour-Satellitenbilder (2 Stunden Historie in 10-Minuten-Schritten), globaler OpenWeatherMap-Regen über einen abgesicherten Backend-Proxy, ein selbst gerendertes Open-Meteo-Wolkenfeld (tief/mittel/hoch) und eine VFR-Ampel-Heatmap – mit Deckkraft, Legende und einem gemeinsamen Zeitregler bis +2 Stunden (amtlicher DWD-Nowcast bzw. stündliche Modellprognose für Wolken und VFR-Ampel).</p></div>
       <div class="card"><div class="icon">🛰️</div><h3>Flugplätze auf der Karte</h3><p>~19.000 weltweite ICAO-Plätze als Punkte nach Typ mit Label, antippbar zur Auswahl, ein- und ausblendbar.</p></div>
       <div class="card"><div class="icon">📅</div><h3>Tagesvorhersage &amp; Stundenverlauf</h3><p>Go/No-Go-Einschätzung für den Tag sowie Stundenverlauf aus Open-Meteo-Daten.</p></div>
       <div class="card"><div class="icon">🔄</div><h3>Schneller Reload</h3><p>Aktualisiert den gewählten Platz bzw. GPS-Standort auf Knopfdruck – ohne erneute Suche.</p></div>
@@ -299,8 +300,9 @@
       <span>MeteoAlarm (EU-Wetterwarnungen)</span>
       <span>Open-Meteo</span>
       <span>OpenWeatherMap</span>
-      <span>GeoSphere Austria · MeteoSwiss · ARSO · DMI · DHMZ · KMI/IRM · KNMI · Météo-France</span>
+      <span>GeoSphere Austria · MeteoSwiss · ARSO · DMI · DHMZ · KMI/IRM · KNMI · Météo-France · AEMET · SMHI</span>
       <span>HARMONIE / AROME / ICON-CH1/CH2 / ICON-2I (Regionalmodelle)</span>
+      <span>EUMETSAT (Satellitenbilder)</span>
       <span>OurAirports (~19k Flugplätze)</span>
       <span>OpenStreetMap / osmdroid</span>
       <span>MapTiler</span>
@@ -391,5 +393,6 @@
     </div>
   </div>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>
