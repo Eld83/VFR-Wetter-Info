@@ -171,7 +171,7 @@
       <div class="card"><div class="icon">🧭</div><h3>VFR-Einstufung</h3><p>Sicht, Bewölkung, Wind, Böen und Wettercode ergeben die Flugkategorie VFR/MVFR/IFR/LIFR auf einen Blick.</p></div>
       <div class="card"><div class="icon">⏱️</div><h3>„Seit HH:MM Uhr“-Karte</h3><p>Zeigt, was sich seit dem letzten Abruf geändert hat – Kategorie, Ceiling, Sicht, Wind, Böen, neue DWD-Warnungen – mit Gesamtfazit besser/schlechter.</p></div>
       <div class="card"><div class="icon">🚦</div><h3>„Wenn du jetzt startest“</h3><p>Ampel-Kurzhorizont am Standort für jetzt, +1, +2 und +3 Stunden inklusive Hauptgrund je Stunde.</p></div>
-      <div class="card"><div class="icon">⭐</div><h3>Favoriten</h3><p>Gespeicherte Flugplätze mit Live-Flugkategorie direkt im Suchdialog – ideal für Stammplätze und Streckenplanung.</p></div>
+      <div class="card"><div class="icon">⭐</div><h3>Favoriten mit Flugfenster-Hinweis</h3><p>Gespeicherte Flugplätze mit Live-Flugkategorie direkt im Suchdialog, dazu ein konservativer Flugfenster-Hinweis aus Standard- und Regionalmodell. Optionale, standardmäßig ausgeschaltete Änderungsbenachrichtigungen je Favorit – ausdrücklich keine Startfreigabe.</p></div>
     </div>
 
     <h3 class="group-title">METAR, TAF &amp; Streckenplanung</h3>
@@ -185,7 +185,7 @@
 
     <h3 class="group-title">Europäische Bodenmessungen &amp; Warnungen</h3>
     <div class="features">
-      <div class="card"><div class="icon">🌦️</div><h3>Echte Stationsmessungen in 10 weiteren Ländern</h3><p>Neben Deutschland (DWD) ergänzen in Österreich (GeoSphere TAWES), der Schweiz (MeteoSwiss SwissMetNet), Slowenien (ARSO), Dänemark (DMI), Kroatien (DHMZ), Belgien (KMI/IRM), den Niederlanden (KNMI), Frankreich (Météo-France), Spanien (AEMET) und Schweden (SMHI) aktuelle amtliche Bodenmessungen die Modellwerte – nur übernommen bis 25 km Entfernung, 500 m Höhenunterschied und je nach Meldetakt höchstens 40 bis 100 Minuten Alter.</p></div>
+      <div class="card"><div class="icon">🌦️</div><h3>Echte Stationsmessungen in 12 weiteren Ländern</h3><p>Neben Deutschland (DWD) ergänzen in Österreich (GeoSphere TAWES), der Schweiz (MeteoSwiss SwissMetNet), Slowenien (ARSO), Dänemark (DMI), Kroatien (DHMZ), Belgien (KMI/IRM), den Niederlanden (KNMI), Frankreich (Météo-France), Spanien (AEMET), Schweden (SMHI), Finnland (FMI) und Norwegen (MET Norway Frost) aktuelle amtliche Bodenmessungen die Modellwerte – nur übernommen bis 25 km Entfernung, 500 m Höhenunterschied und je nach Meldetakt höchstens 40 bis 100 Minuten Alter.</p></div>
       <div class="card"><div class="icon">🎯</div><h3>Hochaufgelöste Regionalmodelle</h3><p>In den Niederlanden/Belgien (KNMI HARMONIE), Dänemark/Kroatien/Polen (DMI HARMONIE), Frankreich/Korsika/Nord- und Zentralspanien inkl. Balearen (Météo-France AROME), Österreich (GeoSphere AROME), der Schweiz (MeteoSwiss ICON-CH1/CH2) und Italien inkl. Sardinien und Sizilien (ItaliaMeteo ICON-2I) ersetzt ein feineres Regionalmodell die groben Stundenwerte für heute. Weicht es relevant von der Standardprognose ab (Sicht, Böen, Tiefbewölkung, Niederschlag, Gewitter), stuft das eine sonst grüne Bewertung auf „Eingeschränkt" ab.</p></div>
       <div class="card"><div class="icon">🚨</div><h3>Amtliche Wetterwarnungen europaweit</h3><p>DWD-Warnungen für Deutschland, ergänzt um MeteoAlarm als kostenlosen Fallback für viele weitere europäische Länder – eine Warnung zählt nur, wenn der Standort wirklich im Warngebiet liegt und der Gültigkeitszeitraum aktiv ist.</p></div>
     </div>
@@ -200,7 +200,7 @@
 
     <h3 class="group-title">Karten, Radar &amp; Vorhersage</h3>
     <div class="features">
-      <div class="card"><div class="icon">🗺️</div><h3>Radar-Tab mit Kartenlayern</h3><p>DWD Radar + Blitze, EUMETSAT-GeoColour-Satellitenbilder (2 Stunden Historie in 10-Minuten-Schritten), globaler OpenWeatherMap-Regen über einen abgesicherten Backend-Proxy, ein selbst gerendertes Open-Meteo-Wolkenfeld (tief/mittel/hoch) und eine VFR-Ampel-Heatmap – mit Deckkraft, Legende und einem gemeinsamen Zeitregler bis +2 Stunden (amtlicher DWD-Nowcast bzw. stündliche Modellprognose für Wolken und VFR-Ampel).</p></div>
+      <div class="card"><div class="icon">🗺️</div><h3>Radar-Tab mit 5 Kartenlayern</h3><p>DWD Radar + Blitze, EUMETSAT-GeoColour-Satellitenbilder, europaweite EUMETNET-OPERA-Radarmessungen (jeweils 2 Stunden Historie), ein selbst gerendertes Open-Meteo-Wolkenfeld (tief/mittel/hoch) und eine VFR-Ampel-Heatmap – mit Deckkraft, Legende und einem gemeinsamen Zeitregler bis +2 Stunden (amtlicher DWD-Nowcast bzw. stündliche Modellprognose für Wolken und VFR-Ampel). Kompakte Layer-Steuerung, alle 5 Layer in einer Zeile.</p></div>
       <div class="card"><div class="icon">🛰️</div><h3>Flugplätze auf der Karte</h3><p>~19.000 weltweite ICAO-Plätze als Punkte nach Typ mit Label, antippbar zur Auswahl, ein- und ausblendbar.</p></div>
       <div class="card"><div class="icon">📅</div><h3>Tagesvorhersage &amp; Stundenverlauf</h3><p>Go/No-Go-Einschätzung für den Tag sowie Stundenverlauf aus Open-Meteo-Daten.</p></div>
       <div class="card"><div class="icon">🔄</div><h3>Schneller Reload</h3><p>Aktualisiert den gewählten Platz bzw. GPS-Standort auf Knopfdruck – ohne erneute Suche.</p></div>
@@ -300,9 +300,10 @@
       <span>MeteoAlarm (EU-Wetterwarnungen)</span>
       <span>Open-Meteo</span>
       <span>OpenWeatherMap</span>
-      <span>GeoSphere Austria · MeteoSwiss · ARSO · DMI · DHMZ · KMI/IRM · KNMI · Météo-France · AEMET · SMHI</span>
+      <span>GeoSphere Austria · MeteoSwiss · ARSO · DMI · DHMZ · KMI/IRM · KNMI · Météo-France · AEMET · SMHI · FMI · MET Norway</span>
       <span>HARMONIE / AROME / ICON-CH1/CH2 / ICON-2I (Regionalmodelle)</span>
       <span>EUMETSAT (Satellitenbilder)</span>
+      <span>MeteoGate / EUMETNET OPERA (Europa-Radar)</span>
       <span>OurAirports (~19k Flugplätze)</span>
       <span>OpenStreetMap / osmdroid</span>
       <span>MapTiler</span>
