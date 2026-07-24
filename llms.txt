@@ -22,10 +22,14 @@ Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Öste
 
 ## Docs
 
-- [Startseite](https://vfrwetter.com/): Funktionen, Datenquellen, Empfehlungslogik, Preise, Screenshots, FAQ
-- [Support](https://vfrwetter.com/support.html): Kontakt und Support
+- [Startseite (Deutsch)](https://vfrwetter.com/): Funktionen, Datenquellen, Empfehlungslogik, Preise, Screenshots, FAQ
+- [Homepage (English)](https://vfrwetter.com/en/): same content in English
+- [Support (Deutsch)](https://vfrwetter.com/support.html): Kontakt und Support
+- [Support (English)](https://vfrwetter.com/en/support.html): contact and support
 
 ## Optional
 
 - [Datenschutzerklärung](https://vfrwetter.com/privacy.html): Datenverarbeitung und Drittanbieter
+- [Privacy Policy (English)](https://vfrwetter.com/en/privacy.html): English translation, German version binding
 - [Impressum](https://vfrwetter.com/impressum.html): Anbieterkennzeichnung
+- [Legal Notice (English)](https://vfrwetter.com/en/impressum.html): English translation, German version binding

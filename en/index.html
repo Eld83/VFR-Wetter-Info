@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VFR Wetter – Flight Weather App for VFR Pilots</title>
+  <meta name="description" content="VFR Wetter combines METAR, TAF, DWD radar, MOSMIX, Open-Meteo and map layers into a clear, reasoned VFR assessment – including performance hints, a route hazard corridor and a homescreen widget.">
+  <meta name="theme-color" content="#071426">
+  <link rel="canonical" href="https://vfrwetter.com/en/">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:site_name" content="VFR Wetter">
+  <meta property="og:url" content="https://vfrwetter.com/en/">
+  <meta property="og:title" content="VFR Wetter – Flight Weather App for VFR Pilots">
+  <meta property="og:description" content="Weather, METAR/TAF, DWD radar, MOSMIX and performance hints in one clear VFR assessment – for Android.">
+  <meta property="og:image" content="https://vfrwetter.com/assets/current-assessment.png">
+  <meta property="og:image:width" content="919">
+  <meta property="og:image:height" content="1991">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VFR Wetter – Flight Weather App for VFR Pilots">
+  <meta name="twitter:description" content="Weather, METAR/TAF, DWD radar, MOSMIX and performance hints in one clear VFR assessment – for Android.">
+  <meta name="twitter:image" content="https://vfrwetter.com/assets/current-assessment.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "VFR Wetter",
+    "url": "https://vfrwetter.com/en/",
+    "applicationCategory": "WeatherApplication",
+    "operatingSystem": "Android",
+    "description": "VFR Wetter combines METAR, TAF, DWD radar, MOSMIX, Open-Meteo and map layers into a clear, reasoned VFR assessment for VFR pilots – including performance hints, a route hazard corridor and a homescreen widget.",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "name": "Niels Deuter"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "VFR Wetter"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does VFR Wetter replace official flight weather briefing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The app is a supplementary tool for private flight preparation. It does not replace an official flight weather briefing, NOTAM/AIP checks, POH performance calculations, or the decision of the pilot in command."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the app work without an internet connection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most recently loaded weather data is cached locally and stays visible offline. If the data is older than 60 minutes, the app clearly flags it. Airport search across ~19,000 airports works fully offline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if an airport has no METAR of its own?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The app automatically looks for a nearby METAR station. Within 10 km it's included as a nearby supplementary source; between 10 and 25 km it's weighted cautiously as a trend hint only. Without a suitable station, the assessment transparently falls back to model weather (Open-Meteo/OWM), DWD, and MOSMIX where available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which platform is supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VFR Wetter is a native Android app, built with Kotlin and Jetpack Compose, including a homescreen widget."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is VFR Wetter free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can try VFR Wetter free for 7 days with no restrictions. Afterwards the app continues as a subscription (VFR Wetter Pro) via Google Play Billing unless you cancel beforehand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which languages is the app available in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can switch between system language, German and English. The splash screen and main navigation are translated, with more screens following step by step."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are the weather API keys protected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OpenWeatherMap, AVWX and Open-Meteo requests don't run directly from the app but through a dedicated cloud service that verifies requests via Firebase App Check. API keys are therefore never part of the app itself."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#recommendation">Assessment</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a class="lang-switch" href="../index.html">DE</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">✈ VFR Flight Weather · Android App</div>
+      <h1>Understand the weather before you launch.</h1>
+      <p class="lead">
+        VFR Wetter bundles current weather data, METAR/TAF, DWD radar, MOSMIX,
+        route assessment, density altitude, crosswind and sun position into a clear,
+        traceable assessment for your private VFR flight preparation.
+      </p>
+      <div class="hero-actions">
+        <a class="button disabled" aria-disabled="true" title="Coming soon to Google Play">
+          <span>▶</span> Coming soon to Google Play
+        </a>
+        <a class="button secondary" href="#screens">View screenshots</a>
+      </div>
+      <div class="trust-row">
+        <span>7-day free trial</span>
+        <span>METAR / TAF</span>
+        <span>DWD Radar</span>
+        <span>MOSMIX</span>
+        <span>Open-Meteo</span>
+        <span>~19k airports</span>
+      </div>
+    </div>
+    <div class="phone-stack" aria-label="App screenshots">
+      <div class="phone back"><img src="../assets/radar-clouds.webp" alt="Radar and cloud map in VFR Wetter" width="919" height="1991" fetchpriority="high"></div>
+      <div class="phone main"><img src="../assets/current-assessment.png" alt="Flight weather assessment in VFR Wetter" width="919" height="1991" fetchpriority="high"></div>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="container">
+    <div class="section-title">
+      <h2>Built for the question: can I fly?</h2>
+      <p>Not just raw data, but a traceable assessment with reasons, data quality and trends – from the overview to runway choice.</p>
+    </div>
+
+    <h3 class="group-title">Weather &amp; assessment</h3>
+    <div class="features">
+      <div class="card"><div class="icon">✅</div><h3>Central flight weather assessment</h3><p>Flyable, marginal or no-go – with prioritized reasons, a data-quality score and an expandable "Why this assessment?" explanation.</p></div>
+      <div class="card"><div class="icon">📍</div><h3>Location or airport search</h3><p>Current weather by GPS or search by ICAO, name or city across ~19,000 airports – fully searchable offline.</p></div>
+      <div class="card"><div class="icon">🧭</div><h3>VFR classification</h3><p>Visibility, cloud cover, wind, gusts and weather code combine into the VFR/MVFR/IFR/LIFR flight category at a glance.</p></div>
+      <div class="card"><div class="icon">⏱️</div><h3>"Since HH:MM" card</h3><p>Shows what's changed since the last refresh – category, ceiling, visibility, wind, gusts, new DWD warnings – with an overall better/worse verdict.</p></div>
+      <div class="card"><div class="icon">🚦</div><h3>"If you launch now"</h3><p>A traffic-light short-term outlook at your location for now, +1, +2 and +3 hours, including the main reason for each hour.</p></div>
+      <div class="card"><div class="icon">⭐</div><h3>Favorites with flight-window hint</h3><p>Saved airports with a live flight category right in the search dialog, plus a conservative flight-window hint from the standard and regional model. Optional, off-by-default change notifications per favorite – explicitly not a go-ahead to fly.</p></div>
+    </div>
+
+    <h3 class="group-title">METAR, TAF &amp; route planning</h3>
+    <div class="features">
+      <div class="card"><div class="icon">📡</div><h3>Full METAR/TAF decoder</h3><p>Every group – wind incl. gusts, visibility, RVR, weather, clouds, QNH, trend – in plain, understandable language.</p></div>
+      <div class="card"><div class="icon">🛫</div><h3>Route mode as a hazard corridor</h3><p>Stations along the route as a vertical traffic-light timeline, plus a time-aware hazard corridor: upper winds and model signals at up to eight ETA points, official MeteoAlarm warning polygons matched exactly to passage time, valid TAF change groups, and DWD RADVOR precipitation at the route point – with a freely selectable departure time up to 72 hours ahead and freely selectable cruise speed in kt. The map draws each leg green/yellow/red.</p></div>
+      <div class="card"><div class="icon">🌬️</div><h3>DWD upper winds &amp; en-route weather</h3><p>ICON-D2 forecast across central Europe, ICON-EU elsewhere, with fixed upper-wind bands (2,000/5,000/8,000 ft MSL) plus haze/Saharan dust and coastal-swell hints.</p></div>
+      <div class="card"><div class="icon">📶</div><h3>Nearby supplementary data</h3><p>For VFR airfields without their own METAR, a nearby station is found automatically and clearly labeled as a supplementary source.</p></div>
+      <div class="card"><div class="icon">🌐</div><h3>Token-free fallback</h3><p>If AVWX has no data, AviationWeather.gov steps in as a worldwide METAR/TAF fallback.</p></div>
+    </div>
+
+    <h3 class="group-title">European ground observations &amp; warnings</h3>
+    <div class="features">
+      <div class="card"><div class="icon">🌦️</div><h3>Real station observations in 12 more countries</h3><p>Besides Germany (DWD), current official ground observations from Austria (GeoSphere TAWES), Switzerland (MeteoSwiss SwissMetNet), Slovenia (ARSO), Denmark (DMI), Croatia (DHMZ), Belgium (KMI/IRM), the Netherlands (KNMI), France (Météo-France), Spain (AEMET), Sweden (SMHI), Finland (FMI) and Norway (MET Norway Frost) refine the model values – only applied within 25 km distance, 500 m elevation difference and, depending on reporting cadence, at most 40 to 100 minutes of age.</p></div>
+      <div class="card"><div class="icon">🎯</div><h3>High-resolution regional models</h3><p>In the Netherlands/Belgium (KNMI HARMONIE), Denmark/Croatia/Poland (DMI HARMONIE), France/Corsica/northern and central Spain incl. the Balearics (Météo-France AROME), Austria (GeoSphere AROME), Switzerland (MeteoSwiss ICON-CH1/CH2) and Italy incl. Sardinia and Sicily (ItaliaMeteo ICON-2I), a finer regional model replaces the coarse hourly values for today. If it deviates meaningfully from the standard forecast (visibility, gusts, low cloud, precipitation, thunderstorms), an otherwise green assessment is downgraded to "Marginal".</p></div>
+      <div class="card"><div class="icon">🚨</div><h3>Official weather warnings across Europe</h3><p>DWD warnings for Germany, supplemented by MeteoAlarm as a free fallback for many more European countries – a warning only counts if the location truly lies within the warning area and the validity period is active.</p></div>
+    </div>
+
+    <h3 class="group-title">Performance &amp; runway choice</h3>
+    <div class="features">
+      <div class="card"><div class="icon">🌡️</div><h3>Density altitude</h3><p>Density altitude, pressure altitude, ISA deviation and humidity for realistic takeoff and climb performance.</p></div>
+      <div class="card"><div class="icon">☁️</div><h3>Cloud base &amp; thermals</h3><p>Cloud base, freezing level plus thermal, turbulence and windshear hints – factored in only where they genuinely limit the flight.</p></div>
+      <div class="card"><div class="icon">🛬</div><h3>Runways, crosswind &amp; performance</h3><p>The most favorable runway heading by headwind, plus crosswind and tailwind assessment right in the main recommendation.</p></div>
+      <div class="card"><div class="icon">🌅</div><h3>Live sun position</h3><p>Elevation, azimuth/compass and phase (day/golden hour/twilight) in the overview – plus a glare warning per runway heading in the performance tab.</p></div>
+    </div>
+
+    <h3 class="group-title">Maps, radar &amp; forecast</h3>
+    <div class="features">
+      <div class="card"><div class="icon">🗺️</div><h3>Radar tab with 5 map layers</h3><p>DWD radar + lightning, EUMETSAT GeoColour satellite imagery, Europe-wide EUMETNET OPERA radar observations (each with 2 hours of history), a self-rendered Open-Meteo cloud field (low/mid/high) and a VFR traffic-light heatmap – with opacity control, legend and a shared time slider up to +2 hours (the official DWD nowcast, or hourly model forecasts for clouds and the VFR layer, clearly labeled). Compact layer controls, all 5 layers in one row.</p></div>
+      <div class="card"><div class="icon">🛰️</div><h3>Airports on the map</h3><p>~19,000 worldwide ICAO airports as points by type with labels, tappable to select, toggle on/off.</p></div>
+      <div class="card"><div class="icon">📅</div><h3>Daily forecast &amp; hourly trend</h3><p>A go/no-go assessment for the day plus an hourly trend from Open-Meteo data.</p></div>
+      <div class="card"><div class="icon">🔄</div><h3>Fast reload</h3><p>Refreshes the selected airport or GPS location at the tap of a button – without a new search.</p></div>
+    </div>
+
+    <h3 class="group-title">Reliable on the go</h3>
+    <div class="features">
+      <div class="card"><div class="icon">📦</div><h3>Offline cache</h3><p>The most recently loaded data stays available locally; the app visibly warns when data is older than 60 minutes.</p></div>
+      <div class="card"><div class="icon">📱</div><h3>Homescreen widget</h3><p>A responsive widget with compact, standard and expanded layouts for a quick overview right on the homescreen, with manual refresh.</p></div>
+      <div class="card"><div class="icon">🌍</div><h3>Language switcher</h3><p>System language, German or English via a top-bar icon – currently available for the splash screen and main chrome, with more screens following step by step.</p></div>
+      <div class="card"><div class="icon">🔐</div><h3>Secured API access</h3><p>Key-protected weather requests run through a dedicated cloud service secured against abuse with Firebase App Check.</p></div>
+      <div class="card"><div class="icon">⚠️</div><h3>Disclaimer</h3><p>A clear notice at every app launch: the app is a tool, not a replacement for official flight weather briefing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="recommendation" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>How the assessment is built</h2>
+      <p>The app doesn't just show a traffic-light symbol – it explains what it's based on.</p>
+    </div>
+    <div class="reco-grid">
+      <div class="reco-card">
+        <h3>Multiple sources, one assessment</h3>
+        <p>Visibility, wind, gusts, precipitation, thunderstorm/thermal risk, DWD warnings and cloud conditions are assessed, among other factors. If an ICAO airport is selected, its METAR is factored in first: <strong>IFR</strong>/<strong>LIFR</strong> forces "No-go", <strong>MVFR</strong> downgrades to at least "Marginal".</p>
+      </div>
+      <div class="reco-card">
+        <h3>TAF, MOSMIX &amp; radar as supplementary assessment</h3>
+        <p>TAF is checked for the next 6 hours, with DWD MOSMIX as an additional hard forecast source. DWD radar supplies the current precipitation rate at the location – "Marginal" from 2.5 mm/h, "No-go" from 7.5 mm/h.</p>
+      </div>
+      <div class="reco-card">
+        <h3>Runways, crosswind &amp; tailwind</h3>
+        <p>Runways are loaded for the selected airport and the most favorable heading is assessed by headwind: crosswind &gt; 15 kt or tailwind &gt; 3 kt leads to at least "Marginal", from 20 kt or 7 kt to "No-go".</p>
+      </div>
+      <div class="reco-card">
+        <h3>Transparent data confidence</h3>
+        <p>Instead of treating a "missing METAR" as an error, the app is upfront about what the assessment is based on: <em>multiple sources cross-checked</em>, <em>nearby supplementary data</em>, or <em>OWM + Open-Meteo</em> if no station is available within 25 km.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <div class="section-title">
+      <h2>Pricing &amp; trial</h2>
+      <p>VFR Wetter is a subscription app. All core features can be tried free of charge first.</p>
+    </div>
+    <div class="price-grid">
+      <div class="reco-card">
+        <h3>🎁 7 days free trial</h3>
+        <p>After the disclaimer, the free trial starts automatically – with no feature restrictions.</p>
+      </div>
+      <div class="reco-card">
+        <h3>🔁 Then subscription</h3>
+        <p>Afterwards, VFR Wetter Pro continues as a subscription via Google Play Billing unless you cancel beforehand. You'll see the current price in the Google Play Store.</p>
+      </div>
+      <div class="reco-card">
+        <h3>✋ Cancel anytime</h3>
+        <p>Cancel anytime directly in the Google Play Store. Payment processing runs entirely through Google Play – the app provider never sees your payment data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="screens">
+  <div class="container">
+    <div class="section-title">
+      <h2>Screenshots</h2>
+      <p>A quick look at the app: assessment, route, radar, METAR decoder, performance and crosswind.</p>
+    </div>
+    <div class="screens">
+      <div class="screen"><img src="../assets/current-assessment.png" alt="Current flight weather assessment with reasoning" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/route.png" alt="Route assessment as a traffic-light timeline" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/radar-rain.webp" alt="DWD rain radar with flight route on the map" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/radar-clouds.webp" alt="Cloud layer on the map" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/radar-vfr.webp" alt="VFR traffic-light heatmap on the map" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/metar-decoder.png" alt="Full METAR/TAF decoder" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/performance.png" alt="Performance-awareness view with density altitude" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/crosswind.png" alt="Crosswind calculator with runway recommendation" width="919" height="1991" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="sources" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Data sources</h2>
+      <p>VFR Wetter combines established weather, aviation and map services into one shared assessment.</p>
+    </div>
+    <div class="trust-row large">
+      <span>AVWX (METAR/TAF)</span>
+      <span>AviationWeather.gov</span>
+      <span>Deutscher Wetterdienst (radar, MOSMIX, warnings)</span>
+      <span>Bright Sky (DWD-adjacent observations)</span>
+      <span>MeteoAlarm (EU weather warnings)</span>
+      <span>Open-Meteo</span>
+      <span>OpenWeatherMap</span>
+      <span>GeoSphere Austria · MeteoSwiss · ARSO · DMI · DHMZ · KMI/IRM · KNMI · Météo-France · AEMET · SMHI · FMI · MET Norway</span>
+      <span>HARMONIE / AROME / ICON-CH1/CH2 / ICON-2I (regional models)</span>
+      <span>EUMETSAT (satellite imagery)</span>
+      <span>MeteoGate / EUMETNET OPERA (Europe radar)</span>
+      <span>OurAirports (~19k airports)</span>
+      <span>OpenStreetMap / osmdroid</span>
+      <span>MapTiler</span>
+      <span>Google Play Services Location</span>
+    </div>
+    <p class="note-text">Key-protected requests to OpenWeatherMap, AVWX and Open-Meteo run through a dedicated cloud service secured with Firebase App Check – API keys never leave the app.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-title">
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Does VFR Wetter replace official flight weather briefing?</summary>
+        <p>No. The app is a supplementary tool for private flight preparation. It does not replace an official flight weather briefing, NOTAM/AIP checks, POH performance calculations, or the decision of the pilot in command.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does the app work without an internet connection?</summary>
+        <p>The most recently loaded weather data is cached locally and stays visible offline. If the data is older than 60 minutes, the app clearly flags it. Airport search across ~19,000 airports works fully offline.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What happens if an airport has no METAR of its own?</summary>
+        <p>The app automatically looks for a nearby METAR station. Within 10 km it's included as a nearby supplementary source; between 10 and 25 km it's weighted cautiously as a trend hint only. Without a suitable station, the assessment transparently falls back to model weather (Open-Meteo/OWM), DWD, and MOSMIX where available.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which platform is supported?</summary>
+        <p>VFR Wetter is a native Android app, built with Kotlin and Jetpack Compose, including a homescreen widget.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is VFR Wetter free?</summary>
+        <p>You can try VFR Wetter free for 7 days with no restrictions. Afterwards the app continues as a subscription (VFR Wetter Pro) via Google Play Billing unless you cancel beforehand. You can cancel anytime in the Google Play Store; payment runs entirely through Google Play.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which languages is the app available in?</summary>
+        <p>You can switch between system language, German and English. Currently the splash screen and main navigation (tabs, top bar) are translated, with more screens following step by step.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How are the weather API keys protected?</summary>
+        <p>OpenWeatherMap, AVWX and Open-Meteo requests don't run directly from the app but through a dedicated cloud service that verifies requests via Firebase App Check. API keys are therefore never part of the app itself.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="club" class="alt">
+  <div class="container">
+    <h2 class="sr-only">About the developer</h2>
+    <div class="club-card">
+      <div class="club-badge"><img src="../assets/lsc-borkenberge-logo.png" alt="Logo of Luftsportclub Borkenberge e.V." width="683" height="250" loading="lazy"></div>
+      <div>
+        <h3>With a tailwind from Luftsportclub Borkenberge e.V.</h3>
+        <p>Developed by Niels Deuter. "We make your dream of flying come true" – the flying club in whose aviation community VFR Wetter came to be.</p>
+      </div>
+      <a class="button secondary" href="https://lsc-borkenberge.de/" target="_blank" rel="noopener">lsc-borkenberge.de</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Note on usage</h2>
+        <p class="lead">
+          The app is a supplementary tool for private VFR flight preparation.
+          It does not replace an official flight weather briefing, NOTAM/AIP checks,
+          POH performance calculations, or the decision of the pilot in command.
+        </p>
+      </div>
+      <a class="button" href="privacy.html">Read privacy policy</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div>© 2026 VFR Wetter · A private VFR briefing tool.</div>
+      <div style="margin-top:6px;font-size:.85rem;opacity:.75">Thanks to Patrick &amp; Frank for beta testing.</div>
+    </div>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

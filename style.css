@@ -104,6 +104,19 @@ a { color: inherit; }
 
 .nav-links a:hover { color: var(--text); }
 
+.lang-switch {
+  padding: 5px 12px;
+  border: 1px solid rgba(5,199,232,.35);
+  border-radius: 999px;
+  color: var(--cyan) !important;
+  font-weight: 800;
+  font-size: .85rem;
+}
+
+.lang-switch:hover {
+  background: rgba(5,199,232,.09);
+}
+
 .nav-toggle {
   display: none;
   align-items: center;

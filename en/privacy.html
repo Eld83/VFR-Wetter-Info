@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – VFR Wetter</title>
+  <meta name="description" content="Privacy policy of the Android app VFR Wetter.">
+  <meta name="theme-color" content="#071426">
+  <link rel="canonical" href="https://vfrwetter.com/en/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/privacy.html">
+  <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a class="lang-switch" href="../privacy.html">DE</a>
+    </div>
+  </div>
+</nav>
+<main class="legal">
+  <div class="container">
+    <article>
+      <h1>Privacy Policy</h1>
+      <p><strong>Last updated: 22 Jul 2026</strong></p>
+      <p class="notice">This is an English translation for your convenience. The German version at <a href="../privacy.html">vfrwetter.com/privacy.html</a> is the legally binding text.</p>
+
+      <p>Protecting your personal data matters to us. This app processes personal data only to the extent required to provide the requested functionality. There are no user accounts, no advertising, and no tracking or analytics services. VFR Wetter consists of the Android app and a dedicated backend service (Cloud Run) that secures and forwards key-protected weather requests on the app's behalf.</p>
+
+      <h2>Controller</h2>
+      <p>See Legal Notice.</p>
+
+      <h2>What data is processed?</h2>
+      <ul>
+        <li>Location data (GPS or network location): to determine location-based weather and flight-weather data and to center the map.</li>
+        <li>ICAO codes or selected airports: to query METAR, TAF and airport information.</li>
+        <li>Map viewport and zoom level: to load the required map and weather data.</li>
+        <li>Favorites, recently used airports and language setting: solely for the convenient use of the app.</li>
+        <li>Device integrity attestation (Play Integrity/Firebase App Check): to secure backend requests against abuse, see below.</li>
+        <li>Purchase status or Play purchase token: to verify an active VFR Wetter Pro subscription, see "Subscription and payment".</li>
+      </ul>
+
+      <h2>Purpose and legal basis</h2>
+      <p>Processing occurs exclusively to provide the app functions you have requested and to provide the subscription. The legal basis is Art. 6(1)(b) GDPR (performance of a contract, including for the subscription) and Art. 6(1)(f) GDPR based on our legitimate interest in a technically functional, abuse-protected and secure app.</p>
+
+      <h2>Recipients and third parties</h2>
+      <p><strong>Our own backend service (Cloud Run):</strong> For OpenWeatherMap, AVWX, EUMETView (EUMETSAT satellite imagery), MeteoGate/EUMETNET OPERA (Europe-wide radar precipitation rates), as well as all Open-Meteo requests (forecast, ICON upper winds, air quality, marine, and – depending on location – the high-resolution regional models KNMI/DMI HARMONIE, Météo-France/GeoSphere AROME, MeteoSwiss ICON-CH1/CH2 and ItaliaMeteo ICON-2I), the request first passes through our own backend service operated on Google Cloud before reaching the respective provider. MeteoAlarm (Europe-wide official weather warnings as a fallback when no DWD warning is available) also runs through this backend service, as do – depending on location – current official ground observations from GeoSphere Austria (Austria), MeteoSwiss SwissMetNet (Switzerland), ARSO (Slovenia), DMI (Denmark), DHMZ (Croatia), KMI/IRM (Belgium), KNMI (Netherlands), Météo-France (France), AEMET (Spain), SMHI (Sweden), FMI (Finland) and MET Norway Frost (Norway). This transmits location or coordinate data as well as the request parameters. The service does not store permanent user profiles, only holding responses briefly in an in-memory cache.</p>
+      <p><strong>Directly called services:</strong> The following providers are queried directly from the app without going through our own backend service:</p>
+      <ul>
+        <li>Deutscher Wetterdienst (DWD) – precipitation radar, lightning and map tiles (GeoServer, WMS)</li>
+        <li>Bright Sky – DWD-adjacent current observations, short-term forecast and official DWD weather warnings for the location</li>
+        <li>Aviation Weather Center (NOAA, AviationWeather.gov) – METAR/TAF fallback</li>
+        <li>OurAirports – airport master data (~19,000 airports, mostly offline from the app's database)</li>
+        <li>MapTiler / CARTO / OpenStreetMap – map tiles for the radar map</li>
+      </ul>
+      <p><strong>Other services:</strong></p>
+      <ul>
+        <li>Google Play Services – location determination</li>
+        <li>Firebase App Check / Google Play Integrity – device and app integrity verification for backend requests</li>
+        <li>Google Play Billing – subscription handling and purchase-status verification</li>
+      </ul>
+      <p>Some of these services may process personal data on servers outside the European Union, in particular in the USA. The respective providers' own privacy terms apply.</p>
+
+      <h2>Local storage</h2>
+      <p>Favorites, recently used airports, language setting, offline weather cache and app settings are stored locally on your device. The most recently verified subscription status is held locally for a maximum of 24 hours as an offline grace period; after that, the app re-checks the purchase status against Google Play. This data is not transmitted to the app provider and can be removed at any time by clearing the app's data or uninstalling the app.</p>
+      <p>Optionally, and disabled by default, you can enable change notifications per favorite. When this feature is switched on, the app uses Android's own WorkManager to check the weather at your favorites in the background at sparing intervals – via the same weather services already listed above. No additional recipients are contacted; the feature can be switched off again at any time in the app.</p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li>Location (precise or approximate): for location-based weather queries. Without granting it, ICAO search remains usable.</li>
+        <li>Internet and network access: to fetch weather, map and airport data and to communicate with our own backend service.</li>
+      </ul>
+
+      <h2>Device integrity (Firebase App Check)</h2>
+      <p>So that the backend service cannot be misused by other apps or automated requests, the app verifies a device/app integrity token via Firebase App Check (based on Google Play Integrity) with every key-protected request. This transmits device and app signals to Google; no profiling for advertising purposes takes place. Without a valid token, the backend service rejects the request.</p>
+
+      <h2>Subscription and payment (Google Play Billing)</h2>
+      <p>VFR Wetter is a subscription app with a seven-day free trial. Afterwards, the "VFR Wetter Pro" subscription continues via Google Play Billing unless cancelled beforehand. The app checks the purchase status against Google Play on every launch and whenever you return to the app; a locally verified state is valid for at most 24 hours as an offline grace period. For server-side verification, the app transmits the Google Play purchase token to our own backend service, which verifies it against the actual subscription status via the Android Publisher API. Payment data (e.g. payment method, billing address) runs exclusively through Google Play; neither the app nor the backend service receives or stores this payment data.</p>
+
+      <h2>Your rights</h2>
+      <p>You have the rights under Art. 15 to 21 GDPR, in particular to access, rectification, erasure, restriction of processing and objection. The app provider itself does not store any permanent personal user profiles server-side; these rights therefore primarily concern the third-party providers used (including Google Play Billing) and the data stored locally on your device.</p>
+
+      <p>If you have questions about privacy, you can reach out anytime to the contact listed in the Legal Notice.</p>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 VFR Wetter · A private VFR briefing tool.</div>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>
