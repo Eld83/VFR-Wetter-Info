@@ -2,7 +2,7 @@
 
 > VFR Wetter ist eine Android-App für VFR-Piloten. Sie kombiniert METAR, TAF, DWD-Radar, MOSMIX, Open-Meteo, hochaufgelöste Regionalmodelle (HARMONIE/AROME/ICON-CH1-CH2/ICON-2I) und Kartenlayer zu einer klaren, begründeten Flugwetter-Einschätzung (Flugtauglich / Eingeschränkt / Nicht flugtauglich) für die private VFR-Flugvorbereitung in Deutschland und weiten Teilen Europas.
 
-Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Österreich, Schweiz, Slowenien, Dänemark, Kroatien, Polen, Belgien, Niederlande, Frankreich, Spanien, Schweden, Finnland, Norwegen und Italien.
+Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Österreich, Schweiz, Slowenien, Dänemark, Kroatien, Polen, Belgien, Niederlande, Frankreich, Spanien, Schweden, Finnland, Norwegen, dem Vereinigten Königreich und Italien.
 
 ## Kernfunktionen
 
