@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://vfrwetter.com/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/"/>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://vfrwetter.com/en/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/"/>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://vfrwetter.com/support.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/support.html"/>
@@ -30,11 +30,29 @@
   </url>
   <url>
     <loc>https://vfrwetter.com/en/support.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/support.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/support.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/support.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/guide.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/guide.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/guide.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/guide.html"/>
   </url>
 </urlset>

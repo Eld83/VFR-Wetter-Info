@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guide – VFR Wetter</title>
+  <meta name="description" content="A complete guide to VFR Wetter: the recommendation card, airport search, route planning, Go Fly, radar layers, briefing PDF, widget, language and subscription.">
+  <meta name="theme-color" content="#071426">
+  <link rel="canonical" href="https://vfrwetter.com/en/guide.html">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/guide.html">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/guide.html">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:site_name" content="VFR Wetter">
+  <meta property="og:url" content="https://vfrwetter.com/en/guide.html">
+  <meta property="og:title" content="Guide – VFR Wetter">
+  <meta property="og:description" content="A complete guide to VFR Wetter: the recommendation card, route planning, Go Fly, radar layers, briefing PDF, widget and subscription.">
+  <meta property="og:image" content="https://vfrwetter.com/assets/current-assessment.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Guide – VFR Wetter",
+    "description": "A complete guide to VFR Wetter: the recommendation card, route planning, Go Fly, radar layers, briefing PDF, widget and subscription.",
+    "url": "https://vfrwetter.com/en/guide.html",
+    "inLanguage": "en",
+    "author": { "@type": "Person", "name": "Niels Deuter" },
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#recommendation">Assessment</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="guide.html">Guide</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <div class="lang-switch">
+        <button class="lang-switch-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-flag">🇬🇧</span><span>EN</span><span class="lang-caret">▾</span>
+        </button>
+        <div class="lang-switch-menu">
+          <a href="../guide.html" class="lang-switch-option"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+          <a href="guide.html" class="lang-switch-option active"><span class="lang-flag">🇬🇧</span> English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:24px;">
+  <div class="container">
+    <div class="kicker">📘 Guide</div>
+    <h1 style="font-size:clamp(2.2rem, 4.5vw, 3.6rem);">How to use VFR Wetter</h1>
+    <p class="lead">
+      A tour through every tab and feature of the app – from the central flight weather assessment
+      through route planning and Go Fly to the widget, language and subscription. We deliberately
+      don't publish the exact weighting of individual weather factors in the assessment – that's the
+      core of the app.
+    </p>
+  </div>
+</header>
+
+<section id="start">
+  <div class="container">
+    <div class="section-title">
+      <h2>Getting started</h2>
+      <p>Three short steps after launch, before you use the app.</p>
+    </div>
+    <div class="features">
+      <div class="card"><div class="icon">⚠️</div><h3>Disclaimer</h3><p>A clear notice at every app launch: VFR Wetter is a tool for private flight preparation, not a replacement for an official flight weather briefing.</p></div>
+      <div class="card"><div class="icon">🎁</div><h3>7-day free trial</h3><p>Afterwards, a subscription gate checks your purchase status. Without an active subscription you'll see the paywall – cancellable anytime in the Google Play Store.</p></div>
+      <div class="card"><div class="icon">📍</div><h3>Location or search</h3><p>By GPS or by searching ICAO code, airport name or city across ~19,000 airports – the search works fully offline.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="assessment" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Current tab: the central assessment</h2>
+      <p>The first tab you see summarizes the weather situation in one card.</p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p>The recommendation card shows one of three statuses – <strong>Flyable</strong>, <strong>Marginal</strong> or <strong>No-go</strong> – together with source chips (e.g. <code>METAR</code>, <code>DWD</code>, <code>MOSMIX</code>) and the main reason. If an airport with its own METAR/TAF is selected, that official report takes priority; official DWD and MeteoAlarm warnings apply on top of that.</p>
+        <p>Exactly how the individual factors – visibility, clouds, wind, gusts, precipitation, thunderstorm risk and more – are weighted and combined in detail is something we deliberately don't publish. But the expandable "Why this assessment?" row always shows the reasons that mattered in this specific case, plus a data-quality score (stars) and a short-term trend for the next three hours.</p>
+        <p>Below that you'll find the "Since HH:MM" card (what's changed since the last refresh), "If you launch now" (a traffic-light outlook for the next three hours) and the live sun position with day/golden-hour/twilight phase.</p>
+      </div>
+      <div class="screen"><img src="../assets/current-assessment.png" alt="Central flight weather assessment in the Current tab" width="919" height="1991" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="favorites">
+  <div class="container">
+    <div class="section-title">
+      <h2>Airport search &amp; favorites</h2>
+      <p>Quick access to the airports you use most.</p>
+    </div>
+    <div class="features">
+      <div class="card"><div class="icon">🔍</div><h3>Search</h3><p>ICAO code, airport name or city – across ~19,000 airports worldwide, fully searchable offline.</p></div>
+      <div class="card"><div class="icon">⭐</div><h3>Save favorites</h3><p>Saved airports show their live flight category (VFR/MVFR/IFR/LIFR) right in the search dialog – ideal for your regular airfields.</p></div>
+      <div class="card"><div class="icon">🔔</div><h3>Flight-window hint</h3><p>A conservative hint from the standard and regional model on when a window looks feasible. Optional, off-by-default change notifications per favorite – explicitly not a go-ahead to fly.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="forecast" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Forecast tab</h2>
+      <p>Looking ahead – for planning flights over the coming days.</p>
+    </div>
+    <div class="features">
+      <div class="card"><div class="icon">📅</div><h3>Daily forecast</h3><p>A go/no-go assessment for the day, based on Open-Meteo data and – where available – the matching regional model.</p></div>
+      <div class="card"><div class="icon">🕐</div><h3>Hourly trend</h3><p>A detailed hourly trend for the coming days, handy for picking the best departure window.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metartaf">
+  <div class="container">
+    <div class="section-title">
+      <h2>METAR/TAF tab</h2>
+      <p>Raw data in plain language, plus route planning with a hazard corridor.</p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p>The full METAR/TAF decoder translates every group – wind incl. gusts, visibility, RVR, weather, clouds, QNH, trend – into plain, understandable language, including nearby stations if your airport has no METAR of its own.</p>
+      </div>
+      <div class="screen"><img src="../assets/metar-decoder.png" alt="Full METAR/TAF decoder" width="919" height="1991" loading="lazy"></div>
+    </div>
+    <div class="hero-grid" style="margin-top:48px;">
+      <div class="screen" style="order:2;"><img src="../assets/route.png" alt="Route planner as a hazard corridor" width="919" height="1991" loading="lazy"></div>
+      <div style="order:1;">
+        <h3 style="margin-top:0;">Route planner as a hazard corridor</h3>
+        <p>Choose a departure, destination and optional waypoints, plus a departure time (up to 72 hours ahead) and cruise speed. The app draws the route as a traffic-light timeline and marks every leg green, yellow or red – based on upper winds, official warning polygons matched to the calculated passage time, TAF change groups and precipitation radar at the route point.</p>
+        <p>Every evaluation is also stored as an offline package for up to 7 days in case you lose connection en route – with a visible age and expiry notice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="performance" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Performance tab</h2>
+      <p>Density altitude and crosswind before you taxi to the runway.</p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p>Density altitude, pressure altitude, ISA deviation and humidity for a realistic sense of takeoff and climb performance – a tool, not a replacement for POH calculations.</p>
+      </div>
+      <div class="screen"><img src="../assets/performance.png" alt="Performance tab with density altitude" width="919" height="1991" loading="lazy"></div>
+    </div>
+    <div class="hero-grid" style="margin-top:48px;">
+      <div class="screen" style="order:2;"><img src="../assets/crosswind.png" alt="Crosswind calculator with runway recommendation" width="919" height="1991" loading="lazy"></div>
+      <div style="order:1;">
+        <h3 style="margin-top:0;">Crosswind calculator</h3>
+        <p>Load runway data or enter wind direction/speed manually – the app shows the crosswind and tailwind component per runway heading and recommends the most favorable one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="radar">
+  <div class="container">
+    <div class="section-title">
+      <h2>Radar tab: 5 map layers</h2>
+      <p>Everything visual in one place, with a shared time slider.</p>
+    </div>
+    <div class="features">
+      <div class="card"><div class="icon">🌧️</div><h3>DWD radar + lightning</h3><p>Official RADVOR nowcast up to +2 hours, plus current lightning detection.</p></div>
+      <div class="card"><div class="icon">🛰️</div><h3>Satellite &amp; Europe radar</h3><p>EUMETSAT GeoColour satellite imagery and Europe-wide EUMETNET OPERA radar observations, each with 2 hours of history.</p></div>
+      <div class="card"><div class="icon">☁️</div><h3>Clouds &amp; VFR heatmap</h3><p>A self-rendered Open-Meteo cloud field plus a traffic-light heatmap by flight category – both with an hourly model forecast.</p></div>
+    </div>
+    <div class="screens" style="margin-top:24px;">
+      <div class="screen"><img src="../assets/radar-rain.webp" alt="DWD rain radar with flight route on the map" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/radar-clouds.webp" alt="Cloud layer on the map" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/radar-vfr.webp" alt="VFR traffic-light heatmap on the map" width="919" height="1991" loading="lazy"></div>
+    </div>
+    <p class="note-text">Airports can be toggled on as points, and a route chosen in the METAR/TAF tab is shown over all layers.</p>
+  </div>
+</section>
+
+<section id="gofly" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Go Fly: live moving map</h2>
+      <p>For during the flight itself – not just for preparation.</p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p>In Go Fly mode the app shows your real GPS position on the same weather map. A route previously chosen in the route planner stays visible only as orientation – it never replaces the GPS position. A compact field shows the overall corridor verdict as <strong>OK</strong>, <strong>Check</strong> or <strong>No Go</strong>, plus the nearest METAR station within 40 km, continuously updated.</p>
+      </div>
+      <div class="screen"><img src="../assets/go-fly-map.webp" alt="Go Fly live moving map with GPS position and route corridor" width="919" height="1991" loading="lazy"></div>
+    </div>
+    <div class="hero-grid" style="margin-top:48px;">
+      <div class="screen" style="order:2;"><img src="../assets/go-fly-wind.webp" alt="Animated wind field over the weather map" width="919" height="1991" loading="lazy"></div>
+      <div style="order:1;">
+        <h3 style="margin-top:0;">Animated wind field</h3>
+        <p>Both the radar and Go Fly views let you toggle on an animated wind field: surface wind plus two model pressure levels (~2,500 and ~5,000 ft). The ft values are deliberately approximations only, not altitude-resolved flight wind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="briefing">
+  <div class="container">
+    <div class="section-title">
+      <h2>Share your briefing as a PDF</h2>
+      <p>Assessment, values and route as a document – for yourself or to pass on.</p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p>"Share briefing as PDF" in the Current tab builds a PDF from data already loaded: assessment, current observed and model values, reasoning, official warnings, hourly trend, forecast days and – with an active route – its most critical leg. No additional requests are triggered.</p>
+        <p>The document is marked as a <strong>snapshot</strong>: the data timestamp and an expiry time (60 minutes after that timestamp) stay visible unchanged even after forwarding. Every page states that it is not an official flight weather briefing and not a go-ahead to fly.</p>
+      </div>
+      <div class="screen"><img src="../assets/guide-briefing-share.webp" alt="Sharing the briefing PDF via Android's share function" width="919" height="1991" loading="lazy"></div>
+    </div>
+    <div class="hero-grid" style="margin-top:48px;">
+      <div class="screen" style="order:2;"><img src="../assets/guide-briefing-pdf.webp" alt="Example page of the VFR Wetter briefing PDF" width="919" height="1991" loading="lazy"></div>
+      <div style="order:1;">
+        <h3 style="margin-top:0;">What's in the PDF</h3>
+        <p>The app's recommendation and AWC weather category, current observed and model values (temperature, wind, visibility, QNH, density altitude, freezing level, precipitation), the reasoning with data quality, and the daily forecast with its data confidence – compact on one page, with a disclaimer footer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="status" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Data source status</h2>
+      <p>See at a glance what the current assessment is really based on.</p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p>The status page in the Current tab reads the same, already-loaded data snapshot – no extra network requests – and lists every possible source individually: <strong>active</strong>, <strong>not used</strong> (e.g. because no suitable ground station or regional model exists at this location), or as a reported outage. So you can see transparently whether, say, a nearby METAR, TAF, DWD radar or MOSMIX actually fed into the current assessment.</p>
+      </div>
+      <div class="screen"><img src="../assets/guide-datasources.webp" alt="Data source status page with active sources" width="919" height="1991" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="widget">
+  <div class="container">
+    <div class="section-title">
+      <h2>Set up the homescreen widget</h2>
+      <p>The key values, without opening the app.</p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p>The widget can be dragged onto the homescreen like any Android widget and adapts to compact, standard or expanded layout depending on the available size. It shows the VFR category, temperature, wind, density altitude, QNH, visibility and an active DWD warning. Tapping the refresh button updates the data manually without opening the app; if the data is older than 60 minutes, the widget makes that visible.</p>
+      </div>
+      <div class="screen"><img src="../assets/guide-widget.webp" alt="VFR Wetter widget on the Android homescreen" width="919" height="2046" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="language" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Switch language</h2>
+      <p>System language, German or English – switchable anytime.</p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p>The language icon in the top bar opens the switcher dialog. UI, professional assessments, the widget, error messages and METAR/TAF plain text all switch together with the chosen language; raw flight weather reports, ICAO codes and proper names deliberately stay unchanged. Switching language restarts the app.</p>
+      </div>
+      <div class="screen"><img src="../assets/guide-language.webp" alt="Language switcher dialog: system language, German, English" width="919" height="1991" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="subscription">
+  <div class="container">
+    <div class="section-title">
+      <h2>Manage your subscription</h2>
+      <p>Short and transparent: trial, price, cancellation.</p>
+    </div>
+    <div class="features">
+      <div class="card"><div class="icon">🎁</div><h3>7 days free</h3><p>After the disclaimer, the trial starts automatically, with no feature restrictions.</p></div>
+      <div class="card"><div class="icon">🔁</div><h3>Then subscription</h3><p>VFR Wetter Pro continues via Google Play Billing. You'll see the current price in the Play Store.</p></div>
+      <div class="card"><div class="icon">✋</div><h3>Cancel anytime</h3><p>Directly in the Google Play Store under "Subscriptions" – also shows your next billing date and current price.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="offline" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Using it offline</h2>
+      <p>What still works when you have no connection.</p>
+    </div>
+    <div class="features">
+      <div class="card"><div class="icon">📦</div><h3>Weather cache</h3><p>The most recently loaded data stays visible locally; past 60 minutes the app clearly warns about stale values.</p></div>
+      <div class="card"><div class="icon">🛫</div><h3>Offline route packages</h3><p>Your last route evaluation stays available as an offline package for up to 7 days, with a visible age and expiry notice.</p></div>
+      <div class="card"><div class="icon">🔍</div><h3>Airport search</h3><p>Search across ~19,000 airports works fully offline, with no connection at all.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Still have questions?</h2>
+        <p class="lead">
+          Find more answers in the <a href="index.html#faq" style="color:var(--cyan);">FAQ</a>
+          on the homepage, or reach out via the support page.
+        </p>
+      </div>
+      <a class="button" href="support.html">Go to support</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div>© 2026 VFR Wetter · A private VFR briefing tool.</div>
+      <div style="margin-top:6px;font-size:.85rem;opacity:.75">Thanks to Patrick &amp; Frank for beta testing.</div>
+    </div>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>
