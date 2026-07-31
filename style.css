@@ -128,8 +128,12 @@ a { color: inherit; }
 }
 
 .lang-flag {
-  font-size: 1.05rem;
-  line-height: 1;
+  width: 18px;
+  height: 13px;
+  border-radius: 2px;
+  display: inline-block;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 
 .lang-caret {
