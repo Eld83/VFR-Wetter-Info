@@ -25,6 +25,21 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "METAR & TAF Glossary: Every Abbreviation Explained",
+    "description": "Complete glossary of METAR and TAF abbreviations, each explained individually.",
+    "url": "https://vfrwetter.com/en/metar-taf-glossar.html",
+    "image": "https://vfrwetter.com/assets/metar-decoder.webp",
+    "datePublished": "2026-08-15",
+    "dateModified": "2026-08-15",
+    "inLanguage": "en",
+    "author": { "@type": "Person", "name": "Niels Deuter" },
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "DefinedTermSet",
     "name": "METAR & TAF Glossary",
     "description": "Complete glossary of METAR and TAF abbreviations: wind, visibility, weather phenomena, clouds, pressure and TAF change groups.",
@@ -32,17 +47,99 @@
     "inLanguage": "en",
     "publisher": { "@type": "Organization", "name": "VFR Wetter" },
     "hasDefinedTerm": [
-      { "@type": "DefinedTerm", "name": "METAR", "description": "A routine, standardized weather report from an airport." },
-      { "@type": "DefinedTerm", "name": "SPECI", "description": "An unscheduled special report issued for a significant weather change between two METARs." },
-      { "@type": "DefinedTerm", "name": "TAF", "description": "Terminal Aerodrome Forecast – the airport weather forecast." },
-      { "@type": "DefinedTerm", "name": "CAVOK", "description": "Ceiling and Visibility OK – visibility at least 10 km, no cloud below 5,000 ft or the minimum sector altitude, no significant weather." },
-      { "@type": "DefinedTerm", "name": "BKN", "description": "Broken – 5 to 7 oktas of cloud cover." },
-      { "@type": "DefinedTerm", "name": "OVC", "description": "Overcast – 8 oktas of cloud cover, a closed cloud layer." },
-      { "@type": "DefinedTerm", "name": "NOSIG", "description": "No significant change – in the METAR trend: no significant change expected over the next two hours." },
-      { "@type": "DefinedTerm", "name": "BECMG", "description": "Becoming – a gradual transition to new conditions." },
-      { "@type": "DefinedTerm", "name": "TEMPO", "description": "Temporary – a temporary fluctuation, each occurrence under one hour." },
-      { "@type": "DefinedTerm", "name": "PROB30", "description": "30% probability of the stated TAF condition occurring." },
-      { "@type": "DefinedTerm", "name": "QNH", "description": "Sea-level-reduced air pressure, set on the altimeter so it correctly reads elevation above mean sea level." }
+      { "@type": "DefinedTerm", "name": "METAR", "description": "A routine, scheduled weather report from an airport, normally issued every 30 or 60 minutes.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-metar" },
+      { "@type": "DefinedTerm", "name": "SPECI", "description": "An unscheduled special report, triggered by a significant weather change between two routine METARs.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-speci" },
+      { "@type": "DefinedTerm", "name": "TAF", "description": "Terminal Aerodrome Forecast, the airport weather forecast for a defined validity period.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-taf" },
+      { "@type": "DefinedTerm", "name": "AUTO", "description": "The report was generated fully automatically, without review or augmentation by an observer.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-auto" },
+      { "@type": "DefinedTerm", "name": "COR", "description": "Correction, a correction to an already-published report.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-cor" },
+      { "@type": "DefinedTerm", "name": "AMD", "description": "Amendment, a TAF was amended before its original validity expired.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-amd" },
+      { "@type": "DefinedTerm", "name": "CNL", "description": "Cancellation, a TAF has been cancelled for the remainder of its validity period.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-cnl" },
+      { "@type": "DefinedTerm", "name": "NIL", "description": "No data available.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-nil" },
+      { "@type": "DefinedTerm", "name": "G (Gust)", "description": "Gust, e.g. 24012G22KT for gusts up to 22 kt.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-g" },
+      { "@type": "DefinedTerm", "name": "VRB", "description": "Variable, shifting wind direction with no clear trend, typically at light wind speeds.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-vrb" },
+      { "@type": "DefinedTerm", "name": "00000KT", "description": "Calm wind.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-calm" },
+      { "@type": "DefinedTerm", "name": "CAVOK", "description": "Ceiling and Visibility OK – visibility at least 10 km, no cloud below 5,000 ft or the minimum sector altitude, no significant weather, no cumulonimbus.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-cavok" },
+      { "@type": "DefinedTerm", "name": "NDV", "description": "No Directional Variation, visibility is reported without a direction, common at automated stations.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-ndv" },
+      { "@type": "DefinedTerm", "name": "RVR", "description": "Runway Visual Range for a specific runway, e.g. R28L/0800.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-rvr" },
+      { "@type": "DefinedTerm", "name": "VC", "description": "Vicinity, in the vicinity of the airport, roughly 8–16 km away, not directly at the field.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-vc" },
+      { "@type": "DefinedTerm", "name": "MI", "description": "Shallow, e.g. shallow ground fog.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-mi" },
+      { "@type": "DefinedTerm", "name": "BC", "description": "Patches, occurring in patches.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-bc" },
+      { "@type": "DefinedTerm", "name": "PR", "description": "Partial, affecting part of the airport.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-pr" },
+      { "@type": "DefinedTerm", "name": "DR", "description": "Low Drifting, light drifting close to the ground.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-dr" },
+      { "@type": "DefinedTerm", "name": "BL", "description": "Blowing, raised higher, e.g. blowing snow.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-bl" },
+      { "@type": "DefinedTerm", "name": "SH", "description": "Shower.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-sh" },
+      { "@type": "DefinedTerm", "name": "TS", "description": "Thunderstorm.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-ts" },
+      { "@type": "DefinedTerm", "name": "FZ", "description": "Freezing, e.g. freezing rain.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-fz" },
+      { "@type": "DefinedTerm", "name": "DZ", "description": "Drizzle.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-dz" },
+      { "@type": "DefinedTerm", "name": "RA", "description": "Rain.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-ra" },
+      { "@type": "DefinedTerm", "name": "SN", "description": "Snow.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-sn" },
+      { "@type": "DefinedTerm", "name": "SG", "description": "Snow Grains.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-sg" },
+      { "@type": "DefinedTerm", "name": "IC", "description": "Ice Crystals.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-ic" },
+      { "@type": "DefinedTerm", "name": "PL", "description": "Ice Pellets.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-pl" },
+      { "@type": "DefinedTerm", "name": "GR", "description": "Hail, stones 5 mm or larger.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-gr" },
+      { "@type": "DefinedTerm", "name": "GS", "description": "Small Hail/Snow Pellets, under 5 mm.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-gs" },
+      { "@type": "DefinedTerm", "name": "UP", "description": "Unknown Precipitation, automated stations only.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-up" },
+      { "@type": "DefinedTerm", "name": "BR", "description": "Mist, visibility between 1,000 m and 5,000 m.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-br" },
+      { "@type": "DefinedTerm", "name": "FG", "description": "Fog, visibility under 1,000 m.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-fg" },
+      { "@type": "DefinedTerm", "name": "FU", "description": "Smoke.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-fu" },
+      { "@type": "DefinedTerm", "name": "VA", "description": "Volcanic Ash.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-va" },
+      { "@type": "DefinedTerm", "name": "DU", "description": "Widespread Dust.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-du" },
+      { "@type": "DefinedTerm", "name": "SA", "description": "Sand.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-sa" },
+      { "@type": "DefinedTerm", "name": "HZ", "description": "Haze.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-hz" },
+      { "@type": "DefinedTerm", "name": "PY", "description": "Spray.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-py" },
+      { "@type": "DefinedTerm", "name": "PO", "description": "Well-developed dust or sand whirls.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-po" },
+      { "@type": "DefinedTerm", "name": "SQ", "description": "Squall.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-sq" },
+      { "@type": "DefinedTerm", "name": "FC", "description": "Funnel Cloud, or tornado/waterspout.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-fc" },
+      { "@type": "DefinedTerm", "name": "SS", "description": "Sandstorm.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-ss" },
+      { "@type": "DefinedTerm", "name": "DS", "description": "Duststorm.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-ds" },
+      { "@type": "DefinedTerm", "name": "FEW", "description": "Few, 1–2 oktas of cover.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-few" },
+      { "@type": "DefinedTerm", "name": "SCT", "description": "Scattered, 3–4 oktas of cover.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-sct" },
+      { "@type": "DefinedTerm", "name": "BKN", "description": "Broken, 5–7 oktas of cover, together with OVC this forms the ceiling.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-bkn" },
+      { "@type": "DefinedTerm", "name": "OVC", "description": "Overcast, 8 oktas, a closed cloud layer.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-ovc" },
+      { "@type": "DefinedTerm", "name": "NSC", "description": "No Significant Cloud below the relevant height.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-nsc" },
+      { "@type": "DefinedTerm", "name": "NCD", "description": "No Cloud Detected, automated stations only.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-ncd" },
+      { "@type": "DefinedTerm", "name": "SKC", "description": "Sky Clear, manual report.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-skc" },
+      { "@type": "DefinedTerm", "name": "CLR", "description": "Clear below 12,000 ft, automated report.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-clr" },
+      { "@type": "DefinedTerm", "name": "VV", "description": "Vertical Visibility in hundreds of feet when the sky is obscured, e.g. VV004 for 400 ft.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-vv" },
+      { "@type": "DefinedTerm", "name": "CB", "description": "Cumulonimbus.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-cb" },
+      { "@type": "DefinedTerm", "name": "TCU", "description": "Towering Cumulus.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-tcu" },
+      { "@type": "DefinedTerm", "name": "QNH", "description": "Sea-level-reduced air pressure, set on the altimeter so it correctly reads elevation above mean sea level.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-qnh" },
+      { "@type": "DefinedTerm", "name": "Altimeter Setting (A)", "description": "Pressure in hundredths of an inch of mercury (inHg), common in North America, e.g. A2992.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-altimeter" },
+      { "@type": "DefinedTerm", "name": "NOSIG", "description": "No Significant Change: METAR trend only, no significant change expected over the next two hours.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-nosig" },
+      { "@type": "DefinedTerm", "name": "BECMG", "description": "Becoming: a gradual transition to new conditions within a stated time window.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-becmg" },
+      { "@type": "DefinedTerm", "name": "TEMPO", "description": "Temporary: a temporary fluctuation, each occurrence under one hour and totaling less than half the stated period.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-tempo" },
+      { "@type": "DefinedTerm", "name": "FM", "description": "From: completely new conditions apply from the stated time onward, TAF only, e.g. FM151800.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-fm" },
+      { "@type": "DefinedTerm", "name": "PROB30 / PROB40", "description": "Probability: 30% or 40% probability of the stated condition, TAF only.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-prob" },
+      { "@type": "DefinedTerm", "name": "TL", "description": "Until: the end date/time of a change group. Common only in the METAR trend.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-tl" },
+      { "@type": "DefinedTerm", "name": "AT", "description": "At: the change occurs at an exact time rather than gradually. Also common only in the METAR trend.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-at" },
+      { "@type": "DefinedTerm", "name": "RMK", "description": "Remarks: region-specific supplementary information, common mainly in North America.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-rmk" },
+      { "@type": "DefinedTerm", "name": "Z (Zulu time)", "description": "UTC; all times in METAR and TAF are UTC, never local time.", "url": "https://vfrwetter.com/en/metar-taf-glossar.html#term-z" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://vfrwetter.com/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://vfrwetter.com/en/wissen.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "METAR & TAF Glossary",
+        "item": "https://vfrwetter.com/en/metar-taf-glossar.html"
+      }
     ]
   }
   </script>
@@ -75,135 +172,157 @@
 
 <main class="legal">
   <div class="container">
-    <article>
+    <article id="top">
       <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Learn</a></p>
       <h1>METAR &amp; TAF Glossary</h1>
+      <p class="byline">By <a href="index.html#club" style="color:var(--cyan);">Niels Deuter</a>, developer of VFR Wetter · updated 15 Aug 2026</p>
       <p>Every abbreviation that can appear in a METAR or TAF, grouped by category. For the basics and a fully worked example, see <a href="metar-lesen.html" style="color:var(--cyan);">Reading METAR</a> and <a href="taf-lesen.html" style="color:var(--cyan);">Reading TAF</a>.</p>
 
-      <h2>Report types</h2>
-      <ul>
-        <li><code>METAR</code> – a routine, scheduled weather report from an airport, normally issued every 30 or 60 minutes.</li>
-        <li><code>SPECI</code> – an unscheduled special report, triggered by a significant weather change between two routine METARs.</li>
-        <li><code>TAF</code> – Terminal Aerodrome Forecast, the airport weather forecast for a defined validity period.</li>
-        <li><code>AUTO</code> – the report was generated fully automatically, without review or augmentation by an observer.</li>
-        <li><code>COR</code> – Correction, a correction to an already-published report.</li>
-        <li><code>AMD</code> – Amendment, a TAF was amended before its original validity expired.</li>
-        <li><code>CNL</code> – Cancellation, a TAF has been cancelled for the remainder of its validity period.</li>
-        <li><code>NIL</code> – no data available.</li>
-      </ul>
+      <nav aria-label="Categories" class="toc">
+        <a href="#cat-report-types">Report types</a>
+        <a href="#cat-wind">Wind</a>
+        <a href="#cat-visibility">Visibility</a>
+        <a href="#cat-weather">Weather phenomena</a>
+        <a href="#cat-clouds">Clouds</a>
+        <a href="#cat-pressure">Temperature &amp; pressure</a>
+        <a href="#cat-trend">Trend &amp; change groups</a>
+        <a href="#cat-other">Other</a>
+      </nav>
 
-      <h2>Wind</h2>
+      <h2 id="cat-report-types">Report types</h2>
       <ul>
-        <li><code>dddffKT</code> / <code>dddffMPS</code> – wind direction in degrees (three digits) and speed in knots or meters per second, e.g. <code>24012KT</code>.</li>
-        <li><code>G</code> – Gust, e.g. <code>24012G22KT</code> for gusts up to 22 kt.</li>
-        <li><code>VRB</code> – Variable, shifting wind direction with no clear trend (typically at light wind speeds).</li>
-        <li><code>dndnVdxdx</code> – direction varying between two values, e.g. <code>210V270</code>.</li>
-        <li><code>00000KT</code> – calm wind.</li>
+        <li id="term-metar"><code>METAR</code> – a routine, scheduled weather report from an airport, normally issued every 30 or 60 minutes.</li>
+        <li id="term-speci"><code>SPECI</code> – an unscheduled special report, triggered by a significant weather change between two routine METARs.</li>
+        <li id="term-taf"><code>TAF</code> – Terminal Aerodrome Forecast, the airport weather forecast for a defined validity period.</li>
+        <li id="term-auto"><code>AUTO</code> – the report was generated fully automatically, without review or augmentation by an observer.</li>
+        <li id="term-cor"><code>COR</code> – Correction, a correction to an already-published report.</li>
+        <li id="term-amd"><code>AMD</code> – Amendment, a TAF was amended before its original validity expired.</li>
+        <li id="term-cnl"><code>CNL</code> – Cancellation, a TAF has been cancelled for the remainder of its validity period.</li>
+        <li id="term-nil"><code>NIL</code> – no data available.</li>
       </ul>
+      <p class="totop"><a href="#top">↑ Back to top</a></p>
 
-      <h2>Visibility</h2>
+      <h2 id="cat-wind">Wind</h2>
       <ul>
-        <li><code>9999</code> – horizontal visibility of 10 km or more (the maximum reporting step, in meters).</li>
-        <li><code>CAVOK</code> – Ceiling and Visibility OK: visibility at least 10 km, no cloud below 5,000 ft or the minimum sector altitude (whichever is higher), no significant weather, no cumulonimbus.</li>
-        <li><code>NDV</code> – No Directional Variation, visibility is reported without a direction (common at automated stations).</li>
-        <li><code>R.../....</code> – Runway Visual Range for a specific runway, e.g. <code>R28L/0800</code>.</li>
-        <li><code>U</code> / <code>D</code> / <code>N</code> – RVR trend: up (increasing), down (decreasing), no change.</li>
+        <li id="term-ddff"><code>dddffKT</code> / <code>dddffMPS</code> – wind direction in degrees (three digits) and speed in knots or meters per second, e.g. <code>24012KT</code>.</li>
+        <li id="term-g"><code>G</code> – Gust, e.g. <code>24012G22KT</code> for gusts up to 22 kt.</li>
+        <li id="term-vrb"><code>VRB</code> – Variable, shifting wind direction with no clear trend (typically at light wind speeds).</li>
+        <li id="term-dvv"><code>dndnVdxdx</code> – direction varying between two values, e.g. <code>210V270</code>.</li>
+        <li id="term-calm"><code>00000KT</code> – calm wind.</li>
       </ul>
+      <p class="totop"><a href="#top">↑ Back to top</a></p>
 
-      <h2>Weather phenomena</h2>
+      <h2 id="cat-visibility">Visibility</h2>
+      <ul>
+        <li id="term-9999"><code>9999</code> – horizontal visibility of 10 km or more (the maximum reporting step, in meters).</li>
+        <li id="term-cavok"><code>CAVOK</code> – Ceiling and Visibility OK: visibility at least 10 km, no cloud below 5,000 ft or the minimum sector altitude (whichever is higher), no significant weather, no cumulonimbus.</li>
+        <li id="term-ndv"><code>NDV</code> – No Directional Variation, visibility is reported without a direction (common at automated stations).</li>
+        <li id="term-rvr"><code>R.../....</code> – Runway Visual Range for a specific runway, e.g. <code>R28L/0800</code>.</li>
+        <li id="term-rvr-trend"><code>U</code> / <code>D</code> / <code>N</code> – RVR trend: up (increasing), down (decreasing), no change.</li>
+      </ul>
+      <p class="totop"><a href="#top">↑ Back to top</a></p>
+
+      <h2 id="cat-weather">Weather phenomena</h2>
       <p>A weather group is made up of up to three parts: intensity, descriptor and phenomenon – e.g. <code>+TSRA</code> for a strong thunderstorm with rain.</p>
       <p><strong>Intensity</strong></p>
       <ul>
-        <li><code>-</code> – light.</li>
-        <li>(no sign) – moderate.</li>
-        <li><code>+</code> – heavy.</li>
-        <li><code>VC</code> – Vicinity, in the vicinity of the airport (roughly 8–16 km away, not directly at the field).</li>
+        <li id="term-minus"><code>-</code> – light.</li>
+        <li id="term-moderate">(no sign) – moderate.</li>
+        <li id="term-plus"><code>+</code> – heavy.</li>
+        <li id="term-vc"><code>VC</code> – Vicinity, in the vicinity of the airport (roughly 8–16 km away, not directly at the field).</li>
       </ul>
       <p><strong>Descriptors</strong></p>
       <ul>
-        <li><code>MI</code> – Shallow (e.g. shallow ground fog).</li>
-        <li><code>BC</code> – Patches, occurring in patches.</li>
-        <li><code>PR</code> – Partial, affecting part of the airport.</li>
-        <li><code>DR</code> – Low Drifting, light drifting close to the ground.</li>
-        <li><code>BL</code> – Blowing, raised higher (e.g. blowing snow).</li>
-        <li><code>SH</code> – Shower.</li>
-        <li><code>TS</code> – Thunderstorm.</li>
-        <li><code>FZ</code> – Freezing (e.g. freezing rain).</li>
+        <li id="term-mi"><code>MI</code> – Shallow (e.g. shallow ground fog).</li>
+        <li id="term-bc"><code>BC</code> – Patches, occurring in patches.</li>
+        <li id="term-pr"><code>PR</code> – Partial, affecting part of the airport.</li>
+        <li id="term-dr"><code>DR</code> – Low Drifting, light drifting close to the ground.</li>
+        <li id="term-bl"><code>BL</code> – Blowing, raised higher (e.g. blowing snow).</li>
+        <li id="term-sh"><code>SH</code> – Shower.</li>
+        <li id="term-ts"><code>TS</code> – Thunderstorm.</li>
+        <li id="term-fz"><code>FZ</code> – Freezing (e.g. freezing rain).</li>
       </ul>
       <p><strong>Precipitation</strong></p>
       <ul>
-        <li><code>DZ</code> – Drizzle.</li>
-        <li><code>RA</code> – Rain.</li>
-        <li><code>SN</code> – Snow.</li>
-        <li><code>SG</code> – Snow Grains.</li>
-        <li><code>IC</code> – Ice Crystals.</li>
-        <li><code>PL</code> – Ice Pellets.</li>
-        <li><code>GR</code> – Hail (stones 5 mm or larger).</li>
-        <li><code>GS</code> – Small Hail/Snow Pellets (under 5 mm).</li>
-        <li><code>UP</code> – Unknown Precipitation (automated stations only, when the sensor can't determine the type).</li>
+        <li id="term-dz"><code>DZ</code> – Drizzle.</li>
+        <li id="term-ra"><code>RA</code> – Rain.</li>
+        <li id="term-sn"><code>SN</code> – Snow.</li>
+        <li id="term-sg"><code>SG</code> – Snow Grains.</li>
+        <li id="term-ic"><code>IC</code> – Ice Crystals.</li>
+        <li id="term-pl"><code>PL</code> – Ice Pellets.</li>
+        <li id="term-gr"><code>GR</code> – Hail (stones 5 mm or larger).</li>
+        <li id="term-gs"><code>GS</code> – Small Hail/Snow Pellets (under 5 mm).</li>
+        <li id="term-up"><code>UP</code> – Unknown Precipitation (automated stations only, when the sensor can't determine the type).</li>
       </ul>
       <p><strong>Obscuration</strong></p>
       <ul>
-        <li><code>BR</code> – Mist (visibility 1,000 m or more).</li>
-        <li><code>FG</code> – Fog (visibility under 1,000 m).</li>
-        <li><code>FU</code> – Smoke.</li>
-        <li><code>VA</code> – Volcanic Ash.</li>
-        <li><code>DU</code> – Widespread Dust.</li>
-        <li><code>SA</code> – Sand.</li>
-        <li><code>HZ</code> – Haze.</li>
-        <li><code>PY</code> – Spray.</li>
+        <li id="term-br"><code>BR</code> – Mist (visibility between 1,000 m and 5,000 m).</li>
+        <li id="term-fg"><code>FG</code> – Fog (visibility under 1,000 m).</li>
+        <li id="term-fu"><code>FU</code> – Smoke.</li>
+        <li id="term-va"><code>VA</code> – Volcanic Ash.</li>
+        <li id="term-du"><code>DU</code> – Widespread Dust.</li>
+        <li id="term-sa"><code>SA</code> – Sand.</li>
+        <li id="term-hz"><code>HZ</code> – Haze.</li>
+        <li id="term-py"><code>PY</code> – Spray.</li>
       </ul>
       <p><strong>Other phenomena</strong></p>
       <ul>
-        <li><code>PO</code> – well-developed dust or sand whirls.</li>
-        <li><code>SQ</code> – Squall.</li>
-        <li><code>FC</code> – Funnel Cloud (or tornado/waterspout).</li>
-        <li><code>SS</code> – Sandstorm.</li>
-        <li><code>DS</code> – Duststorm.</li>
+        <li id="term-po"><code>PO</code> – well-developed dust or sand whirls.</li>
+        <li id="term-sq"><code>SQ</code> – Squall.</li>
+        <li id="term-fc"><code>FC</code> – Funnel Cloud (or tornado/waterspout).</li>
+        <li id="term-ss"><code>SS</code> – Sandstorm.</li>
+        <li id="term-ds"><code>DS</code> – Duststorm.</li>
       </ul>
+      <p class="totop"><a href="#top">↑ Back to top</a></p>
 
-      <h2>Clouds</h2>
+      <h2 id="cat-clouds">Clouds</h2>
       <ul>
-        <li><code>FEW</code> – Few, 1–2 oktas of cover.</li>
-        <li><code>SCT</code> – Scattered, 3–4 oktas of cover.</li>
-        <li><code>BKN</code> – Broken, 5–7 oktas of cover (together with OVC, this forms the ceiling).</li>
-        <li><code>OVC</code> – Overcast, 8 oktas, a closed cloud layer.</li>
-        <li><code>NSC</code> – No Significant Cloud below the relevant height.</li>
-        <li><code>NCD</code> – No Cloud Detected (automated stations only).</li>
-        <li><code>SKC</code> – Sky Clear (manual report).</li>
-        <li><code>CLR</code> – Clear below 12,000 ft (automated report).</li>
-        <li><code>VV</code> – Vertical Visibility in hundreds of feet when the sky is obscured (e.g. by fog), e.g. <code>VV004</code> for 400 ft.</li>
-        <li><code>CB</code> – Cumulonimbus.</li>
-        <li><code>TCU</code> – Towering Cumulus.</li>
+        <li id="term-few"><code>FEW</code> – Few, 1–2 oktas of cover.</li>
+        <li id="term-sct"><code>SCT</code> – Scattered, 3–4 oktas of cover.</li>
+        <li id="term-bkn"><code>BKN</code> – Broken, 5–7 oktas of cover (together with OVC, this forms the ceiling).</li>
+        <li id="term-ovc"><code>OVC</code> – Overcast, 8 oktas, a closed cloud layer.</li>
+        <li id="term-nsc"><code>NSC</code> – No Significant Cloud below the relevant height.</li>
+        <li id="term-ncd"><code>NCD</code> – No Cloud Detected (automated stations only).</li>
+        <li id="term-skc"><code>SKC</code> – Sky Clear (manual report).</li>
+        <li id="term-clr"><code>CLR</code> – Clear below 12,000 ft (automated report).</li>
+        <li id="term-vv"><code>VV</code> – Vertical Visibility in hundreds of feet when the sky is obscured (e.g. by fog), e.g. <code>VV004</code> for 400 ft.</li>
+        <li id="term-cb"><code>CB</code> – Cumulonimbus.</li>
+        <li id="term-tcu"><code>TCU</code> – Towering Cumulus.</li>
       </ul>
+      <p class="totop"><a href="#top">↑ Back to top</a></p>
 
-      <h2>Temperature, dew point and pressure</h2>
+      <h2 id="cat-pressure">Temperature, dew point and pressure</h2>
       <ul>
-        <li><code>TT/TT</code> – air temperature/dew point in whole degrees Celsius, e.g. <code>22/14</code>.</li>
-        <li><code>M</code> – minus prefix for values below 0°C, e.g. <code>M02</code> for −2°C.</li>
-        <li><code>Q....</code> – QNH in hectopascals, the sea-level-reduced pressure used for altimeter setting.</li>
-        <li><code>A....</code> – Altimeter setting in hundredths of an inch of mercury (inHg), common in North America, e.g. <code>A2992</code>.</li>
+        <li id="term-tttt"><code>TT/TT</code> – air temperature/dew point in whole degrees Celsius, e.g. <code>22/14</code>.</li>
+        <li id="term-m"><code>M</code> – minus prefix for values below 0°C, e.g. <code>M02</code> for −2°C.</li>
+        <li id="term-qnh"><code>Q....</code> – QNH in hectopascals, the sea-level-reduced pressure used for altimeter setting.</li>
+        <li id="term-altimeter"><code>A....</code> – Altimeter setting in hundredths of an inch of mercury (inHg), common in North America, e.g. <code>A2992</code>.</li>
       </ul>
+      <p class="totop"><a href="#top">↑ Back to top</a></p>
 
-      <h2>Trend (METAR) and change groups (TAF)</h2>
+      <h2 id="cat-trend">Trend (METAR) and change groups (TAF)</h2>
       <ul>
-        <li><code>NOSIG</code> – No Significant Change: METAR trend only, no significant change expected over the next two hours.</li>
-        <li><code>BECMG</code> – Becoming: a gradual transition to new conditions within a stated time window.</li>
-        <li><code>TEMPO</code> – Temporary: a temporary fluctuation, each occurrence under one hour and totaling less than half the stated period.</li>
-        <li><code>FM</code> – From: completely new conditions apply from the stated time onward (TAF only, e.g. <code>FM151800</code>).</li>
-        <li><code>PROB30</code> / <code>PROB40</code> – Probability: 30% or 40% probability of the stated condition (TAF only).</li>
-        <li><code>TL</code> – Until: the end date/time of a change group.</li>
-        <li><code>AT</code> – At: the change occurs at an exact time rather than gradually.</li>
+        <li id="term-nosig"><code>NOSIG</code> – No Significant Change: METAR trend only, no significant change expected over the next two hours.</li>
+        <li id="term-becmg"><code>BECMG</code> – Becoming: a gradual transition to new conditions within a stated time window.</li>
+        <li id="term-tempo"><code>TEMPO</code> – Temporary: a temporary fluctuation, each occurrence under one hour and totaling less than half the stated period.</li>
+        <li id="term-fm"><code>FM</code> – From: completely new conditions apply from the stated time onward (TAF only, e.g. <code>FM151800</code>).</li>
+        <li id="term-prob"><code>PROB30</code> / <code>PROB40</code> – Probability: 30% or 40% probability of the stated condition (TAF only).</li>
+        <li id="term-tl"><code>TL</code> – Until: the end date/time of a change group. Common only in the METAR trend – within the TAF body, the time span already sits directly in the <code>BECMG</code>/<code>TEMPO</code> group as <em>DayHour/DayHour</em>.</li>
+        <li id="term-at"><code>AT</code> – At: the change occurs at an exact time rather than gradually. Also common only in the METAR trend, not in the TAF body.</li>
       </ul>
+      <p class="totop"><a href="#top">↑ Back to top</a></p>
 
-      <h2>Other</h2>
+      <h2 id="cat-other">Other</h2>
       <ul>
-        <li><code>RMK</code> – Remarks: region-specific supplementary information, common mainly in North America.</li>
-        <li><code>$</code> – Maintenance indicator: signals a possible sensor issue at an automated station (mainly US).</li>
-        <li><code>Z</code> – Zulu time, i.e. UTC; all times in METAR and TAF are UTC, never local time.</li>
+        <li id="term-rmk"><code>RMK</code> – Remarks: region-specific supplementary information, common mainly in North America.</li>
+        <li id="term-dollar"><code>$</code> – Maintenance indicator: signals a possible sensor issue at an automated station (mainly US).</li>
+        <li id="term-z"><code>Z</code> – Zulu time, i.e. UTC; all times in METAR and TAF are UTC, never local time.</li>
       </ul>
 
       <p class="notice">This glossary does not replace aviation training or an official flight weather briefing. Before every flight, the actual official reports and regulations apply.</p>
+
+      <div class="screen" style="max-width:360px;margin-top:24px;"><img src="../assets/metar-decoder.webp" alt="METAR/TAF decoder in the VFR Wetter app" width="919" height="1991" srcset="../assets/metar-decoder-320.webp 320w, ../assets/metar-decoder-480.webp 480w, ../assets/metar-decoder.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <p style="margin-top:14px;">In the <a href="guide.html#metartaf" style="color:var(--cyan);">VFR Wetter app</a>, you don't need to look these codes up yourself – the METAR/TAF decoder translates them into plain language automatically.</p>
     </article>
   </div>
 </main>

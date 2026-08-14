@@ -93,6 +93,26 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://vfrwetter.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Anleitung",
+        "item": "https://vfrwetter.com/guide.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <nav class="nav">
@@ -125,13 +145,14 @@
 
 <header class="hero" style="padding-bottom:24px;">
   <div class="container">
-    <div class="kicker">📘 Anleitung</div>
-    <h1 style="font-size:clamp(2.2rem, 4.5vw, 3.6rem);">So nutzt du VFR Wetter</h1>
+    <div class="kicker">📘 Anleitung zur App</div>
+    <h1 style="font-size:clamp(2.2rem, 4.5vw, 3.6rem);">So nutzt du die App VFR Wetter</h1>
     <p class="lead">
       Ein Rundgang durch alle Tabs und Funktionen der App – von der zentralen Flugwetter-Empfehlung
       über Routenplaner und Go Fly bis zu Widget, Sprache und Abo. Die genaue Gewichtung einzelner
       Wetterfaktoren in der Empfehlung geben wir bewusst nicht im Detail preis – das ist der Kern der App.
     </p>
+    <p style="font-size:.9rem;color:var(--muted);margin-top:10px;">Suchst du allgemeine Grundlagen zu Flugwetter – unabhängig von dieser App? Dann bist du bei <a href="wissen.html" style="color:var(--cyan);">Wissen</a> richtig.</p>
   </div>
 </header>
 
@@ -161,7 +182,7 @@
         <p>Wie genau die einzelnen Faktoren – Sicht, Wolken, Wind, Böen, Niederschlag, Gewitterrisiko und mehr – im Detail gewichtet und kombiniert werden, veröffentlichen wir bewusst nicht. Über die aufklappbare Zeile <strong>„Warum diese Einschätzung?"</strong> siehst du aber jederzeit die im konkreten Fall ausschlaggebenden Gründe, dazu einen Datenqualitäts-Score (Sterne) und einen Kurz-Trend für die nächsten drei Stunden.</p>
         <p>Darunter findest du die <strong>„Seit HH:MM Uhr"</strong>-Karte (was sich seit dem letzten Abruf geändert hat), <strong>„Wenn du jetzt startest"</strong> (Ampel-Kurzhorizont für die nächsten drei Stunden) und den Live-Sonnenstand mit Tag-/Golden-Hour-/Dämmerungsphase.</p>
       </div>
-      <div class="screen"><img src="assets/current-assessment.webp" alt="Zentrale Flugwetter-Empfehlung im Aktuell-Tab" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/current-assessment.webp" alt="Zentrale Flugwetter-Empfehlung im Aktuell-Tab" width="919" height="1991" srcset="assets/current-assessment-320.webp 320w, assets/current-assessment-480.webp 480w, assets/current-assessment.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -178,7 +199,7 @@
         <p><strong>Favoriten speichern:</strong> Im Suchdialog gespeicherte Plätze zeigen direkt ihre Live-Flugkategorie (VFR/MVFR/IFR/LIFR) – ideal für Stammplätze.</p>
         <p><strong>Flugfenster-Hinweis:</strong> Ein konservativer Hinweis aus Standard- und Regionalmodell, wann ein Fenster infrage kommt (im Screenshot: „Wetterfenster: zu wenige belastbare Daten"). Optionale, standardmäßig ausgeschaltete Änderungsbenachrichtigungen je Favorit – ausdrücklich keine Startfreigabe.</p>
       </div>
-      <div class="screen"><img src="assets/guide-favorites.webp" alt="Favoritenliste im Suchdialog mit Live-Flugkategorie und Flugfenster-Hinweis" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/guide-favorites.webp" alt="Favoritenliste im Suchdialog mit Live-Flugkategorie und Flugfenster-Hinweis" width="919" height="1991" srcset="assets/guide-favorites-320.webp 320w, assets/guide-favorites-480.webp 480w, assets/guide-favorites.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -206,10 +227,10 @@
       <div>
         <p>Der vollständige METAR-/TAF-Dekoder übersetzt jede Gruppe – Wind inkl. Böen, Sicht, RVR, Wetter, Wolken, QNH, Tendenz – in verständlichen Klartext, inklusive Stationen in der Nähe, wenn dein Platz kein eigenes METAR hat.</p>
       </div>
-      <div class="screen"><img src="assets/metar-decoder.webp" alt="Vollständiger METAR-/TAF-Dekoder" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/metar-decoder.webp" alt="Vollständiger METAR-/TAF-Dekoder" width="919" height="1991" srcset="assets/metar-decoder-320.webp 320w, assets/metar-decoder-480.webp 480w, assets/metar-decoder.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
     <div class="hero-grid" style="margin-top:48px;">
-      <div class="screen" style="order:2;"><img src="assets/route.webp" alt="Routenplaner als Gefahrenkorridor" width="919" height="1991" loading="lazy"></div>
+      <div class="screen" style="order:2;"><img src="assets/route.webp" alt="Routenplaner als Gefahrenkorridor" width="919" height="1991" srcset="assets/route-320.webp 320w, assets/route-480.webp 480w, assets/route.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
       <div style="order:1;">
         <h3 style="margin-top:0;">Routenplaner als Gefahrenkorridor</h3>
         <p>Wähle Start, Ziel und optional Zwischenstopps, dazu Abflugzeit (bis 72 Stunden im Voraus) und Reisegeschwindigkeit. Die App zeichnet die Strecke als Ampel-Timeline und markiert jeden Abschnitt grün, gelb oder rot – anhand von Höhenwind, amtlichen Warnpolygonen zur berechneten Passagezeit, TAF-Änderungsgruppen und Niederschlagsradar am Routenpunkt.</p>
@@ -229,10 +250,10 @@
       <div>
         <p>Density Altitude, Pressure Altitude, ISA-Abweichung und Luftfeuchte für eine realistische Einschätzung von Start- und Steigleistung – als Hilfsmittel, nicht als Ersatz für POH-Berechnungen.</p>
       </div>
-      <div class="screen"><img src="assets/performance.webp" alt="Performance-Tab mit Density Altitude" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/performance.webp" alt="Performance-Tab mit Density Altitude" width="919" height="1991" srcset="assets/performance-320.webp 320w, assets/performance-480.webp 480w, assets/performance.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
     <div class="hero-grid" style="margin-top:48px;">
-      <div class="screen" style="order:2;"><img src="assets/crosswind.webp" alt="Crosswind-Rechner mit Pistenempfehlung" width="919" height="1991" loading="lazy"></div>
+      <div class="screen" style="order:2;"><img src="assets/crosswind.webp" alt="Crosswind-Rechner mit Pistenempfehlung" width="919" height="1991" srcset="assets/crosswind-320.webp 320w, assets/crosswind-480.webp 480w, assets/crosswind.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
       <div style="order:1;">
         <h3 style="margin-top:0;">Crosswind-Rechner</h3>
         <p>Bahndaten laden lassen oder Windrichtung/-stärke manuell eingeben – die App zeigt Crosswind- und Rückenwind-Komponente je Bahnrichtung und empfiehlt die günstigste.</p>
@@ -253,9 +274,9 @@
       <div class="card"><div class="icon">☁️</div><h3>Wolken &amp; VFR-Heatmap</h3><p>Selbst gerendertes Open-Meteo-Wolkenfeld sowie eine Ampel-Heatmap nach Flugkategorie – beide mit stündlicher Modellprognose.</p></div>
     </div>
     <div class="screens" style="margin-top:24px;">
-      <div class="screen"><img src="assets/radar-rain.webp" alt="DWD-Regenradar mit Flugroute auf der Karte" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/radar-clouds.webp" alt="Wolkenlayer auf der Karte" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/radar-vfr.webp" alt="VFR-Ampel-Heatmap auf der Karte" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/radar-rain.webp" alt="DWD-Regenradar mit Flugroute auf der Karte" width="919" height="1991" srcset="assets/radar-rain-320.webp 320w, assets/radar-rain-480.webp 480w, assets/radar-rain.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="assets/radar-clouds.webp" alt="Wolkenlayer auf der Karte" width="919" height="1991" srcset="assets/radar-clouds-320.webp 320w, assets/radar-clouds-480.webp 480w, assets/radar-clouds.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="assets/radar-vfr.webp" alt="VFR-Ampel-Heatmap auf der Karte" width="919" height="1991" srcset="assets/radar-vfr-320.webp 320w, assets/radar-vfr-480.webp 480w, assets/radar-vfr.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
     <p class="note-text">Flugplätze lassen sich als Punkte einblenden, eine im METAR/TAF-Tab gewählte Route wird über allen Layern angezeigt.</p>
   </div>
@@ -271,10 +292,10 @@
       <div>
         <p>Im Go-Fly-Modus zeigt die App deine reale GPS-Position auf derselben Wetterkarte. Eine zuvor im Routenplaner gewählte Route bleibt nur als Orientierung sichtbar – sie ersetzt nie die GPS-Position. Ein kompaktes Feld zeigt die Gesamtbewertung des Korridors als <strong>OK</strong>, <strong>Prüfen</strong> oder <strong>No Go</strong>, dazu die nächste METAR-Station bis 40 km, dauerhaft aktualisiert.</p>
       </div>
-      <div class="screen"><img src="assets/go-fly-map.webp" alt="Go Fly Live-Moving-Map mit GPS-Position und Routenkorridor" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/go-fly-map.webp" alt="Go Fly Live-Moving-Map mit GPS-Position und Routenkorridor" width="919" height="1991" srcset="assets/go-fly-map-320.webp 320w, assets/go-fly-map-480.webp 480w, assets/go-fly-map.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
     <div class="hero-grid" style="margin-top:48px;">
-      <div class="screen" style="order:2;"><img src="assets/go-fly-wind.webp" alt="Animiertes Windfeld über der Wetterkarte" width="919" height="1991" loading="lazy"></div>
+      <div class="screen" style="order:2;"><img src="assets/go-fly-wind.webp" alt="Animiertes Windfeld über der Wetterkarte" width="919" height="1991" srcset="assets/go-fly-wind-320.webp 320w, assets/go-fly-wind-480.webp 480w, assets/go-fly-wind.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
       <div style="order:1;">
         <h3 style="margin-top:0;">Animiertes Windfeld</h3>
         <p>Im Radar- und im Go-Fly-Modus lässt sich ein animiertes Windfeld zuschalten: Bodenwind sowie zwei Modell-Druckniveaus (~2.500 und ~5.000 ft). Die ft-Angaben sind bewusst nur Näherungen, kein höhenaufgelöster Flugwind.</p>
@@ -299,10 +320,10 @@
         <p>Ohne aktive Route erzeugt „Wetterbriefing als PDF teilen" im Aktuell-Tab aus bereits geladenen Daten ein PDF mit Bewertung, aktuellen Mess- und Modellwerten, Begründungen, amtlichen Warnungen, Stundenverlauf und Vorhersagetagen. Nach einer erfolgreichen Routenauswertung erscheint stattdessen „Routenbriefing als PDF teilen" direkt unter dem Routenergebnis und ergänzt dessen kritischsten Abschnitt. Beide Wege nutzen denselben Export – es werden dabei keine zusätzlichen Abfragen gestartet.</p>
         <p>Das Dokument ist als <strong>Momentaufnahme</strong> gekennzeichnet: Datenstand und eine Ablaufzeit (60 Minuten nach dem Datenstand) bleiben auch nach dem Weiterleiten sichtbar unverändert. Auf jeder Seite steht, dass es kein offizielles Flugwetterbriefing und keine Startfreigabe ist, dazu ein dezenter Hinweis auf VFR Wetter und vfrwetter.com. Die letzte Seite trägt zusätzlich einen QR-Code zum Google-Play-Eintrag.</p>
       </div>
-      <div class="screen"><img src="assets/guide-briefing-share.webp" alt="Briefing-PDF über die Android-Teilen-Funktion versenden" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/guide-briefing-share.webp" alt="Briefing-PDF über die Android-Teilen-Funktion versenden" width="919" height="1991" srcset="assets/guide-briefing-share-320.webp 320w, assets/guide-briefing-share-480.webp 480w, assets/guide-briefing-share.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
     <div class="hero-grid" style="margin-top:48px;">
-      <div class="screen" style="order:2;"><img src="assets/guide-briefing-pdf.webp" alt="Beispielseite des VFR-Wetter-Briefing-PDF" width="919" height="1991" loading="lazy"></div>
+      <div class="screen" style="order:2;"><img src="assets/guide-briefing-pdf.webp" alt="Beispielseite des VFR-Wetter-Briefing-PDF" width="919" height="1991" srcset="assets/guide-briefing-pdf-320.webp 320w, assets/guide-briefing-pdf-480.webp 480w, assets/guide-briefing-pdf.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
       <div style="order:1;">
         <h3 style="margin-top:0;">Was im PDF steht</h3>
         <p>App-Empfehlung und AWC-Wetterkategorie, aktuelle Mess- und Modellwerte (Temperatur, Wind, Sicht, QNH, Dichtehöhe, Nullgradgrenze, Niederschlag), die Begründung samt Datenqualität sowie die Tagesprognose mit Quellenlage – kompakt auf einer Seite, mit Fußzeile zum Haftungsausschluss.</p>
@@ -322,7 +343,7 @@
       <div>
         <p>Die Statusseite im Aktuell-Tab liest denselben bereits geladenen Datenstand – ohne eigene Netzabrufe – und listet jede mögliche Quelle einzeln: <strong>aktiv</strong>, <strong>nicht verwendet</strong> (z. B. weil am Standort keine passende Bodenmessung oder kein Regionalmodell existiert) oder als gemeldeter Ausfall. So siehst du transparent, ob z. B. ein nahes METAR, TAF, DWD-Radar oder MOSMIX in die aktuelle Bewertung eingeflossen ist.</p>
       </div>
-      <div class="screen"><img src="assets/guide-datasources.webp" alt="Datenquellen-Statusseite mit aktiven Quellen" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/guide-datasources.webp" alt="Datenquellen-Statusseite mit aktiven Quellen" width="919" height="1991" srcset="assets/guide-datasources-320.webp 320w, assets/guide-datasources-480.webp 480w, assets/guide-datasources.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -337,7 +358,7 @@
       <div>
         <p>Das Widget lässt sich wie jedes Android-Widget auf den Homescreen ziehen und passt sich in Compact-, Standard- und Expanded-Layout an die verfügbare Größe an. Angezeigt werden VFR-Kategorie, Temperatur, Wind, Dichtehöhe, QNH, Sicht und eine aktive DWD-Warnung. Ein Tippen auf den Refresh-Button aktualisiert die Daten manuell, ohne die App zu öffnen; sind die Daten älter als 60 Minuten, macht das Widget das sichtbar.</p>
       </div>
-      <div class="screen"><img src="assets/guide-widget.webp" alt="VFR-Wetter-Widget auf dem Android-Homescreen" width="919" height="2046" loading="lazy"></div>
+      <div class="screen"><img src="assets/guide-widget.webp" alt="VFR-Wetter-Widget auf dem Android-Homescreen" width="919" height="2046" srcset="assets/guide-widget-320.webp 320w, assets/guide-widget-480.webp 480w, assets/guide-widget.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -352,7 +373,7 @@
       <div>
         <p>Über das Sprach-Icon in der oberen Leiste öffnest du den Umschalter-Dialog. UI, fachliche Bewertungen, Widget, Fehlertexte und METAR-/TAF-Klartext wechseln gemeinsam mit der gewählten Sprache; rohe Flugwettermeldungen, ICAO-Codes und Eigennamen bleiben bewusst unverändert. Ein Sprachwechsel startet die App neu.</p>
       </div>
-      <div class="screen"><img src="assets/guide-language.webp" alt="Sprachumschalter-Dialog: Systemsprache, Deutsch, English" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/guide-language.webp" alt="Sprachumschalter-Dialog: Systemsprache, Deutsch, English" width="919" height="1991" srcset="assets/guide-language-320.webp 320w, assets/guide-language-480.webp 480w, assets/guide-language.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
   </div>
 </section>

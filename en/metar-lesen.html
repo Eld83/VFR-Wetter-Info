@@ -37,6 +37,64 @@
     "publisher": { "@type": "Organization", "name": "VFR Wetter" }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's the difference between METAR and SPECI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A METAR is issued regularly every 30 or 60 minutes. If the weather changes significantly in between, the station also issues a SPECI – structurally identical to a METAR, but unscheduled."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does CAVOK mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ceiling and Visibility OK: visibility at least 10 km, no cloud below 5,000 ft or the minimum sector altitude, no significant weather, no cumulonimbus – shorthand for \"consistently good weather.\""
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why doesn't a METAR show local time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "So reports stay comparable worldwide without time-zone conversion, METAR uses UTC exclusively (shown with the \"Z\" suffix for Zulu time)."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://vfrwetter.com/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://vfrwetter.com/en/wissen.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Reading METAR",
+        "item": "https://vfrwetter.com/en/metar-lesen.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <nav class="nav">
@@ -69,6 +127,7 @@
     <article>
       <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Learn</a></p>
       <h1>Reading METAR</h1>
+      <p class="byline">By <a href="index.html#club" style="color:var(--cyan);">Niels Deuter</a>, developer of VFR Wetter · updated 15 Aug 2026</p>
       <p>The METAR (<em>Meteorological Aerodrome Report</em>) is an airport's current weather report – short, standardized, and updated every 30 to 60 minutes. If you fly VFR, being able to read a raw METAR matters, even though an app like VFR Wetter translates it into plain language automatically. This article walks through the structure group by group using a fully worked example.</p>
 
       <h2>A sample METAR</h2>
@@ -89,7 +148,7 @@
       <p>If present, a group of intensity, descriptor and phenomenon follows, e.g. <code>-RA</code> for light rain, <code>+TSRA</code> for a strong thunderstorm with rain, or <code>BR</code> for mist. Our example has no such group – there's simply no reportable weather phenomenon.</p>
 
       <h2>Clouds</h2>
-      <p><strong>FEW035</strong>: a few clouds (1–2 oktas) at 3,500 ft. <strong>SCT250</strong>: scattered cloud (3–4 oktas) at 25,000 ft. The steps are <code>FEW</code> (1–2/8), <code>SCT</code> (3–4/8), <code>BKN</code> (5–7/8) and <code>OVC</code> (8/8, an overcast layer). <code>BKN</code> or <code>OVC</code> is what's called a ceiling. If there's no cloud group at all, you'll see <code>NSC</code> (no significant cloud) instead, or <code>CAVOK</code> if visibility and weather also clear their respective thresholds.</p>
+      <p><strong>FEW035</strong>: a few clouds (1–2 oktas) at 3,500 ft. <strong>SCT250</strong>: scattered cloud (3–4 oktas) at 25,000 ft. Denser steps like <code>BKN</code> or <code>OVC</code> form a ceiling – every cloud-cover step is listed in the <a href="metar-taf-glossar.html#cat-clouds" style="color:var(--cyan);">glossary</a>. If there's no cloud group at all, you'll see <code>NSC</code> (no significant cloud) instead, or <code>CAVOK</code> if visibility and weather also clear their respective thresholds.</p>
 
       <h2>Temperature and dew point</h2>
       <p><strong>22/14</strong>: 22°C air temperature, 14°C dew point. Values below 0°C get a leading <code>M</code> (e.g. <code>M02</code> for −2°C). The closer temperature and dew point sit together, the higher the tendency toward fog or condensation.</p>
@@ -103,10 +162,28 @@
       <h2>Every abbreviation in detail</h2>
       <p>The examples above cover the most common cases, but METAR has plenty more codes – from obscuration types like <code>HZ</code> to rare phenomena like <code>FC</code> (funnel cloud) to every cloud-cover step. The <a href="metar-taf-glossar.html" style="color:var(--cyan);">full METAR/TAF glossary</a> explains every single abbreviation, grouped by category.</p>
 
+      <h2>Frequently asked METAR questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What's the difference between METAR and SPECI?</summary>
+          <p>A METAR is issued regularly every 30 or 60 minutes. If the weather changes significantly in between, the station also issues a SPECI – structurally identical to a METAR, but unscheduled.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What does CAVOK mean?</summary>
+          <p>Ceiling and Visibility OK: visibility at least 10 km, no cloud below 5,000 ft or the minimum sector altitude, no significant weather, no cumulonimbus – shorthand for "consistently good weather."</p>
+        </details>
+        <details class="faq-item">
+          <summary>Why doesn't a METAR show local time?</summary>
+          <p>So reports stay comparable worldwide without time-zone conversion, METAR uses UTC exclusively (shown with the "Z" suffix for Zulu time).</p>
+        </details>
+      </div>
+
       <h2>What's next?</h2>
       <p>Being able to read raw-text METARs stays a core skill for every VFR pilot – especially when the official source doesn't offer plain language. Next up, <a href="taf-lesen.html" style="color:var(--cyan);">reading TAF</a> builds on the same base groups. For daily preparation, the <a href="guide.html#metartaf" style="color:var(--cyan);">METAR/TAF decoder in VFR Wetter</a> automatically translates every group into plain language and feeds it directly into the central flight weather assessment.</p>
 
       <p class="notice">This article does not replace aviation training or an official flight weather briefing. Before every flight, the actual official reports and regulations apply.</p>
+
+      <div class="screen" style="max-width:360px;margin-top:24px;"><img src="../assets/metar-decoder.webp" alt="METAR/TAF decoder in the VFR Wetter app" width="919" height="1991" srcset="../assets/metar-decoder-320.webp 320w, ../assets/metar-decoder-480.webp 480w, ../assets/metar-decoder.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </article>
   </div>
 </main>

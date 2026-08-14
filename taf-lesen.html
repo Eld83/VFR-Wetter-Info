@@ -37,6 +37,64 @@
     "publisher": { "@type": "Organization", "name": "VFR Wetter" }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen BECMG und TEMPO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BECMG beschreibt einen bleibenden Übergang zu neuen Bedingungen – danach gilt der neue Zustand weiter. TEMPO beschreibt kurze, vorübergehende Ausreißer, die immer wieder kommen und gehen, während der Grundzustand ansonsten bestehen bleibt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was bedeutet PROB30 in einem TAF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PROB30 gibt eine 30-prozentige Eintrittswahrscheinlichkeit für die folgende Bedingung an – meist kombiniert mit TEMPO. PROB40 entsprechend 40 %. Beide erscheinen ausschließlich im TAF, nicht im METAR."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange gilt ein TAF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Je nach Flugplatzgröße 9, 24 oder 30 Stunden, erkennbar am Gültigkeitszeitraum im Kopf der Meldung (Format TagStunde/TagStunde). Außerhalb dieses Fensters ist eine neuere oder ältere Vorhersage maßgeblich."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://vfrwetter.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Wissen",
+        "item": "https://vfrwetter.com/wissen.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "TAF lesen lernen",
+        "item": "https://vfrwetter.com/taf-lesen.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <nav class="nav">
@@ -69,7 +127,8 @@
     <article>
       <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Wissen</a></p>
       <h1>TAF lesen lernen</h1>
-      <p>Das TAF (<em>Terminal Aerodrome Forecast</em>) ist die Wettervorhersage für einen Flugplatz, meist für 24 oder 30 Stunden im Voraus, alle 6 Stunden aktualisiert. Anders als das METAR beschreibt es nicht nur den aktuellen Zustand, sondern auch, wie und wann sich das Wetter ändert. Wer die Grundgruppen aus dem METAR schon kennt, hat die halbe Arbeit bereits erledigt – neu hinzu kommen vor allem die Änderungsgruppen. Für die einzelnen Abkürzungen siehe das <a href="metar-taf-glossar.html" style="color:var(--cyan);">vollständige METAR-/TAF-Glossar</a>.</p>
+      <p class="byline">Von <a href="index.html#club" style="color:var(--cyan);">Niels Deuter</a>, Entwickler von VFR Wetter · aktualisiert 15.08.2026</p>
+      <p>Das TAF (<em>Terminal Aerodrome Forecast</em>) ist die Wettervorhersage für einen Flugplatz, meist für 24 oder 30 Stunden im Voraus, alle 6 Stunden aktualisiert – an kleineren Plätzen oft nur als Kurz-TAF für 9 Stunden, alle 3 Stunden aktualisiert. Anders als das <a href="metar-lesen.html" style="color:var(--cyan);">METAR</a> beschreibt es nicht nur den aktuellen Zustand, sondern auch, wie und wann sich das Wetter ändert. Wer die Grundgruppen aus dem METAR schon kennt, hat die halbe Arbeit bereits erledigt – neu hinzu kommen vor allem die Änderungsgruppen. Für die einzelnen Abkürzungen siehe das <a href="metar-taf-glossar.html" style="color:var(--cyan);">vollständige METAR-/TAF-Glossar</a>.</p>
 
       <h2>Ein Beispiel-TAF</h2>
       <p>So könnte eine Vorhersage für Frankfurt aussehen:</p>
@@ -90,7 +149,7 @@
       <p><strong>BECMG 1514/1516 26018G28KT</strong>: „Becoming" kündigt einen allmählichen Übergang an. Zwischen 14:00 und 16:00 UTC am 15. dreht der Wind auf 260° und frischt auf 18 kt mit Böen bis 28 kt auf. Wann genau innerhalb dieses Fensters die Änderung eintritt, bleibt offen – plane konservativ mit dem ungünstigeren Wert.</p>
 
       <h2>TEMPO – vorübergehende Schwankung</h2>
-      <p><strong>TEMPO 1516/1520 4000 SHRA BKN018CB</strong>: „Temporary" beschreibt eine vorübergehende Verschlechterung, die jeweils unter einer Stunde anhält und insgesamt weniger als die Hälfte des angegebenen Zeitraums betrifft. Zwischen 16:00 und 20:00 UTC am 15. können also zeitweise Schauer mit Sicht bis 4.000 m und einer aufgetürmten Gewitterwolke (Cumulonimbus) in 1.800 ft auftreten – nicht durchgehend, aber jederzeit möglich.</p>
+      <p><strong>TEMPO 1516/1520 4000 SHRA BKN018CB</strong>: „Temporary" markiert kurze Ausreißer nach unten, die immer wieder kommen und gehen können, ohne die ganze Zeit anzuhalten. Zwischen 16:00 und 20:00 UTC am 15. können also zeitweise Schauer mit Sicht bis 4.000 m und einer aufgetürmten Gewitterwolke (Cumulonimbus) in 1.800 ft auftreten – nicht durchgehend, aber jederzeit möglich. Genaue Regeln (Höchstdauer je Ausreißer, maximaler Gesamtanteil) stehen im <a href="metar-taf-glossar.html#term-tempo" style="color:var(--cyan);">Glossar</a>.</p>
 
       <h2>FM – kompletter Neubeginn</h2>
       <p><strong>FM152000 28010KT CAVOK</strong>: „From" markiert einen scharfen Schnitt. Ab exakt 20:00 UTC am 15. gelten komplett neue Bedingungen – hier Wind 280° mit 10 kt und CAVOK. Anders als bei BECMG gibt es keinen Übergang: Die vorherige Vorhersagezeile endet, eine neue beginnt.</p>
@@ -98,10 +157,28 @@
       <h2>PROB30 – Wahrscheinlichkeit</h2>
       <p><strong>PROB30 TEMPO 1606/1610 3000 BR</strong>: „Probability 30" heißt: Mit 30 % Wahrscheinlichkeit tritt zwischen 06:00 und 10:00 UTC am 16. vorübergehend Dunst mit Sicht bis 3.000 m auf. PROB30 und PROB40 kombinieren sich oft mit TEMPO und zeigen an, wie sicher sich die Vorhersage bei einer bestimmten Bedingung ist – wichtig für die eigene Risikoeinschätzung, gerade bei Grenzwetterlagen.</p>
 
+      <h2>Häufige Fragen zum TAF</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Was ist der Unterschied zwischen BECMG und TEMPO?</summary>
+          <p><code>BECMG</code> beschreibt einen bleibenden Übergang zu neuen Bedingungen – danach gilt der neue Zustand weiter. <code>TEMPO</code> beschreibt kurze, vorübergehende Ausreißer, die immer wieder kommen und gehen, während der Grundzustand ansonsten bestehen bleibt.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Was bedeutet PROB30 in einem TAF?</summary>
+          <p>PROB30 gibt eine 30-prozentige Eintrittswahrscheinlichkeit für die folgende Bedingung an – meist kombiniert mit TEMPO. PROB40 entsprechend 40 %. Beide erscheinen ausschließlich im TAF, nicht im METAR.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Wie lange gilt ein TAF?</summary>
+          <p>Je nach Flugplatzgröße 9, 24 oder 30 Stunden, erkennbar am Gültigkeitszeitraum im Kopf der Meldung (Format TagStunde/TagStunde). Außerhalb dieses Fensters ist eine neuere oder ältere Vorhersage maßgeblich.</p>
+        </details>
+      </div>
+
       <h2>Und jetzt?</h2>
       <p>TAF-Vorhersagen liest man am besten Zeile für Zeile als Zeitstrahl: Grundzustand, dann jede Änderungsgruppe der Reihe nach. Für die Bedeutung einzelner Abkürzungen wie Wettercodes oder Wolkenstufen hilft das <a href="metar-taf-glossar.html" style="color:var(--cyan);">vollständige Glossar</a>. In der täglichen Vorbereitung übernimmt der <a href="guide.html#metartaf" style="color:var(--cyan);">METAR-/TAF-Dekoder in VFR Wetter</a> diese Zerlegung automatisch und bewertet TAF-Risiken für die nächsten 6 Stunden direkt in der zentralen Flugwetter-Empfehlung.</p>
 
       <p class="notice">Dieser Artikel ersetzt keine luftfahrtrechtliche Ausbildung und keine amtliche Flugwetterberatung. Vor jedem Flug gelten die tatsächlichen amtlichen Meldungen und Vorschriften.</p>
+
+      <div class="screen" style="max-width:360px;margin-top:24px;"><img src="assets/metar-decoder.webp" alt="METAR-/TAF-Dekoder in der App VFR Wetter" width="919" height="1991" srcset="assets/metar-decoder-320.webp 320w, assets/metar-decoder-480.webp 480w, assets/metar-decoder.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </article>
   </div>
 </main>

@@ -52,6 +52,27 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VFR Wetter",
+    "url": "https://vfrwetter.com/",
+    "sameAs": [
+      "https://play.google.com/store/apps/details?id=de.vfrwetter"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VFR Wetter",
+    "url": "https://vfrwetter.com/",
+    "inLanguage": ["de", "en"],
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
@@ -169,8 +190,8 @@
       </div>
     </div>
     <div class="phone-stack" aria-label="App screenshots">
-      <div class="phone back"><img src="../assets/radar-clouds.webp" alt="Radar and cloud map in VFR Wetter" width="919" height="1991"></div>
-      <div class="phone main"><img src="../assets/current-assessment.webp" alt="Flight weather assessment in VFR Wetter" width="919" height="1991" fetchpriority="high"></div>
+      <div class="phone back"><img src="../assets/radar-clouds.webp" alt="Radar and cloud map in VFR Wetter" width="919" height="1991" srcset="../assets/radar-clouds-320.webp 320w, ../assets/radar-clouds-480.webp 480w, ../assets/radar-clouds.webp 919w" sizes="(max-width: 700px) 90vw, 460px" fetchpriority="low"></div>
+      <div class="phone main"><img src="../assets/current-assessment.webp" alt="Flight weather assessment in VFR Wetter" width="919" height="1991" srcset="../assets/current-assessment-320.webp 320w, ../assets/current-assessment-480.webp 480w, ../assets/current-assessment.webp 919w" sizes="(max-width: 700px) 90vw, 460px" fetchpriority="high"></div>
     </div>
   </div>
 </header>
@@ -296,16 +317,16 @@
       <p>A quick look at the app: assessment, route, radar, METAR decoder, performance and crosswind.</p>
     </div>
     <div class="screens">
-      <div class="screen"><img src="../assets/current-assessment.webp" alt="Current flight weather assessment with reasoning" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/route.webp" alt="Route assessment as a traffic-light timeline" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/radar-rain.webp" alt="DWD rain radar with flight route on the map" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/radar-clouds.webp" alt="Cloud layer on the map" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/radar-vfr.webp" alt="VFR traffic-light heatmap on the map" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/metar-decoder.webp" alt="Full METAR/TAF decoder" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/performance.webp" alt="Performance-awareness view with density altitude" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/crosswind.webp" alt="Crosswind calculator with runway recommendation" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/go-fly-map.webp" alt="Go Fly live moving map with GPS position and route corridor" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="../assets/go-fly-wind.webp" alt="Animated wind field over the weather map" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/current-assessment.webp" alt="Current flight weather assessment with reasoning" width="919" height="1991" srcset="../assets/current-assessment-320.webp 320w, ../assets/current-assessment-480.webp 480w, ../assets/current-assessment.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/route.webp" alt="Route assessment as a traffic-light timeline" width="919" height="1991" srcset="../assets/route-320.webp 320w, ../assets/route-480.webp 480w, ../assets/route.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/radar-rain.webp" alt="DWD rain radar with flight route on the map" width="919" height="1991" srcset="../assets/radar-rain-320.webp 320w, ../assets/radar-rain-480.webp 480w, ../assets/radar-rain.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/radar-clouds.webp" alt="Cloud layer on the map" width="919" height="1991" srcset="../assets/radar-clouds-320.webp 320w, ../assets/radar-clouds-480.webp 480w, ../assets/radar-clouds.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/radar-vfr.webp" alt="VFR traffic-light heatmap on the map" width="919" height="1991" srcset="../assets/radar-vfr-320.webp 320w, ../assets/radar-vfr-480.webp 480w, ../assets/radar-vfr.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/metar-decoder.webp" alt="Full METAR/TAF decoder" width="919" height="1991" srcset="../assets/metar-decoder-320.webp 320w, ../assets/metar-decoder-480.webp 480w, ../assets/metar-decoder.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/performance.webp" alt="Performance-awareness view with density altitude" width="919" height="1991" srcset="../assets/performance-320.webp 320w, ../assets/performance-480.webp 480w, ../assets/performance.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/crosswind.webp" alt="Crosswind calculator with runway recommendation" width="919" height="1991" srcset="../assets/crosswind-320.webp 320w, ../assets/crosswind-480.webp 480w, ../assets/crosswind.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/go-fly-map.webp" alt="Go Fly live moving map with GPS position and route corridor" width="919" height="1991" srcset="../assets/go-fly-map-320.webp 320w, ../assets/go-fly-map-480.webp 480w, ../assets/go-fly-map.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+      <div class="screen"><img src="../assets/go-fly-wind.webp" alt="Animated wind field over the weather map" width="919" height="1991" srcset="../assets/go-fly-wind-320.webp 320w, ../assets/go-fly-wind-480.webp 480w, ../assets/go-fly-wind.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
     </div>
   </div>
 </section>
