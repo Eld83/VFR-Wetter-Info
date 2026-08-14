@@ -33,6 +33,10 @@ Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Öste
 - [Learn (English)](https://vfrwetter.com/en/wissen.html): plain-language articles on flight weather basics
 - [METAR lesen lernen (Deutsch)](https://vfrwetter.com/metar-lesen.html): Aufbau und Gruppen des METAR mit Beispiel
 - [Reading METAR (English)](https://vfrwetter.com/en/metar-lesen.html): METAR structure and groups with a worked example
+- [TAF lesen lernen (Deutsch)](https://vfrwetter.com/taf-lesen.html): Gültigkeitszeitraum, BECMG, TEMPO, FM, PROB30/40 mit Beispiel
+- [Reading TAF (English)](https://vfrwetter.com/en/taf-lesen.html): validity period, BECMG, TEMPO, FM, PROB30/40 with a worked example
+- [METAR-/TAF-Glossar (Deutsch)](https://vfrwetter.com/metar-taf-glossar.html): jede METAR-/TAF-Abkürzung einzeln erklärt
+- [METAR & TAF Glossary (English)](https://vfrwetter.com/en/metar-taf-glossar.html): every METAR/TAF abbreviation explained individually
 
 ## Optional
 

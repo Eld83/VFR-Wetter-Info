@@ -91,4 +91,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/metar-lesen.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/metar-lesen.html"/>
   </url>
+  <url>
+    <loc>https://vfrwetter.com/taf-lesen.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/taf-lesen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/taf-lesen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/taf-lesen.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/taf-lesen.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/taf-lesen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/taf-lesen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/taf-lesen.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/metar-taf-glossar.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/metar-taf-glossar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/metar-taf-glossar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/metar-taf-glossar.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/metar-taf-glossar.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/metar-taf-glossar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/metar-taf-glossar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/metar-taf-glossar.html"/>
+  </url>
 </urlset>

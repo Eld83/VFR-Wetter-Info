@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAF lesen lernen: Die Flugwettervorhersage einfach erklärt – VFR Wetter</title>
+  <meta name="description" content="TAF verständlich erklärt: Gültigkeitszeitraum, BECMG, TEMPO, FM und PROB30/40 – mit einem vollständig zerlegten Beispiel für VFR-Piloten.">
+  <meta name="theme-color" content="#071426">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://vfrwetter.com/taf-lesen.html">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/taf-lesen.html">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/taf-lesen.html">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/taf-lesen.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="VFR Wetter">
+  <meta property="og:url" content="https://vfrwetter.com/taf-lesen.html">
+  <meta property="og:title" content="TAF lesen lernen: Die Flugwettervorhersage einfach erklärt">
+  <meta property="og:description" content="Gültigkeitszeitraum, BECMG, TEMPO, FM und PROB30/40 – mit einem vollständig zerlegten Beispiel für VFR-Piloten.">
+  <meta property="og:image" content="https://vfrwetter.com/assets/metar-decoder.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "TAF lesen lernen: Die Flugwettervorhersage einfach erklärt",
+    "description": "Gültigkeitszeitraum, BECMG, TEMPO, FM und PROB30/40 – mit einem vollständig zerlegten Beispiel für VFR-Piloten.",
+    "url": "https://vfrwetter.com/taf-lesen.html",
+    "image": "https://vfrwetter.com/assets/metar-decoder.webp",
+    "datePublished": "2026-08-15",
+    "dateModified": "2026-08-15",
+    "inLanguage": "de",
+    "author": { "@type": "Person", "name": "Niels Deuter" },
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Funktionen</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="guide.html">Anleitung</a>
+      <a href="wissen.html">Wissen</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <div class="lang-switch">
+        <button class="lang-switch-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <img class="lang-flag" src="assets/flags/de.svg" alt=""><span>DE</span><span class="lang-caret">▾</span>
+        </button>
+        <div class="lang-switch-menu">
+          <a href="taf-lesen.html" class="lang-switch-option active"><img class="lang-flag" src="assets/flags/de.svg" alt=""> Deutsch</a>
+          <a href="en/taf-lesen.html" class="lang-switch-option"><img class="lang-flag" src="assets/flags/gb.svg" alt=""> English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="legal">
+  <div class="container">
+    <article>
+      <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Wissen</a></p>
+      <h1>TAF lesen lernen</h1>
+      <p>Das TAF (<em>Terminal Aerodrome Forecast</em>) ist die Wettervorhersage für einen Flugplatz, meist für 24 oder 30 Stunden im Voraus, alle 6 Stunden aktualisiert. Anders als das METAR beschreibt es nicht nur den aktuellen Zustand, sondern auch, wie und wann sich das Wetter ändert. Wer die Grundgruppen aus dem METAR schon kennt, hat die halbe Arbeit bereits erledigt – neu hinzu kommen vor allem die Änderungsgruppen. Für die einzelnen Abkürzungen siehe das <a href="metar-taf-glossar.html" style="color:var(--cyan);">vollständige METAR-/TAF-Glossar</a>.</p>
+
+      <h2>Ein Beispiel-TAF</h2>
+      <p>So könnte eine Vorhersage für Frankfurt aussehen:</p>
+      <p style="font-family:monospace;background:rgba(0,0,0,.3);padding:14px 18px;border-radius:12px;overflow-x:auto;white-space:pre-wrap;">TAF EDDF 151105Z 1512/1618 24012KT 9999 SCT035
+  BECMG 1514/1516 26018G28KT
+  TEMPO 1516/1520 4000 SHRA BKN018CB
+  FM152000 28010KT CAVOK
+  PROB30 TEMPO 1606/1610 3000 BR</p>
+      <p>Fünf Zeilen, aber jede beschreibt einen anderen Zeitabschnitt der Vorhersage. Der Reihe nach:</p>
+
+      <h2>Kopfzeile und Gültigkeit</h2>
+      <p><strong>TAF EDDF</strong>: Meldungsart und ICAO-Code, wie beim METAR. <strong>151105Z</strong>: herausgegeben am 15. um 11:05 UTC. <strong>1512/1618</strong> ist der Gültigkeitszeitraum im Format <em>TagStunde/TagStunde</em>: von Tag 15, 12:00 UTC bis Tag 16, 18:00 UTC. Außerhalb dieses Fensters gilt das TAF nicht – für den Zeitraum davor oder danach brauchst du die vorherige bzw. nächste Vorhersage.</p>
+
+      <h2>Grundzustand</h2>
+      <p><strong>24012KT 9999 SCT035</strong>: Wind, Sicht und Wolken werden genau wie im METAR angegeben – hier 240° mit 12 kt, Sicht 10 km oder mehr, vereinzelte Wolken in 3.500 ft. Dieser Grundzustand gilt zu Beginn der Gültigkeit und bleibt bestehen, bis eine Änderungsgruppe etwas anderes vorhersagt.</p>
+
+      <h2>BECMG – allmähliche Änderung</h2>
+      <p><strong>BECMG 1514/1516 26018G28KT</strong>: „Becoming" kündigt einen allmählichen Übergang an. Zwischen 14:00 und 16:00 UTC am 15. dreht der Wind auf 260° und frischt auf 18 kt mit Böen bis 28 kt auf. Wann genau innerhalb dieses Fensters die Änderung eintritt, bleibt offen – plane konservativ mit dem ungünstigeren Wert.</p>
+
+      <h2>TEMPO – vorübergehende Schwankung</h2>
+      <p><strong>TEMPO 1516/1520 4000 SHRA BKN018CB</strong>: „Temporary" beschreibt eine vorübergehende Verschlechterung, die jeweils unter einer Stunde anhält und insgesamt weniger als die Hälfte des angegebenen Zeitraums betrifft. Zwischen 16:00 und 20:00 UTC am 15. können also zeitweise Schauer mit Sicht bis 4.000 m und einer aufgetürmten Gewitterwolke (Cumulonimbus) in 1.800 ft auftreten – nicht durchgehend, aber jederzeit möglich.</p>
+
+      <h2>FM – kompletter Neubeginn</h2>
+      <p><strong>FM152000 28010KT CAVOK</strong>: „From" markiert einen scharfen Schnitt. Ab exakt 20:00 UTC am 15. gelten komplett neue Bedingungen – hier Wind 280° mit 10 kt und CAVOK. Anders als bei BECMG gibt es keinen Übergang: Die vorherige Vorhersagezeile endet, eine neue beginnt.</p>
+
+      <h2>PROB30 – Wahrscheinlichkeit</h2>
+      <p><strong>PROB30 TEMPO 1606/1610 3000 BR</strong>: „Probability 30" heißt: Mit 30 % Wahrscheinlichkeit tritt zwischen 06:00 und 10:00 UTC am 16. vorübergehend Dunst mit Sicht bis 3.000 m auf. PROB30 und PROB40 kombinieren sich oft mit TEMPO und zeigen an, wie sicher sich die Vorhersage bei einer bestimmten Bedingung ist – wichtig für die eigene Risikoeinschätzung, gerade bei Grenzwetterlagen.</p>
+
+      <h2>Und jetzt?</h2>
+      <p>TAF-Vorhersagen liest man am besten Zeile für Zeile als Zeitstrahl: Grundzustand, dann jede Änderungsgruppe der Reihe nach. Für die Bedeutung einzelner Abkürzungen wie Wettercodes oder Wolkenstufen hilft das <a href="metar-taf-glossar.html" style="color:var(--cyan);">vollständige Glossar</a>. In der täglichen Vorbereitung übernimmt der <a href="guide.html#metartaf" style="color:var(--cyan);">METAR-/TAF-Dekoder in VFR Wetter</a> diese Zerlegung automatisch und bewertet TAF-Risiken für die nächsten 6 Stunden direkt in der zentralen Flugwetter-Empfehlung.</p>
+
+      <p class="notice">Dieser Artikel ersetzt keine luftfahrtrechtliche Ausbildung und keine amtliche Flugwetterberatung. Vor jedem Flug gelten die tatsächlichen amtlichen Meldungen und Vorschriften.</p>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 VFR Wetter · Ein privates VFR-Briefing-Hilfsmittel.</div>
+    <div>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>
