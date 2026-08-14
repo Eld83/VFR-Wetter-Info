@@ -112,7 +112,8 @@ a { color: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 6px 12px;
+  min-height: 44px;
+  padding: 6px 14px;
   border: 1px solid rgba(5,199,232,.35);
   border-radius: 999px;
   background: transparent;

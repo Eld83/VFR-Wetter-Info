@@ -6,6 +6,8 @@
   <title>VFR Wetter – Flugwetter-App für VFR-Piloten</title>
   <meta name="description" content="VFR Wetter kombiniert METAR, TAF, DWD-Radar, MOSMIX, Open-Meteo und Kartenlayer zu einer klaren, begründeten VFR-Einschätzung – inklusive Performance-Hinweisen, Routen-Ampel und Homescreen-Widget.">
   <meta name="theme-color" content="#071426">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://vfrwetter.com/">
   <link rel="alternate" hreflang="de" href="https://vfrwetter.com/">
   <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/">
@@ -17,13 +19,13 @@
   <meta property="og:url" content="https://vfrwetter.com/">
   <meta property="og:title" content="VFR Wetter – Flugwetter-App für VFR-Piloten">
   <meta property="og:description" content="Wetter, METAR/TAF, DWD-Radar, MOSMIX und Performance-Hinweise in einer klaren VFR-Einschätzung – für Android.">
-  <meta property="og:image" content="https://vfrwetter.com/assets/current-assessment.png">
+  <meta property="og:image" content="https://vfrwetter.com/assets/current-assessment.webp">
   <meta property="og:image:width" content="919">
   <meta property="og:image:height" content="1991">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="VFR Wetter – Flugwetter-App für VFR-Piloten">
   <meta name="twitter:description" content="Wetter, METAR/TAF, DWD-Radar, MOSMIX und Performance-Hinweise in einer klaren VFR-Einschätzung – für Android.">
-  <meta name="twitter:image" content="https://vfrwetter.com/assets/current-assessment.png">
+  <meta name="twitter:image" content="https://vfrwetter.com/assets/current-assessment.webp">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
@@ -167,8 +169,8 @@
       </div>
     </div>
     <div class="phone-stack" aria-label="App Screenshots">
-      <div class="phone back"><img src="assets/radar-clouds.webp" alt="Radar- und Wolkenkarte in VFR Wetter" width="919" height="1991" fetchpriority="high"></div>
-      <div class="phone main"><img src="assets/current-assessment.png" alt="Flugwetterbewertung in VFR Wetter" width="919" height="1991" fetchpriority="high"></div>
+      <div class="phone back"><img src="assets/radar-clouds.webp" alt="Radar- und Wolkenkarte in VFR Wetter" width="919" height="1991"></div>
+      <div class="phone main"><img src="assets/current-assessment.webp" alt="Flugwetterbewertung in VFR Wetter" width="919" height="1991" fetchpriority="high"></div>
     </div>
   </div>
 </header>
@@ -294,14 +296,14 @@
       <p>Ein schneller Eindruck der App: Bewertung, Route, Radar, METAR-Dekoder, Performance und Crosswind.</p>
     </div>
     <div class="screens">
-      <div class="screen"><img src="assets/current-assessment.png" alt="Aktuelle Flugwetterbewertung mit Begründung" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/route.png" alt="Routenbewertung als Ampel-Timeline" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/current-assessment.webp" alt="Aktuelle Flugwetterbewertung mit Begründung" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/route.webp" alt="Routenbewertung als Ampel-Timeline" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/radar-rain.webp" alt="DWD-Regenradar mit Flugroute auf der Karte" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/radar-clouds.webp" alt="Wolkenlayer auf der Karte" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/radar-vfr.webp" alt="VFR-Ampel-Heatmap auf der Karte" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/metar-decoder.png" alt="Vollständiger METAR-/TAF-Dekoder" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/performance.png" alt="Performance-Awareness-Ansicht mit Density Altitude" width="919" height="1991" loading="lazy"></div>
-      <div class="screen"><img src="assets/crosswind.png" alt="Crosswind-Rechner mit Pistenempfehlung" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/metar-decoder.webp" alt="Vollständiger METAR-/TAF-Dekoder" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/performance.webp" alt="Performance-Awareness-Ansicht mit Density Altitude" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="assets/crosswind.webp" alt="Crosswind-Rechner mit Pistenempfehlung" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/go-fly-map.webp" alt="Go Fly Live-Moving-Map mit GPS-Position und Routenkorridor" width="919" height="1991" loading="lazy"></div>
       <div class="screen"><img src="assets/go-fly-wind.webp" alt="Animiertes Windfeld über der Wetterkarte" width="919" height="1991" loading="lazy"></div>
     </div>

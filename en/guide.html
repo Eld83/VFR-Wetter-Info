@@ -6,6 +6,8 @@
   <title>Guide – VFR Wetter</title>
   <meta name="description" content="A complete guide to VFR Wetter: the recommendation card, airport search, route planning, Go Fly, radar layers, briefing PDF, widget, language and subscription.">
   <meta name="theme-color" content="#071426">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://vfrwetter.com/en/guide.html">
   <link rel="alternate" hreflang="de" href="https://vfrwetter.com/guide.html">
   <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/guide.html">
@@ -17,7 +19,7 @@
   <meta property="og:url" content="https://vfrwetter.com/en/guide.html">
   <meta property="og:title" content="Guide – VFR Wetter">
   <meta property="og:description" content="A complete guide to VFR Wetter: the recommendation card, route planning, Go Fly, radar layers, briefing PDF, widget and subscription.">
-  <meta property="og:image" content="https://vfrwetter.com/assets/current-assessment.png">
+  <meta property="og:image" content="https://vfrwetter.com/assets/current-assessment.webp">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="../style.css">
   <script type="application/ld+json">
@@ -27,6 +29,9 @@
     "headline": "Guide – VFR Wetter",
     "description": "A complete guide to VFR Wetter: the recommendation card, route planning, Go Fly, radar layers, briefing PDF, widget and subscription.",
     "url": "https://vfrwetter.com/en/guide.html",
+    "image": "https://vfrwetter.com/assets/current-assessment.webp",
+    "datePublished": "2026-07-30",
+    "dateModified": "2026-08-15",
     "inLanguage": "en",
     "author": { "@type": "Person", "name": "Niels Deuter" },
     "publisher": { "@type": "Organization", "name": "VFR Wetter" }
@@ -157,7 +162,7 @@
         <p>Exactly how the individual factors – visibility, clouds, wind, gusts, precipitation, thunderstorm risk and more – are weighted and combined in detail is something we deliberately don't publish. But the expandable "Why this assessment?" row always shows the reasons that mattered in this specific case, plus a data-quality score (stars) and a short-term trend for the next three hours.</p>
         <p>Below that you'll find the "Since HH:MM" card (what's changed since the last refresh), "If you launch now" (a traffic-light outlook for the next three hours) and the live sun position with day/golden-hour/twilight phase.</p>
       </div>
-      <div class="screen"><img src="../assets/current-assessment.png" alt="Central flight weather assessment in the Current tab" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/current-assessment.webp" alt="Central flight weather assessment in the Current tab" width="919" height="1991" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -202,10 +207,10 @@
       <div>
         <p>The full METAR/TAF decoder translates every group – wind incl. gusts, visibility, RVR, weather, clouds, QNH, trend – into plain, understandable language, including nearby stations if your airport has no METAR of its own.</p>
       </div>
-      <div class="screen"><img src="../assets/metar-decoder.png" alt="Full METAR/TAF decoder" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/metar-decoder.webp" alt="Full METAR/TAF decoder" width="919" height="1991" loading="lazy"></div>
     </div>
     <div class="hero-grid" style="margin-top:48px;">
-      <div class="screen" style="order:2;"><img src="../assets/route.png" alt="Route planner as a hazard corridor" width="919" height="1991" loading="lazy"></div>
+      <div class="screen" style="order:2;"><img src="../assets/route.webp" alt="Route planner as a hazard corridor" width="919" height="1991" loading="lazy"></div>
       <div style="order:1;">
         <h3 style="margin-top:0;">Route planner as a hazard corridor</h3>
         <p>Choose a departure, destination and optional waypoints, plus a departure time (up to 72 hours ahead) and cruise speed. The app draws the route as a traffic-light timeline and marks every leg green, yellow or red – based on upper winds, official warning polygons matched to the calculated passage time, TAF change groups and precipitation radar at the route point.</p>
@@ -225,10 +230,10 @@
       <div>
         <p>Density altitude, pressure altitude, ISA deviation and humidity for a realistic sense of takeoff and climb performance – a tool, not a replacement for POH calculations.</p>
       </div>
-      <div class="screen"><img src="../assets/performance.png" alt="Performance tab with density altitude" width="919" height="1991" loading="lazy"></div>
+      <div class="screen"><img src="../assets/performance.webp" alt="Performance tab with density altitude" width="919" height="1991" loading="lazy"></div>
     </div>
     <div class="hero-grid" style="margin-top:48px;">
-      <div class="screen" style="order:2;"><img src="../assets/crosswind.png" alt="Crosswind calculator with runway recommendation" width="919" height="1991" loading="lazy"></div>
+      <div class="screen" style="order:2;"><img src="../assets/crosswind.webp" alt="Crosswind calculator with runway recommendation" width="919" height="1991" loading="lazy"></div>
       <div style="order:1;">
         <h3 style="margin-top:0;">Crosswind calculator</h3>
         <p>Load runway data or enter wind direction/speed manually – the app shows the crosswind and tailwind component per runway heading and recommends the most favorable one.</p>
