@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reading METAR: The flight weather report explained – VFR Wetter</title>
+  <meta name="description" content="METAR explained in plain language: structure, groups and meaning of the most important flight weather report – with a fully decoded example for VFR pilots.">
+  <meta name="theme-color" content="#071426">
+  <link rel="canonical" href="https://vfrwetter.com/en/metar-lesen.html">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/metar-lesen.html">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/metar-lesen.html">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/metar-lesen.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:site_name" content="VFR Wetter">
+  <meta property="og:url" content="https://vfrwetter.com/en/metar-lesen.html">
+  <meta property="og:title" content="Reading METAR: The flight weather report explained">
+  <meta property="og:description" content="Structure, groups and meaning of the METAR – with a fully decoded example for VFR pilots.">
+  <meta property="og:image" content="https://vfrwetter.com/assets/metar-decoder.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Reading METAR: The flight weather report explained",
+    "description": "Structure, groups and meaning of the METAR – with a fully decoded example for VFR pilots.",
+    "url": "https://vfrwetter.com/en/metar-lesen.html",
+    "inLanguage": "en",
+    "author": { "@type": "Person", "name": "Niels Deuter" },
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="guide.html">Guide</a>
+      <a href="wissen.html">Learn</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <div class="lang-switch">
+        <button class="lang-switch-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <img class="lang-flag" src="../assets/flags/gb.svg" alt=""><span>EN</span><span class="lang-caret">▾</span>
+        </button>
+        <div class="lang-switch-menu">
+          <a href="../metar-lesen.html" class="lang-switch-option"><img class="lang-flag" src="../assets/flags/de.svg" alt=""> Deutsch</a>
+          <a href="metar-lesen.html" class="lang-switch-option active"><img class="lang-flag" src="../assets/flags/gb.svg" alt=""> English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="legal">
+  <div class="container">
+    <article>
+      <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Learn</a></p>
+      <h1>Reading METAR</h1>
+      <p>The METAR (<em>Meteorological Aerodrome Report</em>) is an airport's current weather report – short, standardized, and updated every 30 to 60 minutes. If you fly VFR, being able to read a raw METAR matters, even though an app like VFR Wetter translates it into plain language automatically. This article walks through the structure group by group using a fully worked example.</p>
+
+      <h2>A sample METAR</h2>
+      <p>A report for Frankfurt might look like this:</p>
+      <p style="font-family:monospace;background:rgba(0,0,0,.3);padding:14px 18px;border-radius:12px;overflow-x:auto;">EDDF 151050Z 24012G22KT 210V270 9999 FEW035 SCT250 22/14 Q1015 NOSIG</p>
+      <p>It looks cryptic at first – but broken into its groups, it paints a clear picture of the weather situation.</p>
+
+      <h2>Station and time</h2>
+      <p><strong>EDDF</strong> is the airport's ICAO code (here, Frankfurt). <strong>151050Z</strong> means: report from the 15th of the month, 10:50 UTC (the "Z" stands for Zulu time, i.e. UTC). The report time is always UTC, never local time – mixing the two up is a common beginner mistake.</p>
+
+      <h2>Wind</h2>
+      <p><strong>24012G22KT</strong>: wind from 240°, 12 knots, with gusts (G) up to 22 knots. <strong>210V270</strong> shows the direction varying between 210° and 270° (only reported when the direction is sufficiently variable). Calm wind is shown as <code>00000KT</code>; a strongly shifting direction with no clear trend is reported as <code>VRB</code> instead of a fixed heading.</p>
+
+      <h2>Visibility</h2>
+      <p><strong>9999</strong> represents a horizontal visibility of 10 km or more (the maximum reporting step). Below that, visibility is given in meters, e.g. <code>3000</code> for 3,000 m. If runway visual range is also available, it follows as its own group, such as <code>R25/0800</code>.</p>
+
+      <h2>Weather phenomena</h2>
+      <p>If present, a group of intensity, descriptor and phenomenon follows, e.g. <code>-RA</code> for light rain, <code>+TSRA</code> for a strong thunderstorm with rain, or <code>BR</code> for mist. Our example has no such group – there's simply no reportable weather phenomenon.</p>
+
+      <h2>Clouds</h2>
+      <p><strong>FEW035</strong>: a few clouds (1–2 oktas) at 3,500 ft. <strong>SCT250</strong>: scattered cloud (3–4 oktas) at 25,000 ft. The steps are <code>FEW</code> (1–2/8), <code>SCT</code> (3–4/8), <code>BKN</code> (5–7/8) and <code>OVC</code> (8/8, an overcast layer). <code>BKN</code> or <code>OVC</code> is what's called a ceiling. If there's no cloud group at all, you'll see <code>NSC</code> (no significant cloud) instead, or <code>CAVOK</code> if visibility and weather also clear their respective thresholds.</p>
+
+      <h2>Temperature and dew point</h2>
+      <p><strong>22/14</strong>: 22°C air temperature, 14°C dew point. Values below 0°C get a leading <code>M</code> (e.g. <code>M02</code> for −2°C). The closer temperature and dew point sit together, the higher the tendency toward fog or condensation.</p>
+
+      <h2>Pressure</h2>
+      <p><strong>Q1015</strong> is the QNH in hectopascals – the sea-level-reduced pressure you set on your altimeter so it correctly reads elevation above mean sea level. In the US and some other countries, an <code>A</code> is used instead, followed by the pressure in inches of mercury, e.g. <code>A2992</code>.</p>
+
+      <h2>Trend</h2>
+      <p><strong>NOSIG</strong> ("no significant change") means no significant change is expected over the next two hours. Alternatively, <code>BECMG</code> (gradual change) or <code>TEMPO</code> (temporary fluctuation) can follow, each with its own short weather group.</p>
+
+      <h2>Common abbreviations at a glance</h2>
+      <ul>
+        <li><strong>Cloud cover:</strong> FEW (1–2/8) · SCT (3–4/8) · BKN (5–7/8) · OVC (8/8) · NSC/SKC (none/clear) · VV (vertical visibility when the sky is obscured)</li>
+        <li><strong>Intensity:</strong> − light · (no sign) moderate · + heavy</li>
+        <li><strong>Common phenomena:</strong> RA rain · SN snow · BR mist · FG fog · TS thunderstorm · SH shower · GR hail</li>
+        <li><strong>Other:</strong> AUTO automated report · CAVOK visibility/cloud/weather all above thresholds · SPECI unscheduled report for a sudden change</li>
+      </ul>
+
+      <h2>What's next?</h2>
+      <p>Being able to read raw-text METARs stays a core skill for every VFR pilot – especially when the official source doesn't offer plain language. For daily preparation, the <a href="guide.html#metartaf" style="color:var(--cyan);">METAR/TAF decoder in VFR Wetter</a> automatically translates every group into plain language and feeds it directly into the central flight weather assessment.</p>
+
+      <p class="notice">This article does not replace aviation training or an official flight weather briefing. Before every flight, the actual official reports and regulations apply.</p>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 VFR Wetter · A private VFR briefing tool.</div>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

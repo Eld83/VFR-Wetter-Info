@@ -29,6 +29,10 @@ Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Öste
 - [Guide (English)](https://vfrwetter.com/en/guide.html): full guide to all tabs and features
 - [Support (Deutsch)](https://vfrwetter.com/support.html): Kontakt und Support
 - [Support (English)](https://vfrwetter.com/en/support.html): contact and support
+- [Wissen (Deutsch)](https://vfrwetter.com/wissen.html): verständliche Artikel zu Flugwetter-Grundlagen
+- [Learn (English)](https://vfrwetter.com/en/wissen.html): plain-language articles on flight weather basics
+- [METAR lesen lernen (Deutsch)](https://vfrwetter.com/metar-lesen.html): Aufbau und Gruppen des METAR mit Beispiel
+- [Reading METAR (English)](https://vfrwetter.com/en/metar-lesen.html): METAR structure and groups with a worked example
 
 ## Optional
 
