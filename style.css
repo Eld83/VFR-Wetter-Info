@@ -414,6 +414,19 @@ h2 {
   color: var(--muted);
 }
 
+.card-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--cyan);
+  font-weight: 650;
+  font-size: .88rem;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
 .reco-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -32,6 +32,62 @@
     "publisher": { "@type": "Organization", "name": "VFR Wetter" }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was bedeutet die Korridor-Bewertung „OK\", „Prüfen\" oder „No Go\" bei Go Fly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sie fasst zusammen, wie die zuvor geplante Route entlang deines aktuellen Flugwegs aktuell einzuschätzen ist. Sie ersetzt nie deine reale GPS-Position auf der Karte und ist kein Ersatz für eine amtliche Flugwetterberatung oder eigene Entscheidungen während des Fluges."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange bleiben Offline-Routenpakete gültig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bis zu 7 Tage. Das Paket zeigt sein Alter sichtbar an und weist deutlich darauf hin, wenn die Gültigkeit abgelaufen ist – für eine aktuelle Entscheidung solltest du dann eine neue Verbindung nutzen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was steht auf dem Briefing-PDF, das ich teile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bewertung, aktuelle Mess- und Modellwerte, Begründung, amtliche Warnungen, Stundenverlauf und Vorhersagetage – bei einer aktiven Route zusätzlich eine VFR-Korridorkarte mit Abschnittsrisiken. Jede Seite trägt einen Momentaufnahme- und Haftungshinweis sowie einen dezenten Verweis auf VFR Wetter; die letzte Seite einen QR-Code zum Play-Store-Eintrag."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie sehe ich, ob ein Regionalmodell oder nur Standardwetter genutzt wird?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Datenquellen-Status-Seite im Aktuell-Tab listet transparent, welche Quelle aktiv war, welche als Fallback diente und welche am Standort gar nicht verfügbar ist – ohne zusätzliche Netzabrufe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich die genaue Bewertungslogik im Detail nachvollziehen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die exakte Gewichtung der einzelnen Wetterfaktoren veröffentlichen wir bewusst nicht. Über „Warum diese Einschätzung?\" siehst du aber immer die im konkreten Fall ausschlaggebenden Gründe für die aktuelle Bewertung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wechselt mit der Sprache auch das rohe METAR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. UI, fachliche Bewertungen und Klartext-Übersetzungen wechseln mit der Sprache – rohe Flugwettermeldungen, ICAO-Codes und Eigennamen bleiben absichtlich unverändert."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <nav class="nav">
@@ -319,6 +375,41 @@
       <div class="card"><div class="icon">📦</div><h3>Wetter-Cache</h3><p>Zuletzt geladene Daten bleiben lokal sichtbar; ab 60 Minuten warnt die App deutlich vor veralteten Werten.</p></div>
       <div class="card"><div class="icon">🛫</div><h3>Offline-Routenpakete</h3><p>Die letzte Routenauswertung bleibt bis zu 7 Tage als Offline-Paket verfügbar, mit sichtbarem Alter und Ablaufhinweis.</p></div>
       <div class="card"><div class="icon">🔍</div><h3>Flugplatzsuche</h3><p>Die Suche über ~19.000 Plätze funktioniert vollständig offline, ganz ohne Verbindung.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide-faq" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Fragen zu einzelnen Funktionen</h2>
+      <p>Details aus dieser Anleitung, kurz zusammengefasst.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Was bedeutet die Korridor-Bewertung „OK", „Prüfen" oder „No Go" bei Go Fly?</summary>
+        <p>Sie fasst zusammen, wie die zuvor geplante Route entlang deines aktuellen Flugwegs aktuell einzuschätzen ist. Sie ersetzt nie deine reale GPS-Position auf der Karte und ist kein Ersatz für eine amtliche Flugwetterberatung oder eigene Entscheidungen während des Fluges.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie lange bleiben Offline-Routenpakete gültig?</summary>
+        <p>Bis zu 7 Tage. Das Paket zeigt sein Alter sichtbar an und weist deutlich darauf hin, wenn die Gültigkeit abgelaufen ist – für eine aktuelle Entscheidung solltest du dann eine neue Verbindung nutzen.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was steht auf dem Briefing-PDF, das ich teile?</summary>
+        <p>Bewertung, aktuelle Mess- und Modellwerte, Begründung, amtliche Warnungen, Stundenverlauf und Vorhersagetage – bei einer aktiven Route zusätzlich eine VFR-Korridorkarte mit Abschnittsrisiken. Jede Seite trägt einen Momentaufnahme- und Haftungshinweis sowie einen dezenten Verweis auf VFR Wetter; die letzte Seite einen QR-Code zum Play-Store-Eintrag.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie sehe ich, ob ein Regionalmodell oder nur Standardwetter genutzt wird?</summary>
+        <p>Die Datenquellen-Status-Seite im Aktuell-Tab listet transparent, welche Quelle aktiv war, welche als Fallback diente und welche am Standort gar nicht verfügbar ist – ohne zusätzliche Netzabrufe.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kann ich die genaue Bewertungslogik im Detail nachvollziehen?</summary>
+        <p>Die exakte Gewichtung der einzelnen Wetterfaktoren veröffentlichen wir bewusst nicht. Über „Warum diese Einschätzung?" siehst du aber immer die im konkreten Fall ausschlaggebenden Gründe für die aktuelle Bewertung.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wechselt mit der Sprache auch das rohe METAR?</summary>
+        <p>Nein. UI, fachliche Bewertungen und Klartext-Übersetzungen wechseln mit der Sprache – rohe Flugwettermeldungen, ICAO-Codes und Eigennamen bleiben absichtlich unverändert.</p>
+      </details>
     </div>
   </div>
 </section>

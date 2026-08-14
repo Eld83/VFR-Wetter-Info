@@ -32,6 +32,62 @@
     "publisher": { "@type": "Organization", "name": "VFR Wetter" }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does the \"OK\", \"Check\" or \"No Go\" corridor verdict mean in Go Fly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It summarizes how your previously planned route currently looks along your actual flight path. It never replaces your real GPS position on the map and is not a substitute for an official flight weather briefing or your own in-flight decisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long do offline route packages stay valid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Up to 7 days. The package shows its age visibly and clearly flags it once validity has expired – use a fresh connection for a current decision after that."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's on the briefing PDF I share?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assessment, current observed and model values, reasoning, official warnings, hourly trend and forecast days – with an active route, also a VFR corridor map with per-leg risk. Every page carries a snapshot and disclaimer notice plus a discreet mention of VFR Wetter; the last page adds a QR code to the Play Store listing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I see whether a regional model or only standard weather was used?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The data source status page in the Current tab transparently lists which source was active, which served as a fallback, and which isn't available at all at this location – with no extra network requests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I see the exact assessment logic in detail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We deliberately don't publish the exact weighting of individual weather factors. But \"Why this assessment?\" always shows the reasons that mattered for the current assessment in this specific case."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the raw METAR change with the language too?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The UI, professional assessments and plain-language translations switch with the language – raw flight weather reports, ICAO codes and proper names deliberately stay unchanged."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <nav class="nav">
@@ -320,6 +376,41 @@
       <div class="card"><div class="icon">📦</div><h3>Weather cache</h3><p>The most recently loaded data stays visible locally; past 60 minutes the app clearly warns about stale values.</p></div>
       <div class="card"><div class="icon">🛫</div><h3>Offline route packages</h3><p>Your last route evaluation stays available as an offline package for up to 7 days, with a visible age and expiry notice.</p></div>
       <div class="card"><div class="icon">🔍</div><h3>Airport search</h3><p>Search across ~19,000 airports works fully offline, with no connection at all.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide-faq" class="alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Questions about specific features</h2>
+      <p>Details from this guide, summarized.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What does the "OK", "Check" or "No Go" corridor verdict mean in Go Fly?</summary>
+        <p>It summarizes how your previously planned route currently looks along your actual flight path. It never replaces your real GPS position on the map and is not a substitute for an official flight weather briefing or your own in-flight decisions.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long do offline route packages stay valid?</summary>
+        <p>Up to 7 days. The package shows its age visibly and clearly flags it once validity has expired – use a fresh connection for a current decision after that.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What's on the briefing PDF I share?</summary>
+        <p>Assessment, current observed and model values, reasoning, official warnings, hourly trend and forecast days – with an active route, also a VFR corridor map with per-leg risk. Every page carries a snapshot and disclaimer notice plus a discreet mention of VFR Wetter; the last page adds a QR code to the Play Store listing.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I see whether a regional model or only standard weather was used?</summary>
+        <p>The data source status page in the Current tab transparently lists which source was active, which served as a fallback, and which isn't available at all at this location – with no extra network requests.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I see the exact assessment logic in detail?</summary>
+        <p>We deliberately don't publish the exact weighting of individual weather factors. But "Why this assessment?" always shows the reasons that mattered for the current assessment in this specific case.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does the raw METAR change with the language too?</summary>
+        <p>No. The UI, professional assessments and plain-language translations switch with the language – raw flight weather reports, ICAO codes and proper names deliberately stay unchanged.</p>
+      </details>
     </div>
   </div>
 </section>
