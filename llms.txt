@@ -41,6 +41,16 @@ Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Öste
 - [Calculating Density Altitude (English)](https://vfrwetter.com/en/density-altitude.html): pressure altitude, ISA deviation, rule-of-thumb formulas with example
 - [Crosswind berechnen (Deutsch)](https://vfrwetter.com/crosswind-berechnen.html): Formel, Faustregel-Tabelle und Beispiel zur Bahnwahl
 - [Calculating Crosswind (English)](https://vfrwetter.com/en/crosswind-berechnen.html): formula, rule-of-thumb table and example for runway selection
+- [VFR, MVFR, IFR, LIFR erklärt (Deutsch)](https://vfrwetter.com/vfr-mvfr-ifr-lifr.html): Ceiling-/Sicht-Schwellenwerte der Flugwetterkategorien
+- [VFR, MVFR, IFR, LIFR explained (English)](https://vfrwetter.com/en/vfr-mvfr-ifr-lifr.html): ceiling/visibility thresholds of flight categories
+- [VFR-Sichtflugminima (Deutsch)](https://vfrwetter.com/vfr-minima.html): amtliche VMC-Minima nach SERA und Luftraumklasse
+- [VFR Minima (English)](https://vfrwetter.com/en/vfr-minima.html): official VMC minima under SERA by airspace class
+- [NOTAM lesen und verstehen (Deutsch)](https://vfrwetter.com/notam-lesen.html): Q-Zeile, Item A-E, NOTAMN/R/C mit Beispiel
+- [Reading NOTAMs (English)](https://vfrwetter.com/en/notam-lesen.html): Q-line, items A-E, NOTAMN/R/C with example
+- [SIGMET, AIRMET & GAMET erklärt (Deutsch)](https://vfrwetter.com/sigmet-airmet-gamet.html): amtliche Wetterwarnungen im Vergleich
+- [SIGMET, AIRMET & GAMET explained (English)](https://vfrwetter.com/en/sigmet-airmet-gamet.html): official weather warnings compared
+- [VFR-Wetterbriefing: Ablauf & Checkliste (Deutsch)](https://vfrwetter.com/vfr-wetterbriefing.html): vollständige Vorbereitung von Vorplanung bis Start
+- [VFR Weather Briefing: Process & Checklist (English)](https://vfrwetter.com/en/vfr-wetterbriefing.html): complete preparation from planning to departure
 
 ## Optional
 

@@ -163,4 +163,94 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/crosswind-berechnen.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/crosswind-berechnen.html"/>
   </url>
+  <url>
+    <loc>https://vfrwetter.com/vfr-mvfr-ifr-lifr.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/vfr-mvfr-ifr-lifr.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/vfr-mvfr-ifr-lifr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/vfr-mvfr-ifr-lifr.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/vfr-mvfr-ifr-lifr.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/vfr-mvfr-ifr-lifr.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/vfr-mvfr-ifr-lifr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/vfr-mvfr-ifr-lifr.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/notam-lesen.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/notam-lesen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/notam-lesen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/notam-lesen.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/notam-lesen.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/notam-lesen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/notam-lesen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/notam-lesen.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/sigmet-airmet-gamet.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/sigmet-airmet-gamet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/sigmet-airmet-gamet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/sigmet-airmet-gamet.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/sigmet-airmet-gamet.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/sigmet-airmet-gamet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/sigmet-airmet-gamet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/sigmet-airmet-gamet.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/vfr-minima.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/vfr-minima.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/vfr-minima.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/vfr-minima.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/vfr-minima.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/vfr-minima.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/vfr-minima.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/vfr-minima.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/vfr-wetterbriefing.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/vfr-wetterbriefing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/vfr-wetterbriefing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/vfr-wetterbriefing.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/vfr-wetterbriefing.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/vfr-wetterbriefing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/vfr-wetterbriefing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/vfr-wetterbriefing.html"/>
+  </url>
 </urlset>

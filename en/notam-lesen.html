@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reading NOTAMs: Structure Explained Simply – VFR Wetter</title>
+  <meta name="description" content="NOTAMs explained in plain language: the Q-line, items A through G, and the meaning of NOTAMN, NOTAMR and NOTAMC – with a fully decoded example for VFR pilots.">
+  <meta name="theme-color" content="#071426">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://vfrwetter.com/en/notam-lesen.html">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/notam-lesen.html">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/notam-lesen.html">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/notam-lesen.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:site_name" content="VFR Wetter">
+  <meta property="og:url" content="https://vfrwetter.com/en/notam-lesen.html">
+  <meta property="og:title" content="Reading NOTAMs: Structure Explained Simply">
+  <meta property="og:description" content="The Q-line, items A through G, and NOTAMN/NOTAMR/NOTAMC – with a fully decoded example.">
+  <meta property="og:image" content="https://vfrwetter.com/assets/current-assessment.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Reading NOTAMs: Structure Explained Simply",
+    "description": "The Q-line, items A through G, and the meaning of NOTAMN, NOTAMR and NOTAMC – with a fully decoded example for VFR pilots.",
+    "url": "https://vfrwetter.com/en/notam-lesen.html",
+    "image": "https://vfrwetter.com/assets/current-assessment.webp",
+    "datePublished": "2026-08-15",
+    "dateModified": "2026-08-15",
+    "inLanguage": "en",
+    "author": { "@type": "Person", "name": "Niels Deuter" },
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's the difference between NOTAMN, NOTAMR and NOTAMC?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NOTAMN is a new NOTAM, NOTAMR replaces a previous one (citing its number), and NOTAMC cancels a previous NOTAM entirely."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do \"EST\" and \"PERM\" mean for validity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EST (estimated) marks an estimated, not-yet-final end date. PERM (permanent) means the change is permanent, usually until the next AIP update."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I find current NOTAMs for my flight?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Through your country's official NOTAM service (in Germany, DFS/AIS briefing) or approved briefing portals. NOTAMs for departure, destination, alternate and the airspace you'll cross should be checked before every flight."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vfrwetter.com/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://vfrwetter.com/en/wissen.html" },
+      { "@type": "ListItem", "position": 3, "name": "Reading NOTAMs", "item": "https://vfrwetter.com/en/notam-lesen.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="guide.html">Guide</a>
+      <a href="wissen.html">Learn</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <div class="lang-switch">
+        <button class="lang-switch-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <img class="lang-flag" src="../assets/flags/gb.svg" alt=""><span>EN</span><span class="lang-caret">▾</span>
+        </button>
+        <div class="lang-switch-menu">
+          <a href="../notam-lesen.html" class="lang-switch-option"><img class="lang-flag" src="../assets/flags/de.svg" alt=""> Deutsch</a>
+          <a href="notam-lesen.html" class="lang-switch-option active"><img class="lang-flag" src="../assets/flags/gb.svg" alt=""> English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="legal">
+  <div class="container">
+    <article>
+      <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Learn</a></p>
+      <h1>Reading NOTAMs</h1>
+      <p class="byline">By <a href="index.html#club" style="color:var(--cyan);">Niels Deuter</a>, developer of VFR Wetter · updated 15 Aug 2026</p>
+      <p>A NOTAM (<em>Notice to Air Missions</em>, formerly <em>Notice to Airmen</em>) is a short-notice bulletin about anything relevant to flight safety – closed runways, out-of-service navigation aids, activated restricted areas, apron construction work. Unlike a METAR or TAF, a NOTAM isn't a weather product, but it's just as much a part of complete flight preparation. This article walks through the structure using an example.</p>
+
+      <h2>A sample NOTAM</h2>
+      <p style="font-family:monospace;background:rgba(0,0,0,.3);padding:14px 18px;border-radius:12px;overflow-x:auto;white-space:pre-wrap;">A1234/26 NOTAMN
+Q) EDWW/QMRLC/IV/NBO/A/000/999/5230N00930E005
+A) EDDF
+B) 2608150600
+C) 2608151800
+E) RWY 09/27 CLSD DUE TO WIP</p>
+      <p>Five lines, each with its own job. Taking them in order:</p>
+
+      <h2>Header: number and type</h2>
+      <p><strong>A1234/26</strong> is the series and sequential number, here series A, number 1234 in year 2026. <strong>NOTAMN</strong> marks a new NOTAM. If it replaces a previous one, you'll see <code>NOTAMR</code> instead (citing the replaced number in the text); if it cancels one, <code>NOTAMC</code>.</p>
+
+      <h2>The Q-line</h2>
+      <p><strong>Q) EDWW/QMRLC/IV/NBO/A/000/999/5230N00930E005</strong> is machine-readable: the FIR (here EDWW, Bremen FIR), a four-letter Q-code for the affected subject (here, roughly "runway closed"), traffic type (IV = both IFR and VFR affected), purpose/scope codes, lower/upper altitude limit in hundreds of feet (000/999 = from the ground to effectively unlimited), and finally coordinates with a radius of effect in nautical miles. For practical flight prep, the plain-language item E is usually enough – the Q-line exists mainly for automated filtering.</p>
+
+      <h2>Items A, B, C: where and when</h2>
+      <p><strong>A) EDDF</strong> names the affected ICAO airport. <strong>B) 2608150600</strong> is the start in YearMonthDay-Hour-Minute UTC format: August 15, 2026, 06:00 UTC. <strong>C) 2608151800</strong> is the end accordingly: August 15, 2026, 18:00 UTC. Instead of a fixed end date, you might also see <code>EST</code> (estimated) or <code>PERM</code> (permanent).</p>
+
+      <h2>Item E: plain text</h2>
+      <p><strong>E) RWY 09/27 CLSD DUE TO WIP</strong> is the actual content, in plain text – here: runway 09/27 closed due to work in progress. NOTAM plain text frequently uses standardized abbreviations (<code>RWY</code>, <code>CLSD</code>, <code>U/S</code> for <em>unserviceable</em>, and many more), but stays readable at its core. For altitude limits or restricted areas, optional fields F and G add lower and upper bounds.</p>
+
+      <h2>Frequently asked NOTAM questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What's the difference between NOTAMN, NOTAMR and NOTAMC?</summary>
+          <p>NOTAMN is a new NOTAM, NOTAMR replaces a previous one (citing its number), and NOTAMC cancels a previous NOTAM entirely.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What do "EST" and "PERM" mean for validity?</summary>
+          <p>EST (estimated) marks an estimated, not-yet-final end date. PERM (permanent) means the change is permanent, usually until the next AIP update.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Where do I find current NOTAMs for my flight?</summary>
+          <p>Through your country's official NOTAM service (in Germany, DFS/AIS briefing) or approved briefing portals. NOTAMs for departure, destination, alternate and the airspace you'll cross should be checked before every flight.</p>
+        </details>
+      </div>
+
+      <h2>What's next?</h2>
+      <p>NOTAMs are the part of a complete briefing that no weather app delivers – VFR Wetter included. For how NOTAMs fit together with METAR, TAF and official warnings into a complete flight preparation, see <a href="vfr-wetterbriefing.html" style="color:var(--cyan);">VFR Weather Briefing: Process &amp; Checklist</a>.</p>
+
+      <p class="notice">This article does not replace aviation training or an official NOTAM/AIP check. Before every flight, current NOTAMs must be checked through an official source at your own responsibility.</p>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 VFR Wetter · A private VFR briefing tool.</div>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>
