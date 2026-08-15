@@ -215,6 +215,14 @@
       <div class="card"><div class="icon">📅</div><h3>Daily forecast</h3><p>A go/no-go assessment for the day, based on Open-Meteo data and – where available – the matching regional model.</p></div>
       <div class="card"><div class="icon">🕐</div><h3>Hourly trend</h3><p>A detailed hourly trend for the coming days, handy for picking the best departure window.</p></div>
     </div>
+    <div class="hero-grid" style="margin-top:48px;">
+      <div>
+        <h3 style="margin-top:0;">Cloud profile: a vertical cross-section of the sky</h3>
+        <p>The meteogram shows a real vertical cross-section of the atmosphere instead of nominal cloud bands: low, mid and high cloud sit on a compressed altitude axis that gives the lowest 5,000 ft about half the panel, with opacity following the okta coverage boundaries (3/8, 5/8, 7/8). Cloud base is computed from the temperature/dew-point spread instead of starting at the ground, so the gap you could actually fly through becomes visible. Convective cells (towering cumulus) are drawn as their own base-to-top blocks, alongside ceiling and the 0 °C and −10 °C isotherms marking the icing window. A significant-weather row shows WMO symbols like an official chart, and night hours are shaded.</p>
+        <p class="notice" style="margin-top:16px;">Data source: DWD ICON on eleven pressure levels. When the profile is unavailable, the display automatically falls back to nominal cloud bands.</p>
+      </div>
+      <div class="screen"><img src="../assets/cloud-profile.webp" alt="Cloud profile in the meteogram: cloud by altitude, ceiling and icing window" width="919" height="1991" srcset="../assets/cloud-profile-320.webp 320w, ../assets/cloud-profile-480.webp 480w, ../assets/cloud-profile.webp 919w" sizes="(max-width: 700px) 90vw, 460px" loading="lazy"></div>
+    </div>
   </div>
 </section>
 
