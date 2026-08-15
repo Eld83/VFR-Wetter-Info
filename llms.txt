@@ -51,6 +51,8 @@ Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Öste
 - [SIGMET, AIRMET & GAMET explained (English)](https://vfrwetter.com/en/sigmet-airmet-gamet.html): official weather warnings compared
 - [VFR-Wetterbriefing: Ablauf & Checkliste (Deutsch)](https://vfrwetter.com/vfr-wetterbriefing.html): vollständige Vorbereitung von Vorplanung bis Start
 - [VFR Weather Briefing: Process & Checklist (English)](https://vfrwetter.com/en/vfr-wetterbriefing.html): complete preparation from planning to departure
+- [NOTAM-Glossar (Deutsch)](https://vfrwetter.com/notam-glossar.html): alle NOTAM-Abkürzungen und Q-Code-Zeilen erklärt
+- [NOTAM Glossary (English)](https://vfrwetter.com/en/notam-glossar.html): all NOTAM abbreviations and Q-code lines explained
 
 ## Optional
 

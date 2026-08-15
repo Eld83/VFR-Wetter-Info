@@ -253,4 +253,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/vfr-wetterbriefing.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/vfr-wetterbriefing.html"/>
   </url>
+  <url>
+    <loc>https://vfrwetter.com/notam-glossar.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/notam-glossar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/notam-glossar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/notam-glossar.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/notam-glossar.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/notam-glossar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/notam-glossar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/notam-glossar.html"/>
+  </url>
 </urlset>
