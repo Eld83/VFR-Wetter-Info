@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculating Density Altitude: Explained Simply – VFR Wetter</title>
+  <meta name="description" content="Density altitude explained in plain language: pressure altitude, ISA deviation, rule-of-thumb formulas and a fully worked example for realistic takeoff and climb performance.">
+  <meta name="theme-color" content="#071426">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://vfrwetter.com/en/density-altitude.html">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/density-altitude.html">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/density-altitude.html">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/density-altitude.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:site_name" content="VFR Wetter">
+  <meta property="og:url" content="https://vfrwetter.com/en/density-altitude.html">
+  <meta property="og:title" content="Calculating Density Altitude: Explained Simply">
+  <meta property="og:description" content="Pressure altitude, ISA deviation, rule-of-thumb formulas and a fully worked example for realistic takeoff and climb performance.">
+  <meta property="og:image" content="https://vfrwetter.com/assets/performance.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Calculating Density Altitude: Explained Simply",
+    "description": "Pressure altitude, ISA deviation, rule-of-thumb formulas and a fully worked example for realistic takeoff and climb performance.",
+    "url": "https://vfrwetter.com/en/density-altitude.html",
+    "image": "https://vfrwetter.com/assets/performance.webp",
+    "datePublished": "2026-08-15",
+    "dateModified": "2026-08-15",
+    "inLanguage": "en",
+    "author": { "@type": "Person", "name": "Niels Deuter" },
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does density altitude matter for takeoff?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The higher the density altitude, the thinner the air that the propeller, wing and engine have to work with. Takeoff roll and time to rotation speed grow, climb rate drops – often by more than the field elevation alone would suggest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does humidity affect density altitude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Humid air is slightly lighter than dry air at the same temperature, which further raises density altitude. The effect is much smaller than the temperature effect at normal conditions, but not negligible in muggy heat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I find QNH and temperature for the calculation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both are in the current METAR for the airport or the nearest station. Without a METAR, model weather gives an approximation."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vfrwetter.com/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://vfrwetter.com/en/wissen.html" },
+      { "@type": "ListItem", "position": 3, "name": "Calculating Density Altitude", "item": "https://vfrwetter.com/en/density-altitude.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="guide.html">Guide</a>
+      <a href="wissen.html">Learn</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <div class="lang-switch">
+        <button class="lang-switch-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <img class="lang-flag" src="../assets/flags/gb.svg" alt=""><span>EN</span><span class="lang-caret">▾</span>
+        </button>
+        <div class="lang-switch-menu">
+          <a href="../density-altitude.html" class="lang-switch-option"><img class="lang-flag" src="../assets/flags/de.svg" alt=""> Deutsch</a>
+          <a href="density-altitude.html" class="lang-switch-option active"><img class="lang-flag" src="../assets/flags/gb.svg" alt=""> English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="legal">
+  <div class="container">
+    <article>
+      <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Learn</a></p>
+      <h1>Calculating Density Altitude</h1>
+      <p class="byline">By <a href="index.html#club" style="color:var(--cyan);">Niels Deuter</a>, developer of VFR Wetter · updated 15 Aug 2026</p>
+      <p>Density altitude is the altitude at which the air density at your current location would be found in the standard atmosphere. Put simply: the altitude your aircraft "feels" – independent of the field's actual elevation above sea level. On a hot summer day, a 1,500 ft airfield can feel like 3,500 ft to your propeller and wing. This article shows how to estimate it yourself with two simple rule-of-thumb formulas.</p>
+
+      <h2>Why it matters</h2>
+      <p>As density altitude rises, the air gets thinner. A normally-aspirated engine loses power, the propeller produces less thrust, and the wing needs a higher speed for the same lift. The result: a longer takeoff roll, a lower climb rate, and less margin over obstacles at the field boundary. Rule of thumb for normally-aspirated engines: roughly 3% power loss per 1,000 ft of density altitude.</p>
+
+      <h2>Step 1: Pressure altitude</h2>
+      <p>Pressure altitude is the altitude reading you'd get if you set your altimeter to the standard pressure of 1013 hPa instead of the current QNH. Rule of thumb:</p>
+      <p style="font-family:monospace;background:rgba(0,0,0,.3);padding:14px 18px;border-radius:12px;overflow-x:auto;">Pressure altitude ≈ field elevation + (1013 − QNH) × 30 ft</p>
+      <p>If QNH is below 1013 hPa, pressure altitude sits above the actual field elevation – and vice versa. The 30 ft per hectopascal is a rounded approximation, accurate enough for rough flight planning.</p>
+
+      <h2>Step 2: ISA deviation</h2>
+      <p>The International Standard Atmosphere (ISA) assumes 15°C at sea level, decreasing by about 2°C per 1,000 ft. Actual temperature usually differs – and that deviation is exactly what drives density altitude:</p>
+      <p style="font-family:monospace;background:rgba(0,0,0,.3);padding:14px 18px;border-radius:12px;overflow-x:auto;">Density altitude ≈ pressure altitude + 120 ft × (OAT − ISA temperature)</p>
+      <p>OAT is the measured outside air temperature in °C, ISA temperature is the standard temperature expected at that pressure altitude. If the air is warmer than ISA predicts (the usual case on warm days), density altitude climbs above pressure altitude.</p>
+
+      <h2>A worked example</h2>
+      <p>Airfield at 1,500 ft, QNH 1008 hPa, outside air temperature 28°C:</p>
+      <ul>
+        <li><strong>Pressure altitude:</strong> 1,500 + (1013 − 1008) × 30 = 1,500 + 150 = <strong>1,650 ft</strong></li>
+        <li><strong>ISA temperature at 1,650 ft:</strong> 15°C − (1,650 / 1,000 × 2°C) ≈ <strong>12°C</strong></li>
+        <li><strong>Deviation:</strong> 28°C − 12°C = <strong>16°C above ISA</strong></li>
+        <li><strong>Density altitude:</strong> 1,650 + 120 × 16 = 1,650 + 1,920 = <strong>≈ 3,570 ft</strong></li>
+      </ul>
+      <p>1,500 ft of field elevation becomes a felt 3,570 ft – more than double. This exact scenario (hot summer day, moderate pressure) is the classic setup for underestimated takeoff distances.</p>
+
+      <h2>Humidity: the smaller, but real, factor</h2>
+      <p>Humid air is slightly lighter than dry air at the same temperature and further raises density altitude – by a few hundred feet under normal Central European conditions, noticeably more in muggy summer heat. The two rule-of-thumb formulas above don't account for it; they're still good enough for rough planning as long as you keep in mind that actual density altitude runs a bit higher on humid days.</p>
+
+      <h2>Frequently asked density altitude questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Why does density altitude matter for takeoff?</summary>
+          <p>The higher the density altitude, the thinner the air that the propeller, wing and engine have to work with. Takeoff roll and time to rotation speed grow, climb rate drops – often by more than the field elevation alone would suggest.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How does humidity affect density altitude?</summary>
+          <p>Humid air is slightly lighter than dry air at the same temperature, which further raises density altitude. The effect is much smaller than the temperature effect at normal conditions, but not negligible in muggy heat.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Where do I find QNH and temperature for the calculation?</summary>
+          <p>Both are in the current <a href="metar-lesen.html" style="color:var(--cyan);">METAR</a> for the airport or the nearest station. Without a METAR, model weather gives an approximation.</p>
+        </details>
+      </div>
+
+      <h2>What's next?</h2>
+      <p>The two rule-of-thumb formulas are good enough for a rough assessment the night before or during preflight. For exact takeoff and climb performance, your aircraft's POH always governs. Air density isn't the only thing that decides runway selection – wind matters too, see <a href="crosswind-berechnen.html" style="color:var(--cyan);">Calculating Crosswind</a>. The <a href="guide.html#performance" style="color:var(--cyan);">performance tab in VFR Wetter</a> calculates both automatically from current weather data.</p>
+
+      <p class="notice">This article does not replace POH calculations or aviation training. Actual takeoff and landing distance calculations are governed exclusively by your aircraft's flight manual.</p>
+
+      <div class="screen" style="max-width:360px;margin-top:24px;"><img src="../assets/performance.webp" alt="Performance tab with density altitude in the VFR Wetter app" width="919" height="1991" srcset="../assets/performance-320.webp 320w, ../assets/performance-480.webp 480w, ../assets/performance.webp 919w" sizes="360px" loading="lazy"></div>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 VFR Wetter · A private VFR briefing tool.</div>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

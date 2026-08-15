@@ -127,4 +127,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/metar-taf-glossar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/metar-taf-glossar.html"/>
   </url>
+  <url>
+    <loc>https://vfrwetter.com/density-altitude.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/density-altitude.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/density-altitude.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/density-altitude.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/density-altitude.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/density-altitude.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/density-altitude.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/density-altitude.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/crosswind-berechnen.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/crosswind-berechnen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/crosswind-berechnen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/crosswind-berechnen.html"/>
+  </url>
+  <url>
+    <loc>https://vfrwetter.com/en/crosswind-berechnen.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vfrwetter.com/crosswind-berechnen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/crosswind-berechnen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/crosswind-berechnen.html"/>
+  </url>
 </urlset>

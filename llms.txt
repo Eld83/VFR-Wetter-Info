@@ -37,6 +37,10 @@ Zielgruppe: private VFR-Piloten (Segelflug, UL, Motorflug) in Deutschland, Öste
 - [Reading TAF (English)](https://vfrwetter.com/en/taf-lesen.html): validity period, BECMG, TEMPO, FM, PROB30/40 with a worked example
 - [METAR-/TAF-Glossar (Deutsch)](https://vfrwetter.com/metar-taf-glossar.html): jede METAR-/TAF-Abkürzung einzeln erklärt
 - [METAR & TAF Glossary (English)](https://vfrwetter.com/en/metar-taf-glossar.html): every METAR/TAF abbreviation explained individually
+- [Density Altitude berechnen (Deutsch)](https://vfrwetter.com/density-altitude.html): Pressure Altitude, ISA-Abweichung, Faustformeln mit Beispiel
+- [Calculating Density Altitude (English)](https://vfrwetter.com/en/density-altitude.html): pressure altitude, ISA deviation, rule-of-thumb formulas with example
+- [Crosswind berechnen (Deutsch)](https://vfrwetter.com/crosswind-berechnen.html): Formel, Faustregel-Tabelle und Beispiel zur Bahnwahl
+- [Calculating Crosswind (English)](https://vfrwetter.com/en/crosswind-berechnen.html): formula, rule-of-thumb table and example for runway selection
 
 ## Optional
 

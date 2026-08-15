@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Density Altitude berechnen: Dichtehöhe einfach erklärt – VFR Wetter</title>
+  <meta name="description" content="Density Altitude (Dichtehöhe) verständlich erklärt: Pressure Altitude, ISA-Abweichung, Faustformeln und ein durchgerechnetes Beispiel für realistische Start- und Steigleistung.">
+  <meta name="theme-color" content="#071426">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://vfrwetter.com/density-altitude.html">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/density-altitude.html">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/density-altitude.html">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/density-altitude.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="VFR Wetter">
+  <meta property="og:url" content="https://vfrwetter.com/density-altitude.html">
+  <meta property="og:title" content="Density Altitude berechnen: Dichtehöhe einfach erklärt">
+  <meta property="og:description" content="Pressure Altitude, ISA-Abweichung, Faustformeln und ein durchgerechnetes Beispiel für realistische Start- und Steigleistung.">
+  <meta property="og:image" content="https://vfrwetter.com/assets/performance.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Density Altitude berechnen: Dichtehöhe einfach erklärt",
+    "description": "Pressure Altitude, ISA-Abweichung, Faustformeln und ein durchgerechnetes Beispiel für realistische Start- und Steigleistung.",
+    "url": "https://vfrwetter.com/density-altitude.html",
+    "image": "https://vfrwetter.com/assets/performance.webp",
+    "datePublished": "2026-08-15",
+    "dateModified": "2026-08-15",
+    "inLanguage": "de",
+    "author": { "@type": "Person", "name": "Niels Deuter" },
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Warum ist Density Altitude für den Start wichtig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Je höher die Density Altitude, desto dünner die Luft, an der sich Propeller, Tragfläche und Triebwerk „abstützen“ müssen. Startrollstrecke und Zeit bis zur Abhebegeschwindigkeit wachsen, die Steigrate sinkt – bei ungünstigen Bedingungen deutlich mehr, als die Platzhöhe allein vermuten lässt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie wirkt sich Luftfeuchte auf die Density Altitude aus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Feuchte Luft ist etwas leichter als trockene Luft, erhöht die Density Altitude also zusätzlich. Der Effekt ist bei normalen Temperaturen deutlich kleiner als der Temperatureffekt, bei schwüler Hitze aber nicht vernachlässigbar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wo finde ich QNH und Temperatur für die Berechnung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beides steht im aktuellen METAR des Flugplatzes oder der nächstgelegenen Station. Ohne METAR liefert Modellwetter eine Näherung."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://vfrwetter.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Wissen", "item": "https://vfrwetter.com/wissen.html" },
+      { "@type": "ListItem", "position": 3, "name": "Density Altitude berechnen", "item": "https://vfrwetter.com/density-altitude.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Funktionen</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="guide.html">Anleitung</a>
+      <a href="wissen.html">Wissen</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <div class="lang-switch">
+        <button class="lang-switch-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <img class="lang-flag" src="assets/flags/de.svg" alt=""><span>DE</span><span class="lang-caret">▾</span>
+        </button>
+        <div class="lang-switch-menu">
+          <a href="density-altitude.html" class="lang-switch-option active"><img class="lang-flag" src="assets/flags/de.svg" alt=""> Deutsch</a>
+          <a href="en/density-altitude.html" class="lang-switch-option"><img class="lang-flag" src="assets/flags/gb.svg" alt=""> English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="legal">
+  <div class="container">
+    <article>
+      <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Wissen</a></p>
+      <h1>Density Altitude berechnen</h1>
+      <p class="byline">Von <a href="index.html#club" style="color:var(--cyan);">Niels Deuter</a>, Entwickler von VFR Wetter · aktualisiert 15.08.2026</p>
+      <p>Die Density Altitude (deutsch: Dichtehöhe) ist die Höhe, auf der sich die Luftdichte am aktuellen Standort in der Standardatmosphäre befinden würde. Vereinfacht gesagt: die Höhe, die dein Flugzeug „spürt“ – unabhängig von der tatsächlichen Platzhöhe über NN. An einem heißen Sommertag kann ein 1.500-ft-Flugplatz sich für Propeller und Tragfläche anfühlen wie 3.500 ft. Dieser Artikel zeigt, wie du sie mit zwei einfachen Faustformeln selbst überschlägst.</p>
+
+      <h2>Warum das wichtig ist</h2>
+      <p>Mit steigender Density Altitude wird die Luft dünner. Das Triebwerk (bei Saugmotoren ohne Turbolader) verliert Leistung, der Propeller erzeugt weniger Schub, die Tragfläche braucht eine höhere Geschwindigkeit für denselben Auftrieb. In Summe: längere Startrollstrecke, geringere Steigrate, größerer Abstand zu Hindernissen am Platzrand. Faustregel für Saugmotoren: ungefähr 3 % Leistungsverlust je 1.000 ft Density Altitude.</p>
+
+      <h2>Schritt 1: Pressure Altitude</h2>
+      <p>Die Pressure Altitude ist die Höhenanzeige, die du bekommen würdest, wenn du den Höhenmesser auf den Standarddruck 1013 hPa einstellst statt auf das aktuelle QNH. Faustformel:</p>
+      <p style="font-family:monospace;background:rgba(0,0,0,.3);padding:14px 18px;border-radius:12px;overflow-x:auto;">Pressure Altitude ≈ Platzhöhe + (1013 − QNH) × 30 ft</p>
+      <p>Liegt das QNH unter 1013 hPa, liegt die Pressure Altitude über der tatsächlichen Platzhöhe – und umgekehrt. Die 30 ft je Hektopascal sind eine gerundete Näherung, für die überschlägige Flugplanung ausreichend genau.</p>
+
+      <h2>Schritt 2: ISA-Abweichung</h2>
+      <p>Die Standardatmosphäre (ISA) geht von 15 °C auf Meereshöhe aus, mit einer Abnahme von etwa 2 °C je 1.000 ft. Die tatsächliche Temperatur weicht davon meist ab – und genau diese Abweichung treibt die Density Altitude:</p>
+      <p style="font-family:monospace;background:rgba(0,0,0,.3);padding:14px 18px;border-radius:12px;overflow-x:auto;">Density Altitude ≈ Pressure Altitude + 120 ft × (OAT − ISA-Temperatur)</p>
+      <p>OAT ist die gemessene Außentemperatur in °C, ISA-Temperatur die für die Pressure Altitude erwartete Standardtemperatur. Ist die Luft wärmer als ISA vorhersagt (der Regelfall an warmen Tagen), wächst die Density Altitude über die Pressure Altitude hinaus.</p>
+
+      <h2>Ein durchgerechnetes Beispiel</h2>
+      <p>Flugplatz auf 1.500 ft, QNH 1008 hPa, Außentemperatur 28 °C:</p>
+      <ul>
+        <li><strong>Pressure Altitude:</strong> 1.500 + (1013 − 1008) × 30 = 1.500 + 150 = <strong>1.650 ft</strong></li>
+        <li><strong>ISA-Temperatur bei 1.650 ft:</strong> 15 °C − (1.650 / 1.000 × 2 °C) ≈ <strong>12 °C</strong></li>
+        <li><strong>Abweichung:</strong> 28 °C − 12 °C = <strong>16 °C über ISA</strong></li>
+        <li><strong>Density Altitude:</strong> 1.650 + 120 × 16 = 1.650 + 1.920 = <strong>≈ 3.570 ft</strong></li>
+      </ul>
+      <p>Aus 1.500 ft Platzhöhe werden also gefühlte 3.570 ft – mehr als das Doppelte. Genau dieses Szenario (heißer Sommertag, moderater Luftdruck) ist der Klassiker für unterschätzte Startstrecken.</p>
+
+      <h2>Luftfeuchte: der kleinere, aber reale Faktor</h2>
+      <p>Feuchte Luft ist bei gleicher Temperatur etwas leichter als trockene Luft und erhöht die Density Altitude zusätzlich – bei normalen mitteleuropäischen Bedingungen um wenige Hundert Fuß, bei schwüler Sommerhitze spürbar mehr. Die beiden Faustformeln oben berücksichtigen das nicht; für eine überschlägige Planung reichen sie trotzdem, solange du dir bewusst bist, dass die tatsächliche Density Altitude an schwülen Tagen noch etwas höher liegt.</p>
+
+      <h2>Häufige Fragen zur Density Altitude</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Warum ist Density Altitude für den Start wichtig?</summary>
+          <p>Je höher die Density Altitude, desto dünner die Luft, an der sich Propeller, Tragfläche und Triebwerk „abstützen“ müssen. Startrollstrecke und Zeit bis zur Abhebegeschwindigkeit wachsen, die Steigrate sinkt – bei ungünstigen Bedingungen deutlich mehr, als die Platzhöhe allein vermuten lässt.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Wie wirkt sich Luftfeuchte auf die Density Altitude aus?</summary>
+          <p>Feuchte Luft ist etwas leichter als trockene Luft, erhöht die Density Altitude also zusätzlich. Der Effekt ist bei normalen Temperaturen deutlich kleiner als der Temperatureffekt, bei schwüler Hitze aber nicht vernachlässigbar.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Wo finde ich QNH und Temperatur für die Berechnung?</summary>
+          <p>Beides steht im aktuellen <a href="metar-lesen.html" style="color:var(--cyan);">METAR</a> des Flugplatzes oder der nächstgelegenen Station. Ohne METAR liefert Modellwetter eine Näherung.</p>
+        </details>
+      </div>
+
+      <h2>Und jetzt?</h2>
+      <p>Die beiden Faustformeln reichen für eine überschlägige Einschätzung am Vorabend oder beim Preflight. Für eine exakte Start- und Steigleistung gilt immer das Flughandbuch (POH) deines Musters. Neben der Luftdichte entscheidet auch der Wind über die Bahnwahl – siehe <a href="crosswind-berechnen.html" style="color:var(--cyan);">Crosswind berechnen</a>. Der <a href="guide.html#performance" style="color:var(--cyan);">Performance-Tab in VFR Wetter</a> berechnet beides automatisch aus den aktuellen Wetterdaten.</p>
+
+      <p class="notice">Dieser Artikel ersetzt keine POH-Berechnung und keine luftfahrtrechtliche Ausbildung. Für die tatsächliche Start- und Landestreckenberechnung gilt ausschließlich das Flughandbuch deines Musters.</p>
+
+      <div class="screen" style="max-width:360px;margin-top:24px;"><img src="assets/performance.webp" alt="Performance-Tab mit Density Altitude in der App VFR Wetter" width="919" height="1991" srcset="assets/performance-320.webp 320w, assets/performance-480.webp 480w, assets/performance.webp 919w" sizes="360px" loading="lazy"></div>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 VFR Wetter · Ein privates VFR-Briefing-Hilfsmittel.</div>
+    <div>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

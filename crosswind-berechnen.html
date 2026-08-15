@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crosswind berechnen: Seitenwind-Komponente einfach erklärt – VFR Wetter</title>
+  <meta name="description" content="Crosswind- und Rückenwind-Komponente berechnen: Formel, Faustregeln und ein durchgerechnetes Beispiel zur Bahnwahl bei Seitenwind für VFR-Piloten.">
+  <meta name="theme-color" content="#071426">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://vfrwetter.com/crosswind-berechnen.html">
+  <link rel="alternate" hreflang="de" href="https://vfrwetter.com/crosswind-berechnen.html">
+  <link rel="alternate" hreflang="en" href="https://vfrwetter.com/en/crosswind-berechnen.html">
+  <link rel="alternate" hreflang="x-default" href="https://vfrwetter.com/crosswind-berechnen.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="VFR Wetter">
+  <meta property="og:url" content="https://vfrwetter.com/crosswind-berechnen.html">
+  <meta property="og:title" content="Crosswind berechnen: Seitenwind-Komponente einfach erklärt">
+  <meta property="og:description" content="Formel, Faustregeln und ein durchgerechnetes Beispiel zur Bahnwahl bei Seitenwind.">
+  <meta property="og:image" content="https://vfrwetter.com/assets/crosswind.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2305c7e8'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Crosswind berechnen: Seitenwind-Komponente einfach erklärt",
+    "description": "Formel, Faustregeln und ein durchgerechnetes Beispiel zur Bahnwahl bei Seitenwind.",
+    "url": "https://vfrwetter.com/crosswind-berechnen.html",
+    "image": "https://vfrwetter.com/assets/crosswind.webp",
+    "datePublished": "2026-08-15",
+    "dateModified": "2026-08-15",
+    "inLanguage": "de",
+    "author": { "@type": "Person", "name": "Niels Deuter" },
+    "publisher": { "@type": "Organization", "name": "VFR Wetter" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist die \"demonstrated crosswind velocity\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die vom Hersteller bei der Zulassung tatsächlich geflogene, nicht notwendigerweise die maximal mögliche Seitenwindkomponente. Sie steht im Flughandbuch (POH) und ist keine feste Betriebsgrenze, aber ein wichtiger Anhaltspunkt für die eigene Risikoeinschätzung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie berechne ich den Winkel zwischen Wind und Bahn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windrichtung minus Bahnrichtung (beide in Grad, Bahnrichtung ist die Bahnbezeichnung mal 10, z. B. Bahn 27 = 270°). Das Ergebnis auf den Bereich 0° bis 90° reduzieren, dann in der Faustregel-Tabelle nachschlagen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was gilt bei Böen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Für die Böenkomponente rechnest du mit derselben Formel, aber mit der Böenspitze statt der mittleren Windgeschwindigkeit – sie zeigt das ungünstigste Szenario im Moment des Aufsetzens."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://vfrwetter.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Wissen", "item": "https://vfrwetter.com/wissen.html" },
+      { "@type": "ListItem", "position": 3, "name": "Crosswind berechnen", "item": "https://vfrwetter.com/crosswind-berechnen.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">✈</span><span>VFR Wetter</span></a>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html#features">Funktionen</a>
+      <a href="index.html#screens">Screenshots</a>
+      <a href="guide.html">Anleitung</a>
+      <a href="wissen.html">Wissen</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <div class="lang-switch">
+        <button class="lang-switch-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <img class="lang-flag" src="assets/flags/de.svg" alt=""><span>DE</span><span class="lang-caret">▾</span>
+        </button>
+        <div class="lang-switch-menu">
+          <a href="crosswind-berechnen.html" class="lang-switch-option active"><img class="lang-flag" src="assets/flags/de.svg" alt=""> Deutsch</a>
+          <a href="en/crosswind-berechnen.html" class="lang-switch-option"><img class="lang-flag" src="assets/flags/gb.svg" alt=""> English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="legal">
+  <div class="container">
+    <article>
+      <p style="margin-bottom:8px;"><a href="wissen.html" style="color:var(--cyan);text-decoration:none;">← Wissen</a></p>
+      <h1>Crosswind berechnen</h1>
+      <p class="byline">Von <a href="index.html#club" style="color:var(--cyan);">Niels Deuter</a>, Entwickler von VFR Wetter · aktualisiert 15.08.2026</p>
+      <p>Die Crosswind- (Seitenwind-)Komponente ist der Teil des Windes, der quer zur Bahn steht, statt entlang von ihr zu wehen. Sie entscheidet mit darüber, ob eine Bahn für Start oder Landung geeignet ist – und ist mit ein bisschen Trigonometrie oder einer einfachen Faustregel schnell überschlagen.</p>
+
+      <h2>Die Formel</h2>
+      <p>Bilde zunächst den Winkel zwischen Windrichtung und Bahnrichtung (beide in Grad, Bahn 27 entspricht 270°). Dann gilt:</p>
+      <p style="font-family:monospace;background:rgba(0,0,0,.3);padding:14px 18px;border-radius:12px;overflow-x:auto;">Crosswind = Windgeschwindigkeit × sin(Winkel)
+Headwind/Rückenwind = Windgeschwindigkeit × cos(Winkel)</p>
+      <p>Ist der Winkel kleiner als 90°, hast du Gegenwind (Headwind); ist er größer als 90°, Rückenwind (Tailwind) – beides mit entsprechend geringerer oder höherer Startroll- bzw. Landestrecke.</p>
+
+      <h2>Die Faustregel-Tabelle</h2>
+      <p>Ohne Taschenrechner reicht meist diese gerundete Näherung, im Sprechfunk-Jargon oft „Clock Code“ genannt:</p>
+      <ul>
+        <li><strong>10° Versatz:</strong> ≈ 20 % der Windgeschwindigkeit als Crosswind</li>
+        <li><strong>20° Versatz:</strong> ≈ 35 %</li>
+        <li><strong>30° Versatz:</strong> ≈ 50 % (die Hälfte)</li>
+        <li><strong>45° Versatz:</strong> ≈ 70 %</li>
+        <li><strong>60° Versatz:</strong> ≈ 87 %</li>
+        <li><strong>90° Versatz:</strong> 100 % – der komplette Wind steht quer zur Bahn</li>
+      </ul>
+
+      <h2>Ein durchgerechnetes Beispiel</h2>
+      <p>Bahn 27 (270°), Wind aus 240° mit 20 kt, Böen bis 30 kt:</p>
+      <ul>
+        <li><strong>Winkel:</strong> 270° − 240° = 30°</li>
+        <li><strong>Crosswind (mittel):</strong> 20 kt × sin(30°) = 20 × 0,5 = <strong>10 kt</strong></li>
+        <li><strong>Crosswind (Böe):</strong> 30 kt × sin(30°) = 30 × 0,5 = <strong>15 kt</strong></li>
+        <li><strong>Headwind (mittel):</strong> 20 kt × cos(30°) ≈ 20 × 0,87 ≈ <strong>17 kt</strong></li>
+      </ul>
+      <p>Mit der 30°-Faustregel („die Hälfte“) kommst du ohne Taschenrechner auf dasselbe Ergebnis wie mit der exakten Formel.</p>
+
+      <h2>Wie viel Seitenwind ist zu viel?</h2>
+      <p>Es gibt keine universelle Zahl. Viele Flughandbücher (POH) nennen eine <em>demonstrated crosswind velocity</em> – die bei der Musterzulassung tatsächlich geflogene, nicht zwingend die maximal mögliche Seitenwindkomponente. Sie ist meist keine feste Betriebsgrenze, aber ein wichtiger Anhaltspunkt: Erfahrung, Übung und Böenanteil spielen für die persönliche Grenze mindestens genauso eine Rolle wie die reine Zahl im Handbuch. Im Zweifel gilt: die Bahn mit dem geringsten Seitenwind wählen oder ausweichen.</p>
+
+      <h2>Häufige Fragen zum Crosswind</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Was ist die „demonstrated crosswind velocity“?</summary>
+          <p>Die vom Hersteller bei der Zulassung tatsächlich geflogene, nicht notwendigerweise die maximal mögliche Seitenwindkomponente. Sie steht im Flughandbuch (POH) und ist keine feste Betriebsgrenze, aber ein wichtiger Anhaltspunkt für die eigene Risikoeinschätzung.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Wie berechne ich den Winkel zwischen Wind und Bahn?</summary>
+          <p>Windrichtung minus Bahnrichtung (beide in Grad, Bahnrichtung ist die Bahnbezeichnung mal 10, z. B. Bahn 27 = 270°). Das Ergebnis auf den Bereich 0° bis 90° reduzieren, dann in der Faustregel-Tabelle nachschlagen.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Was gilt bei Böen?</summary>
+          <p>Für die Böenkomponente rechnest du mit derselben Formel, aber mit der Böenspitze statt der mittleren Windgeschwindigkeit – sie zeigt das ungünstigste Szenario im Moment des Aufsetzens.</p>
+        </details>
+      </div>
+
+      <h2>Und jetzt?</h2>
+      <p>Für den täglichen Gebrauch musst du weder Sinus noch die Faustregel-Tabelle im Kopf haben: Der <a href="guide.html#performance" style="color:var(--cyan);">Crosswind-Rechner in VFR Wetter</a> lädt die Bahndaten des gewählten Flugplatzes automatisch und zeigt Crosswind- und Rückenwind-Komponente je Bahnrichtung – inklusive Empfehlung der günstigsten Bahn. Neben Wind entscheidet auch die Luftdichte über die Startleistung – siehe <a href="density-altitude.html" style="color:var(--cyan);">Density Altitude berechnen</a>.</p>
+
+      <p class="notice">Dieser Artikel ersetzt keine POH-Angaben und keine luftfahrtrechtliche Ausbildung. Die tatsächliche Seitenwindgrenze für dein Muster und deine persönliche Erfahrung legst ausschließlich du bzw. das Flughandbuch fest.</p>
+
+      <div class="screen" style="max-width:360px;margin-top:24px;"><img src="assets/crosswind.webp" alt="Crosswind-Rechner in der App VFR Wetter" width="919" height="1991" srcset="assets/crosswind-320.webp 320w, assets/crosswind-480.webp 480w, assets/crosswind.webp 919w" sizes="360px" loading="lazy"></div>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 VFR Wetter · Ein privates VFR-Briefing-Hilfsmittel.</div>
+    <div>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>
